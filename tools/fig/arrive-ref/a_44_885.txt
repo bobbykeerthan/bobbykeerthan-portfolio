@@ -1,0 +1,113 @@
+INST 0,0 393x54 'Chrome/Status Bar'
+  TEXT 30,17 54x20 [Inter Semi Bold 16 #17171a] "9:41"
+  FRAM 134,11 125x37 bg=#000000 r=20 'Dynamic Island'
+  FRAM 302,21 74x13 'Indicators'
+    FRAM 302,22 18x11 'signal'
+      ROUN 302,29 3x4 bg=#17171a r=1 'Rectangle'
+      ROUN 307,27 3x6 bg=#17171a r=1 'Rectangle'
+      ROUN 312,25 3x8 bg=#17171a r=1 'Rectangle'
+      ROUN 317,23 3x10 bg=#17171a r=1 'Rectangle'
+    FRAM 327,22 17x12 'wifi'
+      VECT 328,23 15x12 bg=#17171a 'Vector'
+    FRAM 351,21 25x13 'battery'
+      ROUN 351,21 23x13 bd=#17171a@0.35/1 r=4 'Rectangle'
+      ROUN 353,23 19x9 bg=#17171a r=2 'Rectangle'
+      ROUN 374,26 2x4 bg=#17171a@0.35 r=1 'Rectangle'
+INST 0,54 393x56 bg=#ffffff 'Navigation / Header'
+  INST 8,60 44x44 r=12 'Control / Icon Button'
+    INST 18,70 24x24 'Icon/chevron-left'
+      VECT 27,76 6x12 bd=#808080/2 'Vector'
+  TEXT 0,70 393x24 [Inter Semi Bold 18/24 #17171a] "Transport"
+  INST 397,60 44x44 r=12 'Control / Icon Button'
+    INST 407,70 24x24 'Icon/sliders'
+      VECT 421,74 7x0 bd=#808080/2 'Vector'
+      VECT 410,74 7x0 bd=#808080/2 'Vector'
+      VECT 419,82 9x0 bd=#6b6b73/2 'Vector'
+      VECT 410,82 5x0 bd=#6b6b73/2 'Vector'
+      VECT 423,90 5x0 bd=#6b6b73/2 'Vector'
+      VECT 410,90 9x0 bd=#6b6b73/2 'Vector'
+      VECT 421,72 0x4 bd=#6b6b73/2 'Vector'
+      VECT 415,80 0x4 bd=#6b6b73/2 'Vector'
+      VECT 423,88 0x4 bd=#6b6b73/2 'Vector'
+FRAM 0,110 393x685 'Frame'
+  FRAM 20,118 353x147 bg=#ffffff bd=#e7e7eb/1 r=16 'Frame'
+    FRAM 36,124 321x67 'Frame'
+      ELLI 36,152 12x12 bg=#3730a3 'Ellipse'
+      FRAM 60,138 297x39 'Frame'
+        TEXT 60,138 35x16 [Inter Medium 12/16 #6b6b73] "FROM"
+        TEXT 60,155 80x22 [Inter Semi Bold 16/22 #17171a] "Priory Hall"
+    ROUN 36,191 321x1 bg=#e7e7eb 'Rectangle'
+    FRAM 36,192 321x67 'Frame'
+      ELLI 36,220 12x12 bg=#15803d 'Ellipse'
+      FRAM 60,206 297x39 'Frame'
+        TEXT 60,206 17x16 [Inter Medium 12/16 #6b6b73] "TO"
+        TEXT 60,223 155x22 [Inter Semi Bold 16/22 #17171a] "Coventry University"
+  TEXT 20,281 353x24 [Inter Semi Bold 18/24 #17171a] "Fastest routes"
+  FRAM 20,321 353x252 'Frame'
+    FRAM 20,321 353x76 bg=#ffffff bd=#3730a3/1.5 r=16 'Frame'
+      FRAM 36,337 44x44 bg=#eef2ff r=12 'Frame'
+        INST 46,347 24x24 'Icon/bus'
+          VECT 54,353 0x6 bd=#808080/2 'Vector'
+          VECT 61,353 0x6 bd=#808080/2 'Vector'
+          VECT 48,359 20x0 bd=#808080/2 'Vector'
+          VECT 48,353 20x12 bd=#808080/2 'Vector'
+          VECT 51,363 4x4 bd=#808080/2 'Vector'
+          VECT 55,365 5x0 bd=#808080/2 'Vector'
+          VECT 60,363 4x4 bd=#808080/2 'Vector'
+      FRAM 94,338 194x43 'Frame'
+        FRAM 94,338 98x22 'Frame'
+          TEXT 94,338 30x22 [Inter Semi Bold 16/22 #17171a] "Bus"
+          INST 132,338 60x22 bg=#eef2ff r=999 'Status / Badge'
+            TEXT 140,340 44x16 [Inter Semi Bold 12/16 #3730a3] "Fastest"
+        TEXT 94,362 133x18 [Inter Medium 13/18 #6b6b73] "11 / 12 · Pool Meadow"
+      FRAM 302,338 55x42 'Frame'
+        TEXT 302,338 55x22 [Inter Bold 17/22 #17171a] "18 min"
+        TEXT 307,362 50x18 [Inter Semi Bold 13/18 #15803d] "in 6 min"
+    FRAM 20,409 353x76 bg=#ffffff bd=#e7e7eb/1 r=16 'Frame'
+      FRAM 36,425 44x44 bg=#eef2ff r=12 'Frame'
+        INST 46,435 24x24 'Icon/walk'
+          VECT 57,439 2x2 bd=#808080/2 'Vector'
+          VECT 55,449 6x6 bd=#808080/2 'Vector'
+          VECT 52,443 12x2 bd=#808080/2 'Vector'
+          VECT 58,445 0x4 bd=#808080/2 'Vector'
+      FRAM 94,426 192x43 'Frame'
+        FRAM 94,426 38x22 'Frame'
+          TEXT 94,426 38x22 [Inter Semi Bold 16/22 #17171a] "Walk"
+        TEXT 94,450 126x18 [Inter Medium 13/18 #6b6b73] "Direct via Gulson Rd"
+      FRAM 300,426 57x42 'Frame'
+        TEXT 300,426 57x22 [Inter Bold 17/22 #17171a] "24 min"
+        TEXT 330,450 27x18 [Inter Semi Bold 13/18 #6b6b73] "now"
+    FRAM 20,497 353x76 bg=#ffffff bd=#e7e7eb/1 r=16 'Frame'
+      FRAM 36,513 44x44 bg=#eef2ff r=12 'Frame'
+        INST 46,523 24x24 'Icon/bike'
+          VECT 61,537 7x7 bd=#808080/2 'Vector'
+          VECT 48,537 7x7 bd=#808080/2 'Vector'
+          VECT 60,527 2x2 bd=#808080/2 'Vector'
+          VECT 55,531 8x10 bd=#808080/2 'Vector'
+      FRAM 94,514 195x43 'Frame'
+        FRAM 94,514 44x22 'Frame'
+          TEXT 94,514 44x22 [Inter Semi Bold 16/22 #17171a] "Cycle"
+        TEXT 94,538 143x18 [Inter Medium 13/18 #6b6b73] "Cycle path · mostly flat"
+      FRAM 303,514 54x42 'Frame'
+        TEXT 303,514 54x22 [Inter Bold 17/22 #17171a] "12 min"
+        TEXT 330,538 27x18 [Inter Semi Bold 13/18 #6b6b73] "now"
+  TEXT 20,589 353x24 [Inter Semi Bold 18/24 #17171a] "My usual routes"
+  FRAM 20,629 353x106 'Frame'
+    FRAM 20,629 353x48 bg=#ffffff bd=#e7e7eb/1 r=14 'Frame'
+      TEXT 36,643 43x20 [Inter Semi Bold 15/20 #17171a] "Home"
+      INST 89,645 16x16 'Icon/arrow-right'
+        VECT 92,653 9x0 bd=#808080/2 'Vector'
+        VECT 97,648 5x9 bd=#808080/2 'Vector'
+      TEXT 115,643 74x20 [Inter Semi Bold 15/20 #17171a] "University"
+      FRAM 199,648 130x10 'Frame'
+      INST 339,644 18x18 'Icon/chevron-right'
+        VECT 346,648 4x9 bd=#808080/2 'Vector'
+    FRAM 20,687 353x48 bg=#ffffff bd=#e7e7eb/1 r=14 'Frame'
+      TEXT 36,701 43x20 [Inter Semi Bold 15/20 #17171a] "Home"
+      INST 89,703 16x16 'Icon/arrow-right'
+        VECT 92,711 9x0 bd=#808080/2 'Vector'
+        VECT 97,706 5x9 bd=#808080/2 'Vector'
+      TEXT 115,701 83x20 [Inter Semi Bold 15/20 #17171a] "City Centre"
+      FRAM 208,706 121x10 'Frame'
+      INST 339,702 18x18 'Icon/chevron-right'
+        VECT 346,706 4x9 bd=#808080/2 'Vector'

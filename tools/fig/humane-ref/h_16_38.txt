@@ -1,0 +1,74 @@
+FRAM 0,0 390x38 'Frame'
+  TEXT 24,14 30x18 [Inter Semi Bold 14 #38392b] "9:41"
+  FRAM 302,16 64x15 'Frame'
+    FRAM 302,16 15x15 'Frame'
+      VECT 303,17 12x6 bd=#38392b/1.1875 'Vector'
+    FRAM 323,16 15x15 'Frame'
+      VECT 326,19 10x6 bd=#38392b/1.1875 'Vector'
+    ROUN 344,18 22x11 bg=#38392b r=3 'Rectangle'
+FRAM 0,38 390x54 'Frame'
+  FRAM 12,44 40x40 r=100 'Back'
+    FRAM 20,52 23x23 'Frame'
+      VECT 28,57 7x13 bd=#38392b/1.82083 'Vector'
+  TEXT 52,52 286x24 [Inter Semi Bold 18 #38392b] "ABC Record"
+  FRAM 338,44 40x40 r=100 'Frame'
+    FRAM 346,52 23x23 'Frame'
+      VECT 352,56 12x15 bd=#6f7263/1.82083 'Vector'
+FRAM 0,92 390x752 'Frame'
+  FRAM 20,100 350x80 bg=#ffffff bd=#d7d9d0/1 r=16 'Frame'
+    FRAM 34,114 52x52 bg=GRADIE bd=#d7d9d0/1.4 r=26 'Frame'
+      FRAM 43,124 34x34 'Frame'
+        VECT 50,129 20x21 bd=#5c4a30/2.40833 'Vector'
+    FRAM 99,118 136x45 'Frame'
+      TEXT 99,118 96x24 [Inter Bold 18 #38392b] "Dog #2145"
+      TEXT 99,146 134x17 [Inter Medium 13 #6f7263] "Male · Medium · 18 kg"
+    FRAM 248,127 108x26 bg=#f7f0db r=100 'Frame'
+      ELLI 258,136 7x7 bg=#b98a3c 'Ellipse'
+      TEXT 271,132 74x16 [Inter Semi Bold 12 #b98a3c] "In Treatment"
+  TEXT 20,196 164x17 [Inter Semi Bold 13 #6f7263] "TREATMENT CHECKLIST"
+  FRAM 20,229 350x294 'Frame'
+    FRAM 20,229 350x66 bg=#ffffff bd=#ccdbb8/1.3 r=14 'Check · Sterilisation'
+      FRAM 34,249 26x26 bg=#4b612d r=100 'Frame'
+        FRAM 38,254 17x17 'Frame'
+          VECT 42,259 10x7 bd=#ffffff/1.7 'Vector'
+      FRAM 72,243 254x38 'Frame'
+        TEXT 72,243 87x20 [Inter Semi Bold 15 #38392b] "Sterilisation"
+        TEXT 72,265 180x16 [Inter Medium 12 #6f7263] "Completed · Dr. Meena · 12 Aug"
+      FRAM 338,253 18x18 'Frame'
+        VECT 342,258 10x7 bd=#4b612d/1.65 'Vector'
+    FRAM 20,305 350x66 bg=#ffffff bd=#ccdbb8/1.3 r=14 'Check · Rabies Vaccination'
+      FRAM 34,325 26x26 bg=#4b612d r=100 'Frame'
+        FRAM 38,330 17x17 'Frame'
+          VECT 42,335 10x7 bd=#ffffff/1.7 'Vector'
+      FRAM 72,319 254x38 'Frame'
+        TEXT 72,319 139x20 [Inter Semi Bold 15 #38392b] "Rabies Vaccination"
+        TEXT 72,341 135x16 [Inter Medium 12 #6f7263] "Batch RV-1208 · 12 Aug"
+      FRAM 338,329 18x18 'Frame'
+        VECT 342,334 10x7 bd=#4b612d/1.65 'Vector'
+    FRAM 20,381 350x66 bg=#ffffff bd=#ccdbb8/1.3 r=14 'Check · Deworming'
+      FRAM 34,401 26x26 bg=#4b612d r=100 'Frame'
+        FRAM 38,406 17x17 'Frame'
+          VECT 42,411 10x7 bd=#ffffff/1.7 'Vector'
+      FRAM 72,395 254x38 'Frame'
+        TEXT 72,395 83x20 [Inter Semi Bold 15 #38392b] "Deworming"
+        TEXT 72,417 112x16 [Inter Medium 12 #6f7263] "Completed · 12 Aug"
+      FRAM 338,405 18x18 'Frame'
+        VECT 342,410 10x7 bd=#4b612d/1.65 'Vector'
+    FRAM 20,457 350x66 bg=#ffffff bd=#d7d9d0/1.3 r=14 'Check · Other Treatment'
+      FRAM 34,477 26x26 bg=#ffffff bd=#d7d9d0/1.6 r=100 'Frame'
+      FRAM 72,471 254x38 'Frame'
+        TEXT 72,471 121x20 [Inter Semi Bold 15 #38392b] "Other Treatment"
+        TEXT 72,493 145x16 [Inter Medium 12 #6f7263] "Add a note or medication"
+      FRAM 338,481 18x18 'Frame'
+        VECT 342,485 10x10 bd=#4b612d/1.425 'Vector'
+  TEXT 20,539 130x17 [Inter Semi Bold 13 #6f7263] "RECOVERY STATUS"
+  FRAM 20,572 350x50 bg=#ffffff bd=#d7d9d0/1.4 r=14 'Select · Recovery'
+    ELLI 35,592 9x9 bg=#4b612d 'Ellipse'
+    TEXT 54,587 272x20 [Inter Semi Bold 15 #38392b] "Stable"
+    FRAM 336,587 20x20 'Frame'
+      VECT 340,594 12x6 bd=#6f7263/1.58333 'Vector'
+  FRAM 20,638 100x118 'Frame'
+  FRAM 20,772 350x56 bg=#4b612d r=15 'CTA · Save Record'
+    FRAM 126,790 19x19 'Frame'
+      VECT 131,794 10x13 bd=#ffffff/1.50417 'Vector'
+    TEXT 153,790 111x20 [Inter Bold 15 #ffffff] "SAVE RECORD"

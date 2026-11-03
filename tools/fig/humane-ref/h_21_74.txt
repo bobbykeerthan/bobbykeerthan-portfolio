@@ -1,0 +1,94 @@
+FRAM 0,0 390x38 'Frame'
+  TEXT 24,14 30x18 [Inter Semi Bold 14 #38392b] "9:41"
+  FRAM 302,16 64x15 'Frame'
+    FRAM 302,16 15x15 'Frame'
+      VECT 303,17 12x6 bd=#38392b/1.1875 'Vector'
+    FRAM 323,16 15x15 'Frame'
+      VECT 326,19 10x6 bd=#38392b/1.1875 'Vector'
+    ROUN 344,18 22x11 bg=#38392b r=3 'Rectangle'
+FRAM 0,38 390x39 'Frame'
+  TEXT 166,46 57x23 [Inter Semi Bold 18 #38392b] "Profile"
+FRAM 0,77 390x683 'Frame'
+  FRAM 151,85 88x88 bg=#e5ebda bd=#4b612d/2 r=100 'Frame'
+    FRAM 173,107 44x44 'Frame'
+      VECT 182,115 26x28 bd=#4b612d/3.48333 'Vector'
+  FRAM 94,189 201x47 'Frame'
+    TEXT 137,189 116x27 [Inter Bold 21 #38392b] "Ravi Kumar"
+    TEXT 94,219 201x17 [Inter Medium 13 #6f7263] "Field Team 04 · ABC Chandigarh"
+  FRAM 20,252 350x76 bg=#ffffff bd=#d7d9d0/1 r=16 'Frame'
+    FRAM 30,267 109x46 'Frame'
+      TEXT 77,267 15x29 [Inter Bold 22 #4b612d] "5"
+      TEXT 68,299 33x14 [Inter Medium 11 #6f7263] "Today"
+    ROUN 139,267 1x32 bg=#d7d9d0 'Rectangle'
+    FRAM 140,267 109x46 'Frame'
+      TEXT 180,267 30x29 [Inter Bold 22 #4b612d] "38"
+      TEXT 168,299 54x14 [Inter Medium 11 #6f7263] "This week"
+    ROUN 250,267 1x32 bg=#d7d9d0 'Rectangle'
+    FRAM 251,267 109x46 'Frame'
+      TEXT 285,267 40x29 [Inter Bold 22 #4b612d] "214"
+      TEXT 292,299 27x14 [Inter Medium 11 #6f7263] "Total"
+  FRAM 20,344 350x377 bg=#ffffff bd=#d7d9d0/1 r=16 'Frame'
+    FRAM 26,350 338x60 'Menu · My Dog Records'
+      FRAM 38,363 34x34 bg=#e5ebda r=10 'Frame'
+        FRAM 46,370 19x19 'Frame'
+          VECT 51,373 9x13 bd=#4b612d/1.50417 'Vector'
+      TEXT 85,370 235x19 [Inter Semi Bold 15 #38392b] "My Dog Records"
+      FRAM 333,370 19x19 'Frame'
+        VECT 340,374 6x11 bd=#6f7263/1.50417 'Vector'
+    ROUN 26,410 100x1 bg=#e8e8e3 'Rectangle'
+    FRAM 26,411 338x60 'Menu · Assigned PODs'
+      FRAM 38,424 34x34 bg=#e5ebda r=10 'Frame'
+        FRAM 46,432 19x19 'Frame'
+          VECT 49,435 13x12 bd=#4b612d/1.50417 'Vector'
+      TEXT 85,432 235x19 [Inter Semi Bold 15 #38392b] "Assigned PODs"
+      FRAM 333,432 19x19 'Frame'
+        VECT 340,435 6x11 bd=#6f7263/1.50417 'Vector'
+    ROUN 26,471 100x1 bg=#e8e8e3 'Rectangle'
+    FRAM 26,472 338x60 'Menu · Route History'
+      FRAM 38,485 34x34 bg=#e5ebda r=10 'Frame'
+        FRAM 46,492 19x19 'Frame'
+          VECT 50,495 12x12 bd=#4b612d/1.50417 'Vector'
+      TEXT 85,492 235x19 [Inter Semi Bold 15 #38392b] "Route History"
+      FRAM 333,492 19x19 'Frame'
+        VECT 340,496 6x11 bd=#6f7263/1.50417 'Vector'
+    ROUN 26,532 100x1 bg=#e8e8e3 'Rectangle'
+    FRAM 26,533 338x60 'Menu · Settings'
+      FRAM 38,546 34x34 bg=#e5ebda r=10 'Frame'
+        FRAM 46,554 19x19 'Frame'
+          VECT 45,560 16x12 bd=#4b612d/1.50417 'Vector'
+      TEXT 85,554 235x19 [Inter Semi Bold 15 #38392b] "Settings"
+      FRAM 333,554 19x19 'Frame'
+        VECT 340,557 6x11 bd=#6f7263/1.50417 'Vector'
+    ROUN 26,593 100x1 bg=#e8e8e3 'Rectangle'
+    FRAM 26,594 338x60 'Menu · Help & Support'
+      FRAM 38,607 34x34 bg=#e5ebda r=10 'Frame'
+        FRAM 46,614 19x19 'Frame'
+          VECT 48,617 14x14 bd=#4b612d/1.50417 'Vector'
+      TEXT 85,614 235x19 [Inter Semi Bold 15 #38392b] "Help & Support"
+      FRAM 333,614 19x19 'Frame'
+        VECT 340,618 6x11 bd=#6f7263/1.50417 'Vector'
+    ROUN 26,654 100x1 bg=#e8e8e3 'Rectangle'
+    FRAM 26,655 338x60 'Menu · Log out'
+      FRAM 38,668 34x34 bg=#f5e5e0 r=10 'Frame'
+        FRAM 46,676 19x19 'Frame'
+          VECT 49,679 13x13 bd=#b0563f/1.50417 'Vector'
+      TEXT 85,676 267x19 [Inter Semi Bold 15 #b0563f] "Log out"
+INST 0,760 390x84 bg=#ffffff bd=#d7d9d0/1 'Bottom Nav'
+  FRAM 0,760 390x74 bg=#ffffff 'items'
+    FRAM 24,772 31x44 bg=#ffffff 'Home'
+      FRAM 28,774 24x24 'Frame'
+        VECT 31,778 17x16 bd=#8a8c7e/1.9 'Vector'
+      TEXT 24,803 31x13 [Inter Medium 11 #8a8c7e] "Home"
+    FRAM 124,772 24x44 bg=#ffffff 'Map'
+      FRAM 124,774 24x24 'Frame'
+        VECT 129,778 14x18 bd=#8a8c7e/1.9 'Vector'
+      TEXT 125,803 23x13 [Inter Medium 11 #8a8c7e] "Map"
+    FRAM 218,772 44x44 bg=#ffffff 'Records'
+      FRAM 228,774 24x24 'Frame'
+        VECT 234,778 11x17 bd=#8a8c7e/1.9 'Vector'
+      TEXT 218,803 44x13 [Inter Medium 11 #8a8c7e] "Records"
+    FRAM 331,772 35x54 bg=#ffffff 'Profile'
+      FRAM 336,774 24x24 'Frame'
+        VECT 342,779 13x15 bd=#4b612d/1.9 'Vector'
+      TEXT 331,803 35x13 [Inter Semi Bold 11 #4b612d] "Profile"
+      ELLI 346,821 5x5 bg=#4b612d 'Ellipse'

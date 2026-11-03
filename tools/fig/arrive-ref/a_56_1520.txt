@@ -1,0 +1,98 @@
+INST 0,0 393x54 'Chrome/Status Bar'
+  TEXT 30,17 54x20 [Inter Semi Bold 16 #17171a] "9:41"
+  FRAM 134,11 125x37 bg=#000000 r=20 'Dynamic Island'
+  FRAM 302,21 74x13 'Indicators'
+    FRAM 302,22 18x11 'signal'
+      ROUN 302,29 3x4 bg=#17171a r=1 'Rectangle'
+      ROUN 307,27 3x6 bg=#17171a r=1 'Rectangle'
+      ROUN 312,25 3x8 bg=#17171a r=1 'Rectangle'
+      ROUN 317,23 3x10 bg=#17171a r=1 'Rectangle'
+    FRAM 327,22 17x12 'wifi'
+      VECT 328,23 15x12 bg=#17171a 'Vector'
+    FRAM 351,21 25x13 'battery'
+      ROUN 351,21 23x13 bd=#17171a@0.35/1 r=4 'Rectangle'
+      ROUN 353,23 19x9 bg=#17171a r=2 'Rectangle'
+      ROUN 374,26 2x4 bg=#17171a@0.35 r=1 'Rectangle'
+INST 0,54 393x56 bg=#ffffff 'Navigation / Header'
+  INST 8,60 44x44 r=12 'Control / Icon Button'
+    INST 18,70 24x24 'Icon/chevron-left'
+      VECT 27,76 6x12 bd=#808080/2 'Vector'
+  TEXT 0,70 393x24 [Inter Semi Bold 18/24 #17171a] "Food"
+FRAM 0,110 393x735 'Frame'
+  FRAM 20,118 353x130 bg=#ffffff bd=#e7e7eb/1 r=18 'Frame'
+    TEXT 38,136 115x20 [Inter Medium 14/20 #6b6b73] "Spent this month"
+    FRAM 38,164 317x40 'Frame'
+      TEXT 38,164 85x40 [Inter Bold 34/40 #17171a] "£186"
+      FRAM 133,182 77x4 'Frame'
+      FRAM 220,170 135x28 bg=#f0fdf4 r=999 'Frame'
+        INST 230,176 15x15 'Icon/trending-up'
+          VECT 231,181 12x6 bd=#808080/2 'Vector'
+          VECT 240,181 4x4 bd=#808080/2 'Vector'
+        TEXT 250,176 93x16 [Inter Semi Bold 13/16 #15803d] "£34 below avg"
+    TEXT 38,212 206x18 [Inter Medium 13/18 #a8a8b0] "£240 monthly budget · 78% used"
+  FRAM 20,264 353x208 bg=#ffffff bd=#e7e7eb/1 r=18 'Frame'
+    TEXT 38,282 65x22 [Inter Semi Bold 16/22 #17171a] "By week"
+    FRAM 38,316 317x140 'Frame'
+      FRAM 38,316 69x140 'Frame'
+        FRAM 52,322 40x110 'Frame'
+          FRAM 54,349 36x83 bg=#f1f1f4 r=8 'Frame'
+        TEXT 63,440 18x16 [Inter Medium 12/16 #6b6b73] "W1"
+      FRAM 121,316 69x140 'Frame'
+        FRAM 135,322 40x110 'Frame'
+          FRAM 137,371 36x61 bg=#f1f1f4 r=8 'Frame'
+        TEXT 145,440 20x16 [Inter Medium 12/16 #6b6b73] "W2"
+      FRAM 204,316 69x140 'Frame'
+        FRAM 218,322 40x110 'Frame'
+          FRAM 220,334 36x98 bg=#3730a3 r=8 'Frame'
+        TEXT 228,440 20x16 [Inter Medium 12/16 #6b6b73] "W3"
+      FRAM 286,316 69x140 'Frame'
+        FRAM 301,322 40x110 'Frame'
+          FRAM 303,376 36x56 bg=#f1f1f4 r=8 'Frame'
+        TEXT 311,440 20x16 [Inter Medium 12/16 #6b6b73] "W4"
+  FRAM 20,488 353x297 bg=#ffffff bd=#e7e7eb/1 r=18 'Frame'
+    FRAM 20,488 353x46 'Frame'
+      TEXT 36,504 156x22 [Inter Semi Bold 16/22 #17171a] "Recent transactions"
+    FRAM 20,534 353x62 'Frame'
+      FRAM 36,546 38x38 bg=#f1f1f4 r=10 'Frame'
+        INST 45,555 20x20 'Icon/shopping-cart'
+          VECT 51,572 2x2 bd=#808080/2 'Vector'
+          VECT 60,572 2x2 bd=#808080/2 'Vector'
+          VECT 47,557 17x12 bd=#808080/2 'Vector'
+      FRAM 86,546 206x37 'Frame'
+        TEXT 86,546 106x20 [Inter Semi Bold 15/20 #17171a] "Tesco Express"
+        TEXT 86,568 77x16 [Inter Medium 12/16 #6b6b73] "Today · 14:20"
+      TEXT 304,555 53x20 [Inter Semi Bold 15/20 #17171a] "£24.50"
+    ROUN 20,596 353x1 bg=#e7e7eb 'Rectangle'
+    FRAM 20,597 353x62 'Frame'
+      FRAM 36,609 38x38 bg=#f1f1f4 r=10 'Frame'
+        INST 45,618 20x20 'Icon/coffee'
+          VECT 53,620 0x2 bd=#808080/2 'Vector'
+          VECT 57,620 0x2 bd=#808080/2 'Vector'
+          VECT 48,625 16x11 bd=#808080/2 'Vector'
+          VECT 50,620 0x2 bd=#808080/2 'Vector'
+      FRAM 86,610 216x37 'Frame'
+        TEXT 86,610 96x20 [Inter Semi Bold 15/20 #17171a] "Costa Coffee"
+        TEXT 86,630 77x16 [Inter Medium 12/16 #6b6b73] "Today · 09:10"
+      TEXT 314,618 43x20 [Inter Semi Bold 15/20 #17171a] "£3.20"
+    ROUN 20,659 353x1 bg=#e7e7eb 'Rectangle'
+    FRAM 20,660 353x62 'Frame'
+      FRAM 36,672 38x38 bg=#f1f1f4 r=10 'Frame'
+        INST 45,681 20x20 'Icon/shopping-cart'
+          VECT 51,698 2x2 bd=#808080/2 'Vector'
+          VECT 60,698 2x2 bd=#808080/2 'Vector'
+          VECT 47,683 17x12 bd=#808080/2 'Vector'
+      FRAM 86,672 208x37 'Frame'
+        TEXT 86,672 84x20 [Inter Semi Bold 15/20 #17171a] "Sainsbury’s"
+        TEXT 86,694 58x16 [Inter Medium 12/16 #6b6b73] "Yesterday"
+      TEXT 306,681 51x20 [Inter Semi Bold 15/20 #17171a] "£18.90"
+    ROUN 20,722 353x1 bg=#e7e7eb 'Rectangle'
+    FRAM 20,723 353x62 'Frame'
+      FRAM 36,735 38x38 bg=#f1f1f4 r=10 'Frame'
+        INST 45,744 20x20 'Icon/utensils'
+          VECT 48,746 3x8 bd=#808080/2 'Vector'
+          VECT 51,746 0x17 bd=#808080/2 'Vector'
+          VECT 58,746 4x17 bd=#808080/2 'Vector'
+      FRAM 86,736 219x37 'Frame'
+        TEXT 86,736 53x20 [Inter Semi Bold 15/20 #17171a] "Greggs"
+        TEXT 86,756 67x16 [Inter Medium 12/16 #6b6b73] "Mon · 12:45"
+      TEXT 317,744 40x20 [Inter Semi Bold 15/20 #17171a] "£4.10"

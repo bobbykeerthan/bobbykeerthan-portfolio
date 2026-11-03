@@ -1,0 +1,26 @@
+FRAM 0,0 393x520 bg=IMG 'jesus catehral'
+ROUN -5,0 408x852 bg=GRADIE 'Rectangle 11'
+TEXT 109,94 186x44 [Cormora Medium 36 #000000] "Exhibition of "
+TEXT 75,138 255x44 [Cormora Medium 36 #000000] "Peter Eugene  Ball"
+INST 0,780 393x72 bg=#56453c r=11 'bottom nav'
+  FRAM 17,800 359x32 'Frame 20'
+    INST 17,800 32x32 'mdi:home-outline'
+      VECT 20,804 27x23 bg=#ffffff 'Vector'
+    INST 99,800 32x32 'material-symbols:search-ro'
+      VECT 103,804 23x23 bg=#ffffff 'Vector'
+    INST 180,800 32x32 'tdesign:statue-of-jesus'
+      FRAM 184,803 24x27 'Group'
+        VECT 191,824 11x5 bd=#ffffff/1 'Vector'
+        VECT 184,803 24x27 bd=#ffffff/2 'Vector'
+    FRAM 262,800 32x32 'painting'
+      VECT 267,802 21x29 bg=#ffffff 'Vector'
+      VECT 277,806 13x13 bg=#ffffff 'Vector'
+    INST 344,800 32x32 'wordpress:post-author'
+      VECT 349,803 21x24 bg=#ffffff 'Vector'
+TEXT 30,353 344x90 [Cormora Light 16 #000000] "This app helps you explore the sculptures and paintings in more depth. Discover the stories, materials, and meanings behind each work while you move through the exhibition space."
+TEXT 30,581 344x218 [Cormora Light 16 #000000] "This companion offers clear and structured information about the artworks in this exhibition. Browse sculptures and paintings, access background on the artist, and follow guidance that supports careful observation and interpretation.\nDesigned for use within the gallery space, the app provides context without interrupting the physical experience of the work."
+TEXT 18,254 369x87 [Cormora Bold 24 #000000] "Welcome to the Peter Eugene Ball Exhibition Companion\n"
+TEXT 18,540 369x29 [Cormora Bold 24 #000000] "GUIDE"
+FRAM 24,455 344x37 'Group 2'
+  FRAM 24,455 344x37 bg=#ac7f5e 'A.About'
+  TEXT 88,459 216x29 [Cormora Bold 24 #ffffff] "ABOUT ARTIST"

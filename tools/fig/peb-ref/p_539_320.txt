@@ -1,0 +1,3 @@
+ROUN 8,107 377x819 bg=IMG 'day13 1'
+TEXT 60,96 272x48 [Cormora Regular 40 #1f1f1f] "Peter Eugene Ball"
+TEXT 103,151 187x39 [Cormora Regular 32 #5c5c5c] "Exhibition app"

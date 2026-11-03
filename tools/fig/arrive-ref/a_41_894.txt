@@ -1,0 +1,25 @@
+INST 0,0 393x54 'Chrome/Status Bar'
+  TEXT 30,17 54x20 [Inter Semi Bold 16 #17171a] "9:41"
+  FRAM 134,11 125x37 bg=#000000 r=20 'Dynamic Island'
+  FRAM 302,21 74x13 'Indicators'
+    FRAM 302,22 18x11 'signal'
+      ROUN 302,29 3x4 bg=#17171a r=1 'Rectangle'
+      ROUN 307,27 3x6 bg=#17171a r=1 'Rectangle'
+      ROUN 312,25 3x8 bg=#17171a r=1 'Rectangle'
+      ROUN 317,23 3x10 bg=#17171a r=1 'Rectangle'
+    FRAM 327,22 17x12 'wifi'
+      VECT 328,23 15x12 bg=#17171a 'Vector'
+    FRAM 351,21 25x13 'battery'
+      ROUN 351,21 23x13 bd=#17171a@0.35/1 r=4 'Rectangle'
+      ROUN 353,23 19x9 bg=#17171a r=2 'Rectangle'
+      ROUN 374,26 2x4 bg=#17171a@0.35 r=1 'Rectangle'
+INST 24,770 345x52 bg=#3730a3 r=12 'Button'
+  TEXT 150,786 93x20 [Inter Semi Bold 16/20 #ffffff] "Enter Arrive"
+INST 0,818 393x34 'Chrome/Home Indicator'
+  ROUN 127,839 139x5 bg=#17171a r=3 'Rectangle'
+FRAM 32,200 329x380 'Frame'
+  FRAM 148,266 96x96 bg=#3730a3 r=999 'Frame'
+    INST 172,290 48x48 'Icon/check'
+      VECT 180,302 32x22 bd=#808080/2 'Vector'
+  TEXT 32,382 329x34 [Inter Bold 28/34 #17171a] "You're all set, Bobby"
+  TEXT 32,436 329x78 [Inter Regular 17/26 #6b6b73] "Let's make student life simpler. Your first-week checklist is ready when you are."

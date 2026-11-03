@@ -1,0 +1,187 @@
+INST 0,0 393x54 'Chrome/Status Bar'
+  TEXT 30,17 54x20 [Inter Semi Bold 16 #17171a] "9:41"
+  FRAM 134,11 125x37 bg=#000000 r=20 'Dynamic Island'
+  FRAM 302,21 74x13 'Indicators'
+    FRAM 302,22 18x11 'signal'
+      ROUN 302,29 3x4 bg=#17171a r=1 'Rectangle'
+      ROUN 307,27 3x6 bg=#17171a r=1 'Rectangle'
+      ROUN 312,25 3x8 bg=#17171a r=1 'Rectangle'
+      ROUN 317,23 3x10 bg=#17171a r=1 'Rectangle'
+    FRAM 327,22 17x12 'wifi'
+      VECT 328,23 15x12 bg=#17171a 'Vector'
+    FRAM 351,21 25x13 'battery'
+      ROUN 351,21 23x13 bd=#17171a@0.35/1 r=4 'Rectangle'
+      ROUN 353,23 19x9 bg=#17171a r=2 'Rectangle'
+      ROUN 374,26 2x4 bg=#17171a@0.35 r=1 'Rectangle'
+FRAM 0,54 393x1122 'Content'
+  FRAM 20,62 353x56 'Header'
+    FRAM 20,62 297x56 'Frame'
+      TEXT 20,62 102x20 [Inter Medium 15/20 #6b6b73] "Good morning"
+      TEXT 20,84 88x34 [Inter Bold 28/34 #17171a] "Bobby"
+    FRAM 329,68 44x44 'HeaderRight'
+      INST 329,68 44x44 bg=#f1f1f4 r=12 'Control / Icon Button'
+        INST 339,78 24x24 'Icon/bell'
+          VECT 342,80 18x15 bd=#808080/2 'Vector'
+          VECT 349,99 3x1 bd=#808080/2 'Vector'
+      ELLI 356,74 10x10 bg=#dc2626 bd=#f8f8fa/2 'Ellipse'
+  TEXT 20,138 353x24 [Inter Regular 17/24 #6b6b73] "You have 3 things to take care of today."
+  INST 20,182 353x138 bg=#3730a3 r=20 'Card / Progress'
+    FRAM 40,202 313x42 'Top'
+      FRAM 40,202 247x42 'Frame'
+        TEXT 40,202 247x16 [Inter Semi Bold 12/16 #ffffff] "YOUR FIRST WEEK"
+        TEXT 40,220 247x24 [Inter Semi Bold 18/24 #ffffff] "You're settling in nicely"
+      TEXT 287,206 66x34 [Inter Bold 30/34 #ffffff] "63%"
+    FRAM 40,258 313x10 bg=#ffffff r=999 'Track'
+      ROUN 40,258 196x10 bg=#ffffff r=999 'Fill'
+    TEXT 40,282 229x18 [Inter Medium 13/18 #ffffff] "5 of 8 first-week tasks done · 3 to go"
+  FRAM 20,340 353x84 'Quick Actions'
+    INST 20,340 81x84 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Quick Action'
+      FRAM 40,350 40x40 bg=#eef2ff r=999 'Icon Tile'
+        INST 49,359 22x22 'Icon/bus'
+          VECT 57,364 0x6 bd=#808080/2 'Vector'
+          VECT 63,364 0x6 bd=#808080/2 'Vector'
+          VECT 51,370 18x0 bd=#808080/2 'Vector'
+          VECT 51,364 18x11 bd=#6b6b73/2 'Vector'
+          VECT 54,374 4x4 bd=#6b6b73/2 'Vector'
+          VECT 58,376 5x0 bd=#6b6b73/2 'Vector'
+          VECT 62,374 4x4 bd=#6b6b73/2 'Vector'
+      TEXT 32,398 57x16 [Inter Medium 12/16 #17171a] "Transport"
+    INST 111,340 81x84 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Quick Action'
+      FRAM 131,350 40x40 bg=#eef2ff r=999 'Icon Tile'
+        INST 140,359 22x22 'Icon/briefcase'
+          VECT 147,361 7x16 bd=#808080/2 'Vector'
+          VECT 142,364 18x13 bd=#808080/2 'Vector'
+      TEXT 137,398 28x16 [Inter Medium 12/16 #17171a] "Jobs"
+    INST 202,340 81x84 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Quick Action'
+      FRAM 222,350 40x40 bg=#eef2ff r=999 'Icon Tile'
+        INST 231,359 22x22 'Icon/calendar'
+          VECT 238,361 0x4 bd=#808080/2 'Vector'
+          VECT 246,361 0x4 bd=#808080/2 'Vector'
+          VECT 234,363 16x16 bd=#808080/2 'Vector'
+          VECT 234,368 16x0 bd=#6b6b73/2 'Vector'
+      TEXT 222,398 39x16 [Inter Medium 12/16 #17171a] "Events"
+    INST 292,340 81x84 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Quick Action'
+      FRAM 313,350 40x40 bg=#eef2ff r=999 'Icon Tile'
+        INST 322,359 22x22 'Icon/wallet'
+          VECT 325,362 18x9 bd=#808080/2 'Vector'
+          VECT 325,364 18x16 bd=#808080/2 'Vector'
+          VECT 338,371 6x4 bd=#808080/2 'Vector'
+      TEXT 313,398 39x16 [Inter Medium 12/16 #17171a] "Money"
+  INST 20,444 353x24 'Pattern / Section Header'
+    TEXT 20,444 290x24 [Inter Semi Bold 18/24 #17171a] "Up next"
+    FRAM 310,447 63x18 'Frame'
+      TEXT 310,447 45x18 [Inter Medium 14/18 #3730a3] "See all"
+      INST 357,448 16x16 'Icon/chevron-right'
+        VECT 366,454 6x12 bd=#808080/2 'Vector'
+  FRAM 20,488 353x424 'Tasks'
+    INST 20,488 353x148 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Task'
+      FRAM 36,540 44x44 bg=#eef2ff r=12 'Icon Tile'
+        INST 46,550 24x24 'Icon/graduation-cap'
+          VECT 48,555 20x10 bd=#808080/2 'Vector'
+          VECT 68,560 0x6 bd=#808080/2 'Vector'
+          VECT 52,562 12x6 bd=#808080/2 'Vector'
+      FRAM 92,504 233x116 'Content'
+        TEXT 92,504 233x44 [Inter Semi Bold 16/22 #17171a] "Complete university registration"
+        TEXT 92,552 233x40 [Inter Regular 15/20 #6b6b73] "Register online before your first lecture."
+        FRAM 92,596 161x24 'Meta'
+          INST 92,602 14x14 'Icon/clock'
+            VECT 94,604 20x20 bd=#808080/2 'Vector'
+            VECT 104,608 4x8 bd=#808080/2 'Vector'
+          TEXT 112,601 64x16 [Inter Medium 13/16 #6b6b73] "Due today"
+          INST 182,598 71x22 bg=#fffbeb r=999 'Status / Badge'
+            TEXT 190,601 55x16 [Inter Semi Bold 12/16 #b45309] "Due soon"
+      INST 337,552 20x20 'Icon/chevron-right'
+        VECT 346,558 6x12 bd=#808080/2 'Vector'
+    INST 20,648 353x126 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Task'
+      FRAM 36,689 44x44 bg=#eef2ff r=12 'Icon Tile'
+        INST 46,699 24x24 'Icon/key'
+          VECT 62,703 6x6 bd=#808080/2 'Vector'
+          VECT 57,701 10x10 bd=#808080/2 'Vector'
+          VECT 48,709 11x11 bd=#808080/2 'Vector'
+      FRAM 92,664 233x94 'Content'
+        TEXT 92,664 233x22 [Inter Semi Bold 16/22 #17171a] "Pick up accommodation keys"
+        TEXT 92,690 233x40 [Inter Regular 15/20 #6b6b73] "Priory Hall reception, before 5:00 PM."
+        FRAM 92,734 179x24 'Meta'
+          INST 92,740 14x14 'Icon/clock'
+            VECT 94,742 20x20 bd=#808080/2 'Vector'
+            VECT 104,746 4x8 bd=#808080/2 'Vector'
+          TEXT 112,739 101x16 [Inter Medium 13/16 #6b6b73] "Today · 5:00 PM"
+          INST 219,736 52x22 bg=#eef2ff r=999 'Tone=Brand'
+            TEXT 227,739 36x16 [Inter Semi Bold 12/16 #3730a3] "Today"
+      INST 337,701 20x20 'Icon/chevron-right'
+        VECT 346,707 6x12 bd=#808080/2 'Vector'
+    INST 20,786 353x126 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Task'
+      FRAM 36,827 44x44 bg=#eef2ff r=12 'Icon Tile'
+        INST 46,837 24x24 'Icon/credit-card'
+          VECT 48,842 20x14 bd=#808080/2 'Vector'
+          VECT 48,847 20x0 bd=#808080/2 'Vector'
+      FRAM 92,802 233x94 'Content'
+        TEXT 92,802 233x22 [Inter Semi Bold 16/22 #17171a] "Set up your travel card"
+        TEXT 92,828 233x40 [Inter Regular 15/20 #6b6b73] "Add funds to travel around Coventry."
+        FRAM 92,872 135x24 'Meta'
+          INST 92,878 14x14 'Icon/clock'
+            VECT 94,880 20x20 bd=#808080/2 'Vector'
+            VECT 104,884 4x8 bd=#808080/2 'Vector'
+          TEXT 112,877 63x16 [Inter Medium 13/16 #6b6b73] "This week"
+          INST 181,874 46x22 bg=#f1f1f4 r=999 'Tone=Neutral'
+            TEXT 189,877 30x16 [Inter Semi Bold 12/16 #6b6b73] "Soon"
+      INST 337,839 20x20 'Icon/chevron-right'
+        VECT 346,845 6x12 bd=#808080/2 'Vector'
+  INST 20,932 353x24 'Pattern / Section Header'
+    TEXT 20,932 290x24 [Inter Semi Bold 18/24 #17171a] "Near you"
+    FRAM 310,935 63x18 'Frame'
+      TEXT 310,935 45x18 [Inter Medium 14/18 #3730a3] "See all"
+      INST 357,936 16x16 'Icon/chevron-right'
+        VECT 366,942 6x12 bd=#808080/2 'Vector'
+  INST 20,976 353x80 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Place'
+    FRAM 32,988 56x56 bg=#eef2ff r=12 'Thumb'
+      INST 47,1003 26x26 'Icon/shopping-cart'
+        VECT 54,1023 2x2 bd=#808080/2 'Vector'
+        VECT 65,1023 2x2 bd=#808080/2 'Vector'
+        VECT 49,1005 20x14 bd=#808080/2 'Vector'
+    FRAM 100,995 225x42 'Frame'
+      FRAM 100,995 225x22 'Frame'
+        TEXT 100,995 113x22 [Inter Semi Bold 16/22 #17171a] "Tesco Express"
+        INST 221,995 48x22 bg=#f0fdf4 r=999 'Status / Badge'
+          TEXT 229,998 32x16 [Inter Semi Bold 12/16 #15803d] "Open"
+      FRAM 100,1021 239x16 'Frame'
+        INST 100,1022 14x14 'Icon/map-pin'
+          VECT 104,1024 16x20 bd=#808080/2 'Vector'
+          VECT 109,1029 6x6 bd=#808080/2 'Vector'
+        TEXT 120,1021 67x16 [Inter Medium 13/16 #6b6b73] "8 min walk"
+        TEXT 193,1021 146x16 [Inter Regular 13/16 #6b6b73] "· Groceries · Until 23:00"
+    INST 337,1006 20x20 'Icon/chevron-right'
+      VECT 346,1012 6x12 bd=#808080/2 'Vector'
+ROUN 0,754 393x98 bg=#ffffff 'Rectangle'
+INST 0,754 393x64 bg=#ffffff 'Navigation / Bottom'
+  FRAM 0,754 79x64 'Tab/Home'
+    INST 27,771 24x24 'Icon/home'
+      VECT 30,773 18x20 bd=#808080/2 'Vector'
+      VECT 36,783 6x10 bd=#808080/2 'Vector'
+    TEXT 23,799 32x14 [Inter Medium 11/14 #3730a3] "Home"
+  FRAM 79,754 79x64 'Tab/Journey'
+    INST 106,771 24x24 'Icon/route'
+      VECT 109,787 6x6 bd=#6b6b73/2 'Vector'
+      VECT 109,776 18x14 bd=#6b6b73/2 'Vector'
+      VECT 121,773 6x6 bd=#6b6b73/2 'Vector'
+    TEXT 96,799 43x14 [Inter Medium 11/14 #6b6b73] "Journey"
+  FRAM 157,754 79x64 'Tab/Explore'
+    INST 184,771 24x24 'Icon/compass'
+      VECT 192,779 8x8 bd=#6b6b73/2 'Vector'
+      VECT 186,773 20x20 bd=#6b6b73/2 'Vector'
+    TEXT 176,799 40x14 [Inter Medium 11/14 #6b6b73] "Explore"
+  FRAM 236,754 79x64 'Tab/Community'
+    INST 263,771 24x24 'Icon/users'
+      VECT 265,786 14x6 bd=#6b6b73/2 'Vector'
+      VECT 268,774 8x8 bd=#6b6b73/2 'Vector'
+      VECT 282,786 3x6 bd=#6b6b73/2 'Vector'
+      VECT 279,774 3x8 bd=#6b6b73/2 'Vector'
+    TEXT 245,799 61x14 [Inter Medium 11/14 #6b6b73] "Community"
+  FRAM 314,754 79x64 'Tab/Profile'
+    INST 342,771 24x24 'Icon/user'
+      VECT 347,786 14x6 bd=#6b6b73/2 'Vector'
+      VECT 350,774 8x8 bd=#6b6b73/2 'Vector'
+    TEXT 337,799 34x14 [Inter Medium 11/14 #6b6b73] "Profile"
+  ROUN 0,754 393x1 bg=#e7e7eb 'Rectangle'
+INST 0,818 393x34 'Chrome/Home Indicator'
+  ROUN 127,839 139x5 bg=#17171a r=3 'Rectangle'

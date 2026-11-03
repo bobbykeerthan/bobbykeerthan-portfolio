@@ -1,0 +1,90 @@
+INST 0,0 393x54 'Chrome/Status Bar'
+  TEXT 30,17 54x20 [Inter Semi Bold 16 #17171a] "9:41"
+  FRAM 134,11 125x37 bg=#000000 r=20 'Dynamic Island'
+  FRAM 302,21 74x13 'Indicators'
+    FRAM 302,22 18x11 'signal'
+      ROUN 302,29 3x4 bg=#17171a r=1 'Rectangle'
+      ROUN 307,27 3x6 bg=#17171a r=1 'Rectangle'
+      ROUN 312,25 3x8 bg=#17171a r=1 'Rectangle'
+      ROUN 317,23 3x10 bg=#17171a r=1 'Rectangle'
+    FRAM 327,22 17x12 'wifi'
+      VECT 328,23 15x12 bg=#17171a 'Vector'
+    FRAM 351,21 25x13 'battery'
+      ROUN 351,21 23x13 bd=#17171a@0.35/1 r=4 'Rectangle'
+      ROUN 353,23 19x9 bg=#17171a r=2 'Rectangle'
+      ROUN 374,26 2x4 bg=#17171a@0.35 r=1 'Rectangle'
+INST 0,54 393x56 bg=#ffffff 'Navigation / Header'
+  INST 8,60 44x44 r=12 'Control / Icon Button'
+    INST 18,70 24x24 'Icon/chevron-left'
+      VECT 27,76 6x12 bd=#808080/2 'Vector'
+  TEXT 0,70 393x24 [Inter Semi Bold 18/24 #17171a] "Money"
+  INST 397,60 44x44 r=12 'Control / Icon Button'
+    INST 407,70 24x24 'Icon/more-horizontal'
+      VECT 418,81 2x2 bd=#808080/2 'Vector'
+      VECT 425,81 2x2 bd=#808080/2 'Vector'
+      VECT 411,81 2x2 bd=#808080/2 'Vector'
+FRAM 0,110 393x746 'Frame'
+  FRAM 20,118 353x136 bg=#ffffff bd=#e7e7eb/1 r=18 'Frame'
+    TEXT 38,136 146x20 [Inter Medium 14/20 #6b6b73] "Remaining this month"
+    FRAM 38,170 317x40 'Frame'
+      TEXT 38,170 96x40 [Inter Bold 36/40 #17171a] "£620"
+      TEXT 142,188 115x20 [Inter Medium 14/20 #6b6b73] "of £1,240 budget"
+    FRAM 38,224 317x12 bg=#f1f1f4 r=999 'Frame'
+      FRAM 38,224 183x12 bg=#3730a3 'Frame'
+      FRAM 223,224 61x12 bg=#7c3aed 'Frame'
+      FRAM 286,224 28x12 bg=#818cf8 'Frame'
+      FRAM 316,224 25x12 bg=#c4b5fd 'Frame'
+      FRAM 343,224 10x12 bg=#a5b4fc 'Frame'
+      FRAM 355,224 8x12 bg=#d6d6dc 'Frame'
+  FRAM 20,270 353x262 bg=#ffffff bd=#e7e7eb/1 r=18 'Frame'
+    TEXT 38,288 108x22 [Inter Semi Bold 16/22 #17171a] "Where it goes"
+    FRAM 38,324 317x20 'Frame'
+      ELLI 38,329 10x10 bg=#3730a3 'Ellipse'
+      TEXT 58,324 247x20 [Inter Medium 15/20 #17171a] "Rent"
+      TEXT 315,324 40x20 [Inter Semi Bold 15/20 #17171a] "£360"
+    FRAM 38,358 317x20 'Frame'
+      ELLI 38,363 10x10 bg=#7c3aed 'Ellipse'
+      TEXT 58,358 250x20 [Inter Medium 15/20 #17171a] "Food"
+      TEXT 318,358 37x20 [Inter Semi Bold 15/20 #17171a] "£120"
+    FRAM 38,392 317x20 'Frame'
+      ELLI 38,397 10x10 bg=#818cf8 'Ellipse'
+      TEXT 58,392 258x20 [Inter Medium 15/20 #17171a] "Transport"
+      TEXT 326,392 29x20 [Inter Semi Bold 15/20 #17171a] "£55"
+    FRAM 38,426 317x20 'Frame'
+      ELLI 38,431 10x10 bg=#c4b5fd 'Ellipse'
+      TEXT 58,426 257x20 [Inter Medium 15/20 #17171a] "Social"
+      TEXT 325,426 30x20 [Inter Semi Bold 15/20 #17171a] "£50"
+    FRAM 38,460 317x20 'Frame'
+      ELLI 38,465 10x10 bg=#a5b4fc 'Ellipse'
+      TEXT 58,460 257x20 [Inter Medium 15/20 #17171a] "University"
+      TEXT 325,460 30x20 [Inter Semi Bold 15/20 #17171a] "£20"
+    FRAM 38,494 317x20 'Frame'
+      ELLI 38,499 10x10 bg=#d6d6dc 'Ellipse'
+      TEXT 58,494 260x20 [Inter Medium 15/20 #17171a] "Other"
+      TEXT 328,494 27x20 [Inter Semi Bold 15/20 #17171a] "£15"
+  FRAM 20,548 353x164 bg=#ffffff bd=#e7e7eb/1 r=18 'Frame'
+    TEXT 38,566 160x22 [Inter Semi Bold 16/22 #17171a] "Upcoming payments"
+    FRAM 38,602 317x39 'Frame'
+      FRAM 38,604 36x36 bg=#f1f1f4 r=10 'Frame'
+        INST 47,612 18x18 'Icon/key'
+          VECT 59,616 5x5 bd=#808080/2 'Vector'
+          VECT 56,614 7x7 bd=#808080/2 'Vector'
+          VECT 48,620 8x8 bd=#808080/2 'Vector'
+      FRAM 86,602 218x39 'Frame'
+        TEXT 86,602 120x20 [Inter Semi Bold 15/20 #17171a] "Rent · Priory Hall"
+        TEXT 86,623 60x18 [Inter Medium 13/18 #6b6b73] "Due 1 Oct"
+      TEXT 316,612 39x20 [Inter Semi Bold 15/20 #17171a] "£520"
+    FRAM 38,655 317x39 'Frame'
+      FRAM 38,656 36x36 bg=#f1f1f4 r=10 'Frame'
+        INST 47,666 18x18 'Icon/smartphone'
+          VECT 51,667 10x15 bd=#808080/2 'Vector'
+          VECT 56,679 0x0 bd=#808080/2 'Vector'
+      FRAM 86,655 230x39 'Frame'
+        TEXT 86,655 112x20 [Inter Semi Bold 15/20 #17171a] "Phone · giffgaff"
+        TEXT 86,676 63x18 [Inter Medium 13/18 #6b6b73] "Due 3 Oct"
+      TEXT 328,664 27x20 [Inter Semi Bold 15/20 #17171a] "£15"
+  FRAM 20,728 353x68 bg=#f0fdf4 r=16 'Frame'
+    INST 36,751 22x22 'Icon/trending-up'
+      VECT 38,757 18x9 bd=#808080/2 'Vector'
+      VECT 51,757 6x6 bd=#808080/2 'Vector'
+    TEXT 70,742 287x40 [Inter Medium 14/20 #15803d] "Your food spending is £34 below your monthly average. Nice."

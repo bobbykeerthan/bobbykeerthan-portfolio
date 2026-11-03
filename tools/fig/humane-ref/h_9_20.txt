@@ -1,0 +1,94 @@
+FRAM 0,0 390x38 'Frame'
+  TEXT 24,14 30x18 [Inter Semi Bold 14 #38392b] "9:41"
+  FRAM 302,16 64x15 'Frame'
+    FRAM 302,16 15x15 'Frame'
+      VECT 303,17 12x6 bd=#38392b/1.1875 'Vector'
+    FRAM 323,16 15x15 'Frame'
+      VECT 326,19 10x6 bd=#38392b/1.1875 'Vector'
+    ROUN 344,18 22x11 bg=#38392b r=3 'Rectangle'
+FRAM 0,38 390x54 'Frame'
+  FRAM 12,44 40x40 r=100 'Back'
+    FRAM 20,52 23x23 'Frame'
+      VECT 28,57 7x13 bd=#38392b/1.82083 'Vector'
+  TEXT 52,52 286x24 [Inter Semi Bold 18 #38392b] "Active PODs"
+  FRAM 338,44 40x40 r=100 'Frame'
+    FRAM 346,52 23x23 'Frame'
+      VECT 350,55 15x15 bd=#6f7263/1.82083 'Vector'
+FRAM 0,92 390x47 'Frame'
+  FRAM 20,96 113x35 bg=#4b612d bd=#4b612d/1.2 r=100 'Tab'
+    TEXT 57,105 39x17 [Inter Semi Bold 13 #ffffff] "All (3)"
+  FRAM 139,96 113x35 bg=#ffffff bd=#d7d9d0/1.2 r=100 'Tab'
+    TEXT 155,105 79x17 [Inter Medium 13 #6f7263] "In Transit (2)"
+  FRAM 257,96 113x35 bg=#ffffff bd=#d7d9d0/1.2 r=100 'Tab'
+    TEXT 276,105 76x17 [Inter Medium 13 #6f7263] "Available (1)"
+FRAM 0,139 390x621 'Frame'
+  FRAM 20,145 350x115 bg=#ffffff bd=#d7d9d0/1 r=16 'POD Card · POD 01'
+    FRAM 36,159 318x29 'Frame'
+      FRAM 36,159 70x29 bg=#4b612d r=8 'Frame'
+        TEXT 47,165 48x17 [Inter Bold 13 #ffffff] "POD 01"
+      TEXT 285,165 69x17 [Inter Semi Bold 13 #38392b] "Dog #2145"
+    FRAM 36,200 318x46 'Frame'
+      FRAM 36,202 84x41 'Frame'
+        FRAM 36,202 84x20 'Frame'
+          ELLI 36,208 9x9 bg=#4b612d 'Ellipse'
+          TEXT 52,202 68x20 [Inter Semi Bold 15 #38392b] "Captured"
+        TEXT 36,228 62x16 [Inter Medium 12 #6f7263] "12 min ago"
+      FRAM 278,200 76x46 'Frame'
+        FRAM 278,200 46x46 bg=GRADIE bd=#d7d9d0/1.4 r=23 'Frame'
+          FRAM 286,209 30x30 'Frame'
+            VECT 292,213 18x18 bd=#5c4a30/2.125 'Vector'
+        FRAM 334,213 20x20 'Frame'
+          VECT 342,217 6x12 bd=#6f7263/1.58333 'Vector'
+  FRAM 20,272 350x115 bg=#ffffff bd=#d7d9d0/1 r=16 'POD Card · POD 02'
+    FRAM 36,286 318x29 'Frame'
+      FRAM 36,286 71x29 bg=#4b612d r=8 'Frame'
+        TEXT 47,292 49x17 [Inter Bold 13 #ffffff] "POD 02"
+      TEXT 285,292 69x17 [Inter Semi Bold 13 #38392b] "Dog #2146"
+    FRAM 36,327 318x46 'Frame'
+      FRAM 36,330 84x41 'Frame'
+        FRAM 36,330 84x20 'Frame'
+          ELLI 36,335 9x9 bg=#b98a3c 'Ellipse'
+          TEXT 52,330 68x20 [Inter Semi Bold 15 #38392b] "In Transit"
+        TEXT 36,354 56x16 [Inter Medium 12 #6f7263] "7 min ago"
+      FRAM 278,327 76x46 'Frame'
+        FRAM 278,327 46x46 bg=GRADIE bd=#d7d9d0/1.4 r=23 'Frame'
+          FRAM 286,336 30x30 'Frame'
+            VECT 292,340 18x18 bd=#5c4a30/2.125 'Vector'
+        FRAM 334,340 20x20 'Frame'
+          VECT 342,344 6x12 bd=#6f7263/1.58333 'Vector'
+  FRAM 20,399 350x115 bg=#ffffff bd=#d7d9d0/1 r=16 'POD Card · POD 03'
+    FRAM 36,413 318x29 'Frame'
+      FRAM 36,413 72x29 bg=#4b612d r=8 'Frame'
+        TEXT 47,419 50x17 [Inter Bold 13 #ffffff] "POD 03"
+      TEXT 272,419 82x17 [Inter Semi Bold 13 #6f7263] "Ready to use"
+    FRAM 36,454 318x46 'Frame'
+      FRAM 36,456 165x41 'Frame'
+        FRAM 36,456 82x20 'Frame'
+          ELLI 36,462 9x9 bg=#4b612d 'Ellipse'
+          TEXT 52,456 66x20 [Inter Semi Bold 15 #38392b] "Available"
+        TEXT 36,482 165x16 [Inter Medium 12 #6f7263] "Ready to use · cleaned 09:10"
+      FRAM 278,454 76x46 'Frame'
+        FRAM 278,454 46x46 bg=#eaeae3 r=100 'Frame'
+          FRAM 289,465 24x24 'Frame'
+            VECT 293,469 16x15 bd=#6f7263/1.9 'Vector'
+        FRAM 334,467 20x20 'Frame'
+          VECT 342,471 6x12 bd=#6f7263/1.58333 'Vector'
+INST 0,760 390x84 bg=#ffffff bd=#d7d9d0/1 'Bottom Nav'
+  FRAM 0,760 390x74 bg=#ffffff 'items'
+    FRAM 24,772 32x54 bg=#ffffff 'Home'
+      FRAM 28,774 24x24 'Frame'
+        VECT 32,778 17x16 bd=#4b612d/1.9 'Vector'
+      TEXT 24,803 32x13 [Inter Semi Bold 11 #4b612d] "Home"
+      ELLI 38,821 5x5 bg=#4b612d 'Ellipse'
+    FRAM 125,772 24x44 bg=#ffffff 'Map'
+      FRAM 125,774 24x24 'Frame'
+        VECT 130,778 14x18 bd=#8a8c7e/1.9 'Vector'
+      TEXT 126,803 23x13 [Inter Medium 11 #8a8c7e] "Map"
+    FRAM 219,772 44x44 bg=#ffffff 'Records'
+      FRAM 229,774 24x24 'Frame'
+        VECT 235,778 11x17 bd=#8a8c7e/1.9 'Vector'
+      TEXT 219,803 44x13 [Inter Medium 11 #8a8c7e] "Records"
+    FRAM 332,772 34x44 bg=#ffffff 'Profile'
+      FRAM 337,774 24x24 'Frame'
+        VECT 342,779 13x15 bd=#8a8c7e/1.9 'Vector'
+      TEXT 332,803 34x13 [Inter Medium 11 #8a8c7e] "Profile"

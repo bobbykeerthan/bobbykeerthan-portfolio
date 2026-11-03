@@ -1,0 +1,62 @@
+FRAM 0,0 390x39 'Frame'
+  TEXT 24,14 30x19 [Inter Semi Bold 14 #38392b] "9:41"
+  FRAM 302,16 64x15 'Frame'
+    FRAM 302,16 15x15 'Frame'
+      VECT 303,18 12x6 bd=#38392b/1.1875 'Vector'
+    FRAM 323,16 15x15 'Frame'
+      VECT 326,20 10x6 bd=#38392b/1.1875 'Vector'
+    ROUN 344,18 22x11 bg=#38392b r=3 'Rectangle'
+FRAM 0,39 390x54 'Frame'
+  FRAM 12,45 40x40 r=100 'Back'
+    FRAM 20,54 23x23 'Frame'
+      VECT 28,58 7x13 bd=#38392b/1.82083 'Vector'
+  TEXT 52,54 286x23 [Inter Semi Bold 17 #38392b] "Handover at ABC Centre"
+  FRAM 338,45 40x40 r=100 'Frame'
+    FRAM 346,54 23x23 'Frame'
+      VECT 350,57 15x15 bd=#6f7263/1.82083 'Vector'
+FRAM 0,93 390x751 'Frame'
+  TEXT 124,101 142x20 [Inter Semi Bold 15 #6f7263] "Scan POD QR Code"
+  FRAM 65,137 260x210 bg=#eaeae3 r=20 'Scanner'
+    FRAM 90,167 210x150 'Frame'
+      VECT 168,182 54x9 bd=#7c7f72/5 'Vector'
+      VECT 116,201 158x98 bg=#e4e5de bd=#a9ac9f/2.5 'Vector'
+      VECT 186,213 76x74 bg=#f6f6f1 bd=#a9ac9f/2.5 'Vector'
+      VECT 201,217 45x66 bd=#a9ac9f/2.4 'Vector'
+      VECT 116,285 158x16 bg=#4b612d 'Vector'
+      VECT 132,299 18x11 bg=#6e7163 'Vector'
+      VECT 240,299 18x11 bg=#6e7163 'Vector'
+      VECT 130,226 42x42 bg=#4b612d 'Vector'
+      TEXT 134,238 33x18 [Inter Bold 15 #ffffff] "ABC"
+    FRAM 65,137 260x210 'Frame'
+      VECT 83,155 224x174 bd=#4b612d/4 'Vector'
+  FRAM 20,363 350x216 bg=#ffffff bd=#d7d9d0/1 r=18 'Frame'
+    FRAM 38,379 314x27 'Frame'
+      TEXT 38,379 76x27 [Inter Bold 20 #38392b] "POD 04"
+      FRAM 263,380 89x26 bg=#e5ebda r=100 'Frame'
+        FRAM 272,386 13x13 'Frame'
+          VECT 275,390 8x5 bd=#4b612d/1.3 'Vector'
+        TEXT 290,384 51x16 [Inter Semi Bold 12 #4b612d] "Scanned"
+    ROUN 38,418 100x1 bg=#d7d9d0 'Rectangle'
+    FRAM 38,431 314x36 'Frame'
+      FRAM 38,440 18x18 'Frame'
+        VECT 43,444 8x8 bd=#6f7263/1.425 'Vector'
+      FRAM 66,431 74x36 'Frame'
+        TEXT 66,431 24x16 [Inter Medium 12 #6f7263] "Dog"
+        TEXT 66,448 74x19 [Inter Semi Bold 14 #38392b] "Dog #2145"
+    FRAM 38,479 314x36 'Frame'
+      FRAM 38,488 18x18 'Frame'
+        VECT 40,490 14x14 bd=#6f7263/1.425 'Vector'
+      FRAM 66,479 129x36 'Frame'
+        TEXT 66,479 54x16 [Inter Medium 12 #6f7263] "Captured"
+        TEXT 66,496 129x19 [Inter Semi Bold 14 #38392b] "11 Aug 2026, 14:23"
+    FRAM 38,527 314x36 'Frame'
+      FRAM 38,536 18x18 'Frame'
+        VECT 42,539 10x13 bd=#6f7263/1.425 'Vector'
+      FRAM 66,527 148x36 'Frame'
+        TEXT 66,527 30x16 [Inter Medium 12 #6f7263] "From"
+        TEXT 66,544 148x19 [Inter Semi Bold 14 #38392b] "Sector 17, Chandigarh"
+  FRAM 145,595 100x159 'Frame'
+  FRAM 20,770 350x56 bg=#4b612d r=15 'CTA · Accept ABC'
+    FRAM 84,788 20x20 'Frame'
+      VECT 88,794 12x8 bd=#ffffff/1.83333 'Vector'
+    TEXT 112,788 195x19 [Inter Bold 14 #ffffff] "ACCEPT INTO ABC CENTRE"

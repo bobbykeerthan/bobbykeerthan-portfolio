@@ -1,0 +1,19 @@
+# Secrets and local config — never commit
+.env
+.env.*
+*.pem
+*.key
+figma-token*
+.figma*
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+# Dependencies and scratch
+node_modules/
+*.log
+/raw/
+# Local tool config
+.claude/

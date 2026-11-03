@@ -1,0 +1,422 @@
+INST 0,0 248x1542 bg=#000000 'Sidebar'
+  FRAM 16,24 122x64 'Logo'
+    FRAM 24,28 32x32 bg=#ad343e r=9 'Frame'
+      INST 31,35 18x18 'icon/bag'
+        FRAM 31,35 24x24 'glyph'
+          VECT 36,43 14x12 bd=#ffffff/1.8 'Vector'
+          VECT 40,38 6x4 bd=#ffffff/1.8 'Vector'
+    FRAM 66,24 72x40 'Frame'
+      TEXT 66,24 72x24 [Figtree SemiBold 16/24 #ffffff] "Shopdesk"
+      TEXT 66,48 52x16 [Figtree Regular 12/16 #94a3b8] "Kiln & Co."
+  TEXT 16,94 36x16 [Figtree SemiBold 12/16 #94a3b8] "MENU"
+  FRAM 16,116 216x44 bg=#474747 r=10 'Nav · Overview'
+    INST 28,128 20x20 'icon/grid'
+      FRAM 28,128 24x24 'glyph'
+        VECT 32,132 7x7 bd=#f2af29/1.8 'Vector'
+        VECT 42,132 7x7 bd=#f2af29/1.8 'Vector'
+        VECT 32,142 7x7 bd=#f2af29/1.8 'Vector'
+        VECT 42,142 7x7 bd=#f2af29/1.8 'Vector'
+    TEXT 60,128 160x20 [Figtree SemiBold 14/20 #ffffff] "Overview"
+  FRAM 16,166 216x44 r=10 'Nav · Orders'
+    INST 28,178 20x20 'icon/bag'
+      FRAM 28,178 24x24 'glyph'
+        VECT 33,186 14x12 bd=#94a3b8/1.8 'Vector'
+        VECT 37,182 6x4 bd=#94a3b8/1.8 'Vector'
+    TEXT 60,178 120x20 [Figtree Regular 14/20 #94a3b8] "Orders"
+    FRAM 192,178 28x20 bg=#f2af29 r=999 'Frame'
+      TEXT 200,180 12x16 [Figtree SemiBold 12/16 #000000] "12"
+  FRAM 16,216 216x44 r=10 'Nav · Products'
+    INST 28,228 20x20 'icon/box'
+      FRAM 28,228 24x24 'glyph'
+        VECT 32,231 17x18 bd=#94a3b8/1.8 'Vector'
+        VECT 32,236 17x14 bd=#94a3b8/1.8 'Vector'
+    TEXT 60,228 160x20 [Figtree Regular 14/20 #94a3b8] "Products"
+  FRAM 16,266 216x44 r=10 'Nav · Customers'
+    INST 28,278 20x20 'icon/users'
+      FRAM 28,278 24x24 'glyph'
+        VECT 34,282 7x7 bd=#94a3b8/1.8 'Vector'
+        VECT 30,292 13x6 bd=#94a3b8/1.8 'Vector'
+        VECT 44,283 2x6 bd=#94a3b8/1.8 'Vector'
+        VECT 46,292 4x6 bd=#94a3b8/1.8 'Vector'
+    TEXT 60,278 160x20 [Figtree Regular 14/20 #94a3b8] "Customers"
+  FRAM 16,316 10x1140 'Spacer'
+  FRAM 16,1462 216x60 bg=#474747 r=12 'Owner'
+    INST 28,1476 32x32 bg=#e0e0ce r=16 'Avatar'
+      TEXT 36,1484 17x16 [Figtree SemiBold 12/16 #000000] "EH"
+    FRAM 70,1474 66x36 'Frame'
+      TEXT 70,1474 58x20 [Figtree SemiBold 14/20 #ffffff] "Ellie Hart"
+      TEXT 70,1494 66x16 [Figtree Regular 12/16 #e0e0ce] "Store owner"
+FRAM 248,0 1192x1542 'Main'
+  INST 248,0 1192x76 bg=#ffffff bd=#e2e8f0/0 'Top bar'
+    FRAM 280,10 598x56 'Heading'
+      TEXT 280,10 123x36 [Figtree Bold 28/36 #000000] "Overview"
+      TEXT 280,46 322x20 [Figtree Regular 14/20 #474747] "Good morning, Ellie. Here is how Kiln & Co. is doing."
+    INST 894,18 280x40 bg=#f6f6f1 bd=#e2e8f0/1 r=10 'Search'
+      INST 907,28 18x18 'icon/search'
+        FRAM 907,28 24x24 'glyph'
+          VECT 912,33 13x13 bd=#474747/1.8 'Vector'
+          VECT 923,44 4x4 bd=#474747/1.8 'Vector'
+      TEXT 933,28 159x20 [Figtree Regular 14/20 #474747] "Search orders, products…"
+    INST 1190,18 170x40 'Date picker'
+      FRAM 1190,18 170x40 bg=#ffffff bd=#e2e8f0/1 r=10 'Trigger'
+        INST 1203,28 18x18 'icon/calendar'
+          FRAM 1203,28 24x24 'glyph'
+            VECT 1206,34 17x16 bd=#000000/1.8 'Vector'
+            VECT 1206,32 17x7 bd=#000000/1.8 'Vector'
+        TEXT 1229,28 94x20 [Figtree SemiBold 14/20 #000000] "Last 7 days"
+        INST 1331,28 18x18 'icon/chevron-down'
+          FRAM 1331,28 24x24 'glyph'
+            VECT 1337,38 12x6 bd=#000000/1.8 'Vector'
+    INST 1376,22 32x32 bg=#e0e0ce r=16 'Avatar'
+      TEXT 1384,30 17x16 [Figtree SemiBold 12/16 #000000] "EH"
+  FRAM 248,76 1192x1466 'Content'
+    FRAM 280,108 1128x162 'Key numbers'
+      INST 280,108 264x162 bg=#ffffff bd=#e2e8f0/1 r=16 'KPI card'
+        FRAM 301,129 222x36 'Top'
+          TEXT 301,137 55x20 [Figtree SemiBold 14/20 #474747] "Revenue"
+          FRAM 487,129 36x36 bg=#e0e0ce r=10 'Icon tile'
+            INST 495,137 20x20 'Icon'
+              FRAM 495,137 20x20 'glyph'
+                VECT 499,144 12x10 bd=#000000/1.8 'Vector'
+                VECT 502,140 5x4 bd=#000000/1.8 'Vector'
+        TEXT 301,177 99x38 [Figtree Bold 30/38 #000000] "£8,420"
+        FRAM 301,227 145x22 'Trend row'
+          INST 301,227 72x22 bg=#ecfdf3 r=999 'Trend'
+            INST 307,231 14x14 'icon/arrow-up'
+              FRAM 307,231 24x24 'glyph'
+                VECT 313,236 12x14 bd=#15803d/1.8 'Vector'
+            TEXT 325,230 40x16 [Figtree SemiBold 12/16 #15803d] "+12.4%"
+          TEXT 381,230 65x16 [Figtree Regular 12/16 #474747] "vs last week"
+      INST 568,108 264x162 bg=#ffffff bd=#e2e8f0/1 r=16 'KPI card'
+        FRAM 589,129 222x36 'Top'
+          TEXT 589,137 44x20 [Figtree SemiBold 14/20 #474747] "Orders"
+          FRAM 775,129 36x36 bg=#e0e0ce r=10 'Icon tile'
+            INST 783,137 20x20 'Icon'
+              FRAM 783,137 20x20 'glyph'
+                VECT 787,144 12x10 bd=#000000/1.8 'Vector'
+                VECT 790,140 5x4 bd=#000000/1.8 'Vector'
+        TEXT 589,177 48x38 [Figtree Bold 30/38 #000000] "186"
+        FRAM 589,227 138x22 'Trend row'
+          INST 589,227 65x22 bg=#ecfdf3 r=999 'Trend'
+            INST 595,231 14x14 'icon/arrow-up'
+              FRAM 595,231 24x24 'glyph'
+                VECT 601,236 12x14 bd=#15803d/1.8 'Vector'
+            TEXT 613,230 33x16 [Figtree SemiBold 12/16 #15803d] "+8.1%"
+          TEXT 662,230 65x16 [Figtree Regular 12/16 #474747] "vs last week"
+      INST 856,108 264x162 bg=#ffffff bd=#e2e8f0/1 r=16 'KPI card'
+        FRAM 877,129 222x36 'Top'
+          TEXT 877,137 91x20 [Figtree SemiBold 14/20 #474747] "Average order"
+          FRAM 1063,129 36x36 bg=#e0e0ce r=10 'Icon tile'
+            INST 1071,137 20x20 'Icon'
+              FRAM 1071,137 20x20 'glyph'
+                VECT 1074,140 14x15 bd=#000000/1.8 'Vector'
+                VECT 1074,143 14x11 bd=#000000/1.8 'Vector'
+        TEXT 877,177 95x38 [Figtree Bold 30/38 #000000] "£45.27"
+        FRAM 877,227 139x22 'Trend row'
+          INST 877,227 66x22 bg=#fef2f2 r=999 'Trend'
+            INST 883,231 14x14 'icon/arrow-down'
+              FRAM 883,231 24x24 'glyph'
+                VECT 889,236 12x14 bd=#b91c1c/1.8 'Vector'
+            TEXT 901,230 34x16 [Figtree SemiBold 12/16 #b91c1c] "−3.2%"
+          TEXT 951,230 65x16 [Figtree Regular 12/16 #474747] "vs last week"
+      INST 1144,108 264x162 bg=#ffffff bd=#e2e8f0/1 r=16 'KPI card'
+        FRAM 1165,129 222x36 'Top'
+          TEXT 1165,137 65x20 [Figtree SemiBold 14/20 #474747] "Low stock"
+          FRAM 1351,129 36x36 bg=#e0e0ce r=10 'Icon tile'
+            INST 1359,137 20x20 'Icon'
+              FRAM 1359,137 20x20 'glyph'
+                VECT 1361,140 16x13 bd=#000000/1.8 'Vector'
+                VECT 1369,145 0x6 bd=#000000/1.8 'Vector'
+        TEXT 1165,177 18x38 [Figtree Bold 30/38 #000000] "6"
+        FRAM 1165,227 168x22 'Trend row'
+          INST 1165,227 111x22 bg=#f2af29 r=999 'Trend'
+            INST 1171,231 14x14 'icon/alert'
+              FRAM 1171,231 24x24 'glyph'
+                VECT 1174,235 19x16 bd=#000000/1.8 'Vector'
+                VECT 1183,241 0x7 bd=#000000/1.8 'Vector'
+            TEXT 1189,230 79x16 [Figtree SemiBold 12/16 #000000] "Needs restock"
+          TEXT 1284,230 49x16 [Figtree Regular 12/16 #474747] "products"
+    FRAM 280,294 1128x376 'Row 2'
+      INST 280,294 744x376 bg=#ffffff bd=#e2e8f0/1 r=16 'Sales chart'
+        FRAM 305,317 694x42 'Header'
+          FRAM 305,317 190x42 'Frame'
+            TEXT 305,317 39x24 [Figtree SemiBold 16/24 #000000] "Sales"
+            TEXT 305,343 190x16 [Figtree Regular 12/16 #474747] "This week compared with last week"
+          FRAM 856,317 143x42 bg=#f6f6f1 bd=#e2e8f0/1 r=10 'Range switch'
+            FRAM 861,322 59x32 bg=#000000 r=8 '7 days'
+              TEXT 873,330 35x16 [Figtree SemiBold 12/16 #ffffff] "7 days"
+            FRAM 924,322 70x32 r=8 '4 weeks'
+              TEXT 936,330 46x16 [Figtree SemiBold 12/16 #474747] "4 weeks"
+        FRAM 305,379 304x20 'Legend'
+          FRAM 305,379 140x20 'Frame'
+            FRAM 305,387 24x4 'Frame'
+              VECT 306,389 22x0 bd=#ad343e/3 'Vector'
+            TEXT 337,381 53x16 [Figtree Regular 12/16 #474747] "This week"
+            TEXT 398,379 47x20 [Figtree SemiBold 14/20 #000000] "£8,420"
+          FRAM 469,379 140x20 'Frame'
+            FRAM 469,387 24x4 'Frame'
+              VECT 470,389 22x0 bd=#474747/3 'Vector'
+            TEXT 501,381 54x16 [Figtree Regular 12/16 #474747] "Last week"
+            TEXT 563,379 46x20 [Figtree SemiBold 14/20 #000000] "£7,490"
+        FRAM 305,419 696x228 'Plot'
+          ROUN 353,619 640x1 bg=#e2e8f0 'Rectangle'
+          TEXT 305,611 15x16 [Figtree Regular 12/16 #474747] "£0"
+          ROUN 353,552 640x1 bg=#e2e8f0 'Rectangle'
+          TEXT 305,544 30x16 [Figtree Regular 12/16 #474747] "£500"
+          ROUN 353,486 640x1 bg=#e2e8f0 'Rectangle'
+          TEXT 305,478 18x16 [Figtree Regular 12/16 #474747] "£1k"
+          ROUN 353,419 640x1 bg=#e2e8f0 'Rectangle'
+          TEXT 305,411 28x16 [Figtree Regular 12/16 #474747] "£1.5k"
+          FRAM 305,419 696x200 'Lines'
+            VECT 353,424 640x195 bg=#ad343e@0.1 'Vector'
+            VECT 353,447 640x52 bd=#474747/2 'Vector'
+            VECT 353,424 640x64 bd=#ad343e/3 'Vector'
+            VECT 349,484 8x8 bg=#ffffff bd=#ad343e/2 'Vector'
+            VECT 456,466 8x8 bg=#ffffff bd=#ad343e/2 'Vector'
+            VECT 562,475 8x8 bg=#ffffff bd=#ad343e/2 'Vector'
+            VECT 669,436 8x8 bg=#ffffff bd=#ad343e/2 'Vector'
+            VECT 776,454 8x8 bg=#ffffff bd=#ad343e/2 'Vector'
+            VECT 882,420 8x8 bg=#ffffff bd=#ad343e/2 'Vector'
+            VECT 989,447 8x8 bg=#ffffff bd=#ad343e/2 'Vector'
+          TEXT 341,629 24x16 [Figtree Regular 12/16 #474747] "Mon"
+          TEXT 450,629 20x16 [Figtree Regular 12/16 #474747] "Tue"
+          TEXT 554,629 25x16 [Figtree Regular 12/16 #474747] "Wed"
+          TEXT 662,629 21x16 [Figtree Regular 12/16 #474747] "Thu"
+          TEXT 773,629 14x16 [Figtree Regular 12/16 #474747] "Fri"
+          TEXT 877,629 19x16 [Figtree Regular 12/16 #474747] "Sat"
+          TEXT 982,629 21x16 [Figtree Regular 12/16 #474747] "Sun"
+          FRAM 949,417 53x22 bg=#000000 r=6 'Last value'
+            TEXT 957,420 37x16 [Figtree SemiBold 12/16 #ffffff] "£1,260"
+      INST 1048,294 360x376 bg=#ffffff bd=#e2e8f0/1 r=16 'Top products'
+        FRAM 1073,317 310x42 'Header'
+          FRAM 1073,317 153x42 'Frame'
+            TEXT 1073,317 97x24 [Figtree SemiBold 16/24 #000000] "Top products"
+            TEXT 1073,343 153x16 [Figtree Regular 12/16 #474747] "Best sellers in the last 7 days"
+        INST 1073,365 310x61 bd=#e2e8f0/0 'Product row'
+          INST 1073,375 40x40 bg=#e0e0ce r=10 'Product thumb'
+            INST 1083,385 20x20 'icon/box'
+              FRAM 1083,385 24x24 'glyph'
+                VECT 1086,388 17x18 bd=#474747/1.8 'Vector'
+                VECT 1086,392 17x14 bd=#474747/1.8 'Vector'
+          FRAM 1125,376 230x38 'Frame'
+            TEXT 1125,376 203x20 [Figtree SemiBold 14/20 #000000] "Speckled mug"
+            TEXT 1125,398 203x16 [Figtree Regular 12/16 #474747] "56 sold"
+          TEXT 1340,385 43x20 [Figtree SemiBold 14/20 #000000] "£1,260"
+        INST 1073,432 310x61 bd=#e2e8f0/0 'Product row'
+          INST 1073,442 40x40 bg=#e0e0ce r=10 'Product thumb'
+            INST 1083,452 20x20 'icon/box'
+              FRAM 1083,452 24x24 'glyph'
+                VECT 1086,455 17x18 bd=#474747/1.8 'Vector'
+                VECT 1086,460 17x14 bd=#474747/1.8 'Vector'
+          FRAM 1125,443 230x38 'Frame'
+            TEXT 1125,443 212x20 [Figtree SemiBold 14/20 #000000] "Ripple bowl"
+            TEXT 1125,465 212x16 [Figtree Regular 12/16 #474747] "35 sold"
+          TEXT 1349,452 34x20 [Figtree SemiBold 14/20 #000000] "£980"
+        INST 1073,499 310x61 bd=#e2e8f0/0 'Product row'
+          INST 1073,509 40x40 bg=#e0e0ce r=10 'Product thumb'
+            INST 1083,519 20x20 'icon/box'
+              FRAM 1083,519 24x24 'glyph'
+                VECT 1086,522 17x18 bd=#474747/1.8 'Vector'
+                VECT 1086,526 17x14 bd=#474747/1.8 'Vector'
+          FRAM 1125,510 230x38 'Frame'
+            TEXT 1125,510 212x20 [Figtree SemiBold 14/20 #000000] "Stone plate set"
+            TEXT 1125,532 212x16 [Figtree Regular 12/16 #474747] "12 sold"
+          TEXT 1349,519 34x20 [Figtree SemiBold 14/20 #000000] "£864"
+        INST 1073,566 310x61 bd=#e2e8f0/0 'Product row'
+          INST 1073,576 40x40 bg=#e0e0ce r=10 'Product thumb'
+            INST 1083,586 20x20 'icon/box'
+              FRAM 1083,586 24x24 'glyph'
+                VECT 1086,589 17x18 bd=#474747/1.8 'Vector'
+                VECT 1086,594 17x14 bd=#474747/1.8 'Vector'
+          FRAM 1125,577 230x38 'Frame'
+            TEXT 1125,577 211x20 [Figtree SemiBold 14/20 #000000] "Tall vase"
+            TEXT 1125,599 211x16 [Figtree Regular 12/16 #474747] "16 sold"
+          TEXT 1348,586 35x20 [Figtree SemiBold 14/20 #000000] "£640"
+    FRAM 280,694 1128x378 'Row 3'
+      INST 280,694 552x378 bg=#ffffff bd=#e2e8f0/1 r=16 'Category chart'
+        FRAM 305,717 502x42 'Header'
+          FRAM 305,717 136x42 'Frame'
+            TEXT 305,717 130x24 [Figtree SemiBold 16/24 #000000] "Sales by category"
+            TEXT 305,743 136x16 [Figtree Regular 12/16 #474747] "Last 7 days · £8,420 total"
+        FRAM 305,777 502x20 'Mugs'
+          TEXT 305,777 64x20 [Figtree SemiBold 14/20 #000000] "Mugs"
+          FRAM 381,780 304x14 bg=#f6f6f1 r=7 'Track'
+            ROUN 381,780 255x14 bg=#ad343e r=7 'Rectangle'
+          TEXT 697,777 110x20 [Figtree SemiBold 14/20 #000000] "£3,120 · 37%"
+        FRAM 305,815 502x20 'Bowls'
+          TEXT 305,815 64x20 [Figtree SemiBold 14/20 #000000] "Bowls"
+          FRAM 381,818 304x14 bg=#f6f6f1 r=7 'Track'
+            ROUN 381,818 200x14 bg=#ad343e r=7 'Rectangle'
+          TEXT 697,815 110x20 [Figtree SemiBold 14/20 #000000] "£2,460 · 29%"
+        FRAM 305,853 502x20 'Plates'
+          TEXT 305,853 64x20 [Figtree SemiBold 14/20 #000000] "Plates"
+          FRAM 381,856 304x14 bg=#f6f6f1 r=7 'Track'
+            ROUN 381,856 138x14 bg=#ad343e r=7 'Rectangle'
+          TEXT 697,853 110x20 [Figtree SemiBold 14/20 #000000] "£1,690 · 20%"
+        FRAM 305,891 502x20 'Vases'
+          TEXT 305,891 64x20 [Figtree SemiBold 14/20 #000000] "Vases"
+          FRAM 381,894 304x14 bg=#f6f6f1 r=7 'Track'
+            ROUN 381,894 97x14 bg=#ad343e r=7 'Rectangle'
+          TEXT 697,891 110x20 [Figtree SemiBold 14/20 #000000] "£1,150 · 14%"
+      INST 856,694 552x378 bg=#ffffff bd=#e2e8f0/1 r=16 'Low stock'
+        FRAM 881,717 502x42 'Header'
+          FRAM 881,717 148x42 'Frame'
+            TEXT 881,717 75x24 [Figtree SemiBold 16/24 #000000] "Low stock"
+            TEXT 881,743 148x16 [Figtree Regular 12/16 #474747] "6 products need restocking"
+          INST 1292,727 91x22 bg=#f2af29 r=999 'Trend chip'
+            INST 1298,731 14x14 'icon/alert'
+              FRAM 1298,731 24x24 'glyph'
+                VECT 1300,735 19x16 bd=#000000/1.8 'Vector'
+                VECT 1310,741 0x7 bd=#000000/1.8 'Vector'
+            TEXT 1316,730 59x16 [Figtree SemiBold 12/16 #000000] "6 products"
+        FRAM 881,765 502x61 bd=#e2e8f0/0 'Matte cup'
+          INST 881,775 40x40 bg=#e0e0ce r=10 'Product thumb'
+            INST 891,785 20x20 'icon/box'
+              FRAM 891,785 24x24 'glyph'
+                VECT 894,788 17x18 bd=#474747/1.8 'Vector'
+                VECT 894,792 17x14 bd=#474747/1.8 'Vector'
+          FRAM 933,776 389x38 'Frame'
+            TEXT 933,776 66x20 [Figtree SemiBold 14/20 #000000] "Matte cup"
+            TEXT 933,798 106x16 [Figtree Regular 12/16 #474747] "Cups · reorder at 10"
+          INST 1334,783 49x24 bg=#f2af29 r=999 'Stock badge'
+            TEXT 1344,787 29x16 [Figtree SemiBold 12/16 #000000] "2 left"
+        FRAM 881,832 502x61 bd=#e2e8f0/0 'Bud vase'
+          INST 881,842 40x40 bg=#e0e0ce r=10 'Product thumb'
+            INST 891,852 20x20 'icon/box'
+              FRAM 891,852 24x24 'glyph'
+                VECT 894,855 17x18 bd=#474747/1.8 'Vector'
+                VECT 894,860 17x14 bd=#474747/1.8 'Vector'
+          FRAM 933,843 389x38 'Frame'
+            TEXT 933,843 58x20 [Figtree SemiBold 14/20 #000000] "Bud vase"
+            TEXT 933,865 110x16 [Figtree Regular 12/16 #474747] "Vases · reorder at 10"
+          INST 1334,850 49x24 bg=#f2af29 r=999 'Stock badge'
+            TEXT 1344,854 29x16 [Figtree SemiBold 12/16 #000000] "3 left"
+        FRAM 881,899 502x61 bd=#e2e8f0/0 'Speckled mug'
+          INST 881,909 40x40 bg=#e0e0ce r=10 'Product thumb'
+            INST 891,919 20x20 'icon/box'
+              FRAM 891,919 24x24 'glyph'
+                VECT 894,922 17x18 bd=#474747/1.8 'Vector'
+                VECT 894,926 17x14 bd=#474747/1.8 'Vector'
+          FRAM 933,910 388x38 'Frame'
+            TEXT 933,910 91x20 [Figtree SemiBold 14/20 #000000] "Speckled mug"
+            TEXT 933,932 109x16 [Figtree Regular 12/16 #474747] "Mugs · reorder at 20"
+          INST 1333,917 50x24 bg=#f2af29 r=999 'Stock badge'
+            TEXT 1343,921 30x16 [Figtree SemiBold 12/16 #000000] "4 left"
+        FRAM 881,966 502x61 bd=#e2e8f0/0 'Oat dinner plate'
+          INST 881,976 40x40 bg=#e0e0ce r=10 'Product thumb'
+            INST 891,986 20x20 'icon/box'
+              FRAM 891,986 24x24 'glyph'
+                VECT 894,989 17x18 bd=#474747/1.8 'Vector'
+                VECT 894,994 17x14 bd=#474747/1.8 'Vector'
+          FRAM 933,977 389x38 'Frame'
+            TEXT 933,977 104x20 [Figtree SemiBold 14/20 #000000] "Oat dinner plate"
+            TEXT 933,999 110x16 [Figtree Regular 12/16 #474747] "Plates · reorder at 10"
+          INST 1334,984 49x24 bg=#f2af29 r=999 'Stock badge'
+            TEXT 1344,988 29x16 [Figtree SemiBold 12/16 #000000] "5 left"
+        TEXT 881,1033 111x20 [Figtree SemiBold 14/20 #ad343e] "View all products"
+    FRAM 280,1096 1128x406 bg=#ffffff bd=#e2e8f0/1 r=16 'Table card'
+      FRAM 281,1097 1126x60 'Card header'
+        TEXT 305,1115 103x24 [Figtree SemiBold 16/24 #000000] "Recent orders"
+        TEXT 1289,1117 94x20 [Figtree SemiBold 14/20 #ad343e] "View all orders"
+      INST 281,1157 1126x44 bg=#e0e0ce 'Orders table header'
+        TEXT 305,1171 96x16 [Figtree SemiBold 12/16 #000000] "ORDER"
+        TEXT 417,1171 250x16 [Figtree SemiBold 12/16 #000000] "CUSTOMER"
+        TEXT 683,1171 120x16 [Figtree SemiBold 12/16 #000000] "DATE"
+        TEXT 819,1171 80x16 [Figtree SemiBold 12/16 #000000] "ITEMS"
+        TEXT 915,1171 110x16 [Figtree SemiBold 12/16 #000000] "TOTAL"
+        TEXT 1041,1171 302x16 [Figtree SemiBold 12/16 #000000] "STATUS"
+        FRAM 1359,1174 24x10 'Frame'
+      INST 281,1201 1126x60 bg=#ffffff bd=#e2e8f0/0 'Row #1048'
+        TEXT 305,1220 96x20 [Figtree SemiBold 14/20 #000000] "#1048"
+        FRAM 417,1214 250x32 'Customer'
+          INST 417,1214 32x32 bg=#e0e0ce r=16 'Avatar'
+            TEXT 424,1222 18x16 [Figtree SemiBold 12/16 #000000] "AO"
+          TEXT 459,1220 87x20 [Figtree Regular 14/20 #000000] "Amara Okafor"
+        TEXT 683,1220 120x20 [Figtree Regular 14/20 #474747] "24 Oct"
+        TEXT 819,1220 80x20 [Figtree Regular 14/20 #474747] "3"
+        TEXT 915,1220 110x20 [Figtree SemiBold 14/20 #000000] "£81.00"
+        FRAM 1041,1218 306x24 'Status cell'
+          INST 1041,1218 77x24 bg=#f2af29 r=999 'Status'
+            INST 1049,1224 14x14 'icon/box'
+              FRAM 1049,1224 24x24 'glyph'
+                VECT 1052,1226 17x18 bd=#000000/1.8 'Vector'
+                VECT 1052,1231 17x14 bd=#000000/1.8 'Vector'
+            TEXT 1069,1222 39x16 [Figtree SemiBold 12/16 #000000] "To ship"
+        INST 1363,1220 20x20 'Chevron'
+          FRAM 1363,1220 24x24 'glyph'
+            VECT 1372,1226 6x12 bd=#94a3b8/1.8 'Vector'
+      INST 281,1261 1126x60 bg=#ffffff bd=#e2e8f0/0 'Row #1047'
+        TEXT 305,1280 96x20 [Figtree SemiBold 14/20 #000000] "#1047"
+        FRAM 417,1274 250x32 'Customer'
+          INST 417,1274 32x32 bg=#e0e0ce r=16 'Avatar'
+            TEXT 424,1282 17x16 [Figtree SemiBold 12/16 #000000] "BC"
+          TEXT 459,1280 68x20 [Figtree Regular 14/20 #000000] "Ben Carter"
+        TEXT 683,1280 120x20 [Figtree Regular 14/20 #474747] "24 Oct"
+        TEXT 819,1280 80x20 [Figtree Regular 14/20 #474747] "1"
+        TEXT 915,1280 110x20 [Figtree SemiBold 14/20 #000000] "£24.00"
+        FRAM 1041,1278 306x24 'Status cell'
+          INST 1041,1278 77x24 bg=#f2af29 r=999 'Status'
+            INST 1049,1284 14x14 'icon/box'
+              FRAM 1049,1284 24x24 'glyph'
+                VECT 1052,1286 17x18 bd=#000000/1.8 'Vector'
+                VECT 1052,1291 17x14 bd=#000000/1.8 'Vector'
+            TEXT 1069,1282 39x16 [Figtree SemiBold 12/16 #000000] "To ship"
+        INST 1363,1280 20x20 'Chevron'
+          FRAM 1363,1280 24x24 'glyph'
+            VECT 1372,1286 6x12 bd=#94a3b8/1.8 'Vector'
+      INST 281,1321 1126x60 bg=#ffffff bd=#e2e8f0/0 'Row #1046'
+        TEXT 305,1340 96x20 [Figtree SemiBold 14/20 #000000] "#1046"
+        FRAM 417,1334 250x32 'Customer'
+          INST 417,1334 32x32 bg=#e0e0ce r=16 'Avatar'
+            TEXT 424,1342 18x16 [Figtree SemiBold 12/16 #000000] "CN"
+          TEXT 459,1340 60x20 [Figtree Regular 14/20 #000000] "Chloe Ng"
+        TEXT 683,1340 120x20 [Figtree Regular 14/20 #474747] "23 Oct"
+        TEXT 819,1340 80x20 [Figtree Regular 14/20 #474747] "2"
+        TEXT 915,1340 110x20 [Figtree SemiBold 14/20 #000000] "£52.50"
+        FRAM 1041,1338 306x24 'Status cell'
+          INST 1041,1338 84x24 bg=#e0e0ce r=999 'Status'
+            INST 1049,1344 14x14 'icon/truck'
+              FRAM 1049,1344 24x24 'glyph'
+                VECT 1052,1350 18x10 bd=#000000/1.8 'Vector'
+                VECT 1054,1359 4x4 bd=#000000/1.8 'Vector'
+                VECT 1064,1359 4x4 bd=#000000/1.8 'Vector'
+            TEXT 1069,1342 46x16 [Figtree SemiBold 12/16 #000000] "Shipped"
+        INST 1363,1340 20x20 'Chevron'
+          FRAM 1363,1340 24x24 'glyph'
+            VECT 1372,1346 6x12 bd=#94a3b8/1.8 'Vector'
+      INST 281,1381 1126x60 bg=#ffffff bd=#e2e8f0/0 'Row #1045'
+        TEXT 305,1400 96x20 [Figtree SemiBold 14/20 #000000] "#1045"
+        FRAM 417,1394 250x32 'Customer'
+          INST 417,1394 32x32 bg=#e0e0ce r=16 'Avatar'
+            TEXT 425,1402 16x16 [Figtree SemiBold 12/16 #000000] "DP"
+          TEXT 459,1400 74x20 [Figtree Regular 14/20 #000000] "Daniel Price"
+        TEXT 683,1400 120x20 [Figtree Regular 14/20 #474747] "23 Oct"
+        TEXT 819,1400 80x20 [Figtree Regular 14/20 #474747] "4"
+        TEXT 915,1400 110x20 [Figtree SemiBold 14/20 #000000] "£118.00"
+        FRAM 1041,1398 306x24 'Status cell'
+          INST 1041,1398 90x24 bg=#ecfdf3 r=999 'Status'
+            INST 1049,1404 14x14 'icon/check'
+              FRAM 1049,1404 24x24 'glyph'
+                VECT 1054,1411 14x10 bd=#15803d/1.8 'Vector'
+            TEXT 1069,1402 52x16 [Figtree SemiBold 12/16 #15803d] "Delivered"
+        INST 1363,1400 20x20 'Chevron'
+          FRAM 1363,1400 24x24 'glyph'
+            VECT 1372,1406 6x12 bd=#94a3b8/1.8 'Vector'
+      INST 281,1441 1126x60 bg=#ffffff bd=#e2e8f0/0 'Row #1044'
+        TEXT 305,1460 96x20 [Figtree SemiBold 14/20 #000000] "#1044"
+        FRAM 417,1454 250x32 'Customer'
+          INST 417,1454 32x32 bg=#e0e0ce r=16 'Avatar'
+            TEXT 424,1462 19x16 [Figtree SemiBold 12/16 #000000] "EW"
+          TEXT 459,1460 85x20 [Figtree Regular 14/20 #000000] "Emma Wilson"
+        TEXT 683,1460 120x20 [Figtree Regular 14/20 #474747] "22 Oct"
+        TEXT 819,1460 80x20 [Figtree Regular 14/20 #474747] "1"
+        TEXT 915,1460 110x20 [Figtree SemiBold 14/20 #000000] "£32.00"
+        FRAM 1041,1458 306x24 'Status cell'
+          INST 1041,1458 90x24 bg=#ecfdf3 r=999 'Status'
+            INST 1049,1464 14x14 'icon/check'
+              FRAM 1049,1464 24x24 'glyph'
+                VECT 1054,1471 14x10 bd=#15803d/1.8 'Vector'
+            TEXT 1069,1462 52x16 [Figtree SemiBold 12/16 #15803d] "Delivered"
+        INST 1363,1460 20x20 'Chevron'
+          FRAM 1363,1460 24x24 'glyph'
+            VECT 1372,1466 6x12 bd=#94a3b8/1.8 'Vector'

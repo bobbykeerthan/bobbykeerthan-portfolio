@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <title>Studyflow — working demo</title>
+  <meta name="description" content="A working demo of the Studyflow landing page designed by Bobby Keerthan, with a weekly planner preview you can tick off. Sample data only.">
+  <meta name="theme-color" content="#EEFAF3">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav" id="top">
+    <div class="wrap nav__in">
+      <a class="logo" href="#top" aria-label="Studyflow, back to top"><span class="logo__mark"><span class="i i--check"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.64 11.86 C5.28 11.51 4.72 11.51 4.36 11.86 C4.01 12.22 4.01 12.78 4.36 13.14 L5 12.5 L5.64 11.86 Z M9.5 17 L8.86 17.64 C9.22 17.99 9.78 17.99 10.14 17.64 L9.5 17 Z M19.64 8.14 C19.99 7.78 19.99 7.22 19.64 6.86 C19.28 6.51 18.72 6.51 18.36 6.86 L19 7.5 L19.64 8.14 Z M5 12.5 L4.36 13.14 L8.86 17.64 L9.5 17 L10.14 16.36 L5.64 11.86 L5 12.5 Z M9.5 17 L10.14 17.64 L19.64 8.14 L19 7.5 L18.36 6.86 L8.86 16.36 L9.5 17 Z"/></svg></span></span><span class="logo__name">Studyflow</span></a>
+      <nav class="links" aria-label="Main">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#reviews">Reviews</a>
+        <button type="button" class="linkish" data-note="faq">FAQ</button>
+      </nav>
+      <div class="actions">
+        <button type="button" class="btn btn--ghost" data-note="login">Log in</button>
+        <button type="button" class="btn btn--primary" data-start>Start free</button>
+      </div>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span class="i i--menu"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 6.1 C3.5 6.1 3.1 6.5 3.1 7 C3.1 7.5 3.5 7.9 4 7.9 L4 7 L4 6.1 Z M20 7.9 C20.5 7.9 20.9 7.5 20.9 7 C20.9 6.5 20.5 6.1 20 6.1 L20 7 L20 7.9 Z M4 11.1 C3.5 11.1 3.1 11.5 3.1 12 C3.1 12.5 3.5 12.9 4 12.9 L4 12 L4 11.1 Z M20 12.9 C20.5 12.9 20.9 12.5 20.9 12 C20.9 11.5 20.5 11.1 20 11.1 L20 12 L20 12.9 Z M4 16.1 C3.5 16.1 3.1 16.5 3.1 17 C3.1 17.5 3.5 17.9 4 17.9 L4 17 L4 16.1 Z M20 17.9 C20.5 17.9 20.9 17.5 20.9 17 C20.9 16.5 20.5 16.1 20 16.1 L20 17 L20 17.9 Z M4 7 L4 7.9 L20 7.9 L20 7 L20 6.1 L4 6.1 L4 7 Z M4 12 L4 12.9 L20 12.9 L20 12 L20 11.1 L4 11.1 L4 12 Z M4 17 L4 17.9 L20 17.9 L20 17 L20 16.1 L4 16.1 L4 17 Z"/></svg></span></button>
+    </div>
+    <div class="menu" id="menu" hidden>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#reviews">Reviews</a>
+      <button type="button" class="linkish" data-note="faq">FAQ</button>
+      <div class="menu__actions">
+        <button type="button" class="btn btn--outline" data-note="login">Log in</button>
+        <button type="button" class="btn btn--primary" data-start>Start free</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__in">
+        <div class="hero__text">
+          <p class="badge"><span class="i i--sparkle"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.9 3 C12.9 2.5 12.5 2.1 12 2.1 C11.5 2.1 11.1 2.5 11.1 3 L12 3 L12.9 3 Z M11.1 7 C11.1 7.5 11.5 7.9 12 7.9 C12.5 7.9 12.9 7.5 12.9 7 L12 7 L11.1 7 Z M12.9 17 C12.9 16.5 12.5 16.1 12 16.1 C11.5 16.1 11.1 16.5 11.1 17 L12 17 L12.9 17 Z M11.1 21 C11.1 21.5 11.5 21.9 12 21.9 C12.5 21.9 12.9 21.5 12.9 21 L12 21 L11.1 21 Z M3 11.1 C2.5 11.1 2.1 11.5 2.1 12 C2.1 12.5 2.5 12.9 3 12.9 L3 12 L3 11.1 Z M7 12.9 C7.5 12.9 7.9 12.5 7.9 12 C7.9 11.5 7.5 11.1 7 11.1 L7 12 L7 12.9 Z M17 11.1 C16.5 11.1 16.1 11.5 16.1 12 C16.1 12.5 16.5 12.9 17 12.9 L17 12 L17 11.1 Z M21 12.9 C21.5 12.9 21.9 12.5 21.9 12 C21.9 11.5 21.5 11.1 21 11.1 L21 12 L21 12.9 Z M6.64 5.36 C6.28 5.01 5.72 5.01 5.36 5.36 C5.01 5.72 5.01 6.28 5.36 6.64 L6 6 L6.64 5.36 Z M7.86 9.14 C8.22 9.49 8.78 9.49 9.14 9.14 C9.49 8.78 9.49 8.22 9.14 7.86 L8.5 8.5 L7.86 9.14 Z M16.14 14.86 C15.78 14.51 15.22 14.51 14.86 14.86 C14.51 15.22 14.51 15.78 14.86 16.14 L15.5 15.5 L16.14 14.86 Z M17.36 18.64 C17.72 18.99 18.28 18.99 18.64 18.64 C18.99 18.28 18.99 17.72 18.64 17.36 L18 18 L17.36 18.64 Z M18.64 6.64 C18.99 6.28 18.99 5.72 18.64 5.36 C18.28 5.01 17.72 5.01 17.36 5.36 L18 6 L18.64 6.64 Z M14.86 7.86 C14.51 8.22 14.51 8.78 14.86 9.14 C15.22 9.49 15.78 9.49 16.14 9.14 L15.5 8.5 L14.86 7.86 Z M9.14 16.14 C9.49 15.78 9.49 15.22 9.14 14.86 C8.78 14.51 8.22 14.51 7.86 14.86 L8.5 15.5 L9.14 16.14 Z M5.36 17.36 C5.01 17.72 5.01 18.28 5.36 18.64 C5.72 18.99 6.28 18.99 6.64 18.64 L6 18 L5.36 17.36 Z M12 3 L11.1 3 L11.1 7 L12 7 L12.9 7 L12.9 3 L12 3 Z M12 17 L11.1 17 L11.1 21 L12 21 L12.9 21 L12.9 17 L12 17 Z M3 12 L3 12.9 L7 12.9 L7 12 L7 11.1 L3 11.1 L3 12 Z M17 12 L17 12.9 L21 12.9 L21 12 L21 11.1 L17 11.1 L17 12 Z M6 6 L5.36 6.64 L7.86 9.14 L8.5 8.5 L9.14 7.86 L6.64 5.36 L6 6 Z M15.5 15.5 L14.86 16.14 L17.36 18.64 L18 18 L18.64 17.36 L16.14 14.86 L15.5 15.5 Z M18 6 L17.36 5.36 L14.86 7.86 L15.5 8.5 L16.14 9.14 L18.64 6.64 L18 6 Z M8.5 15.5 L7.86 14.86 L5.36 17.36 L6 18 L6.64 18.64 L9.14 16.14 L8.5 15.5 Z"/></svg></span>Free for students</p>
+          <h1 id="hero-title">Plan your study week in 5 minutes</h1>
+          <p class="lead">Add your modules and deadlines. Studyflow builds a simple weekly plan and reminds you before anything is due.</p>
+          <div class="cta-row">
+            <button type="button" class="btn btn--primary btn--lg" data-start>Start planning free<span class="arrow"><span class="i i--arrow-right"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 11.1 C4.5 11.1 4.1 11.5 4.1 12 C4.1 12.5 4.5 12.9 5 12.9 L5 12 L5 11.1 Z M19 12 L19.64 12.64 C19.99 12.28 19.99 11.72 19.64 11.36 L19 12 Z M13.64 5.36 C13.28 5.01 12.72 5.01 12.36 5.36 C12.01 5.72 12.01 6.28 12.36 6.64 L13 6 L13.64 5.36 Z M12.36 17.36 C12.01 17.72 12.01 18.28 12.36 18.64 C12.72 18.99 13.28 18.99 13.64 18.64 L13 18 L12.36 17.36 Z M5 12 L5 12.9 L19 12.9 L19 12 L19 11.1 L5 11.1 L5 12 Z M13 6 L12.36 6.64 L18.36 12.64 L19 12 L19.64 11.36 L13.64 5.36 L13 6 Z M19 12 L18.36 11.36 L12.36 17.36 L13 18 L13.64 18.64 L19.64 12.64 L19 12 Z"/></svg></span></span></button>
+            <a class="btn btn--outline btn--lg" href="#how">See how it works</a>
+          </div>
+          <ul class="trust">
+            <li><span class="i i--check"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.64 11.86 C5.28 11.51 4.72 11.51 4.36 11.86 C4.01 12.22 4.01 12.78 4.36 13.14 L5 12.5 L5.64 11.86 Z M9.5 17 L8.86 17.64 C9.22 17.99 9.78 17.99 10.14 17.64 L9.5 17 Z M19.64 8.14 C19.99 7.78 19.99 7.22 19.64 6.86 C19.28 6.51 18.72 6.51 18.36 6.86 L19 7.5 L19.64 8.14 Z M5 12.5 L4.36 13.14 L8.86 17.64 L9.5 17 L10.14 16.36 L5.64 11.86 L5 12.5 Z M9.5 17 L10.14 17.64 L19.64 8.14 L19 7.5 L18.36 6.86 L8.86 16.36 L9.5 17 Z"/></svg></span>No card needed</li>
+            <li><span class="i i--check"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.64 11.86 C5.28 11.51 4.72 11.51 4.36 11.86 C4.01 12.22 4.01 12.78 4.36 13.14 L5 12.5 L5.64 11.86 Z M9.5 17 L8.86 17.64 C9.22 17.99 9.78 17.99 10.14 17.64 L9.5 17 Z M19.64 8.14 C19.99 7.78 19.99 7.22 19.64 6.86 C19.28 6.51 18.72 6.51 18.36 6.86 L19 7.5 L19.64 8.14 Z M5 12.5 L4.36 13.14 L8.86 17.64 L9.5 17 L10.14 16.36 L5.64 11.86 L5 12.5 Z M9.5 17 L10.14 17.64 L19.64 8.14 L19 7.5 L18.36 6.86 L8.86 16.36 L9.5 17 Z"/></svg></span>Set up in 5 minutes</li>
+            <li><span class="i i--check"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.64 11.86 C5.28 11.51 4.72 11.51 4.36 11.86 C4.01 12.22 4.01 12.78 4.36 13.14 L5 12.5 L5.64 11.86 Z M9.5 17 L8.86 17.64 C9.22 17.99 9.78 17.99 10.14 17.64 L9.5 17 Z M19.64 8.14 C19.99 7.78 19.99 7.22 19.64 6.86 C19.28 6.51 18.72 6.51 18.36 6.86 L19 7.5 L19.64 8.14 Z M5 12.5 L4.36 13.14 L8.86 17.64 L9.5 17 L10.14 16.36 L5.64 11.86 L5 12.5 Z M9.5 17 L10.14 17.64 L19.64 8.14 L19 7.5 L18.36 6.86 L8.86 16.36 L9.5 17 Z"/></svg></span>Works on any browser</li>
+          </ul>
+        </div>
+
+        <div class="visual">
+          <div class="soft" aria-hidden="true"></div>
+          <section class="planner" id="planner" aria-labelledby="planner-title">
+            <div class="planner__head">
+              <div><h2 id="planner-title">Your week</h2><p>14 – 20 October</p></div>
+              <p class="badge"><span class="i i--sparkle"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.9 3 C12.9 2.5 12.5 2.1 12 2.1 C11.5 2.1 11.1 2.5 11.1 3 L12 3 L12.9 3 Z M11.1 7 C11.1 7.5 11.5 7.9 12 7.9 C12.5 7.9 12.9 7.5 12.9 7 L12 7 L11.1 7 Z M12.9 17 C12.9 16.5 12.5 16.1 12 16.1 C11.5 16.1 11.1 16.5 11.1 17 L12 17 L12.9 17 Z M11.1 21 C11.1 21.5 11.5 21.9 12 21.9 C12.5 21.9 12.9 21.5 12.9 21 L12 21 L11.1 21 Z M3 11.1 C2.5 11.1 2.1 11.5 2.1 12 C2.1 12.5 2.5 12.9 3 12.9 L3 12 L3 11.1 Z M7 12.9 C7.5 12.9 7.9 12.5 7.9 12 C7.9 11.5 7.5 11.1 7 11.1 L7 12 L7 12.9 Z M17 11.1 C16.5 11.1 16.1 11.5 16.1 12 C16.1 12.5 16.5 12.9 17 12.9 L17 12 L17 11.1 Z M21 12.9 C21.5 12.9 21.9 12.5 21.9 12 C21.9 11.5 21.5 11.1 21 11.1 L21 12 L21 12.9 Z M6.64 5.36 C6.28 5.01 5.72 5.01 5.36 5.36 C5.01 5.72 5.01 6.28 5.36 6.64 L6 6 L6.64 5.36 Z M7.86 9.14 C8.22 9.49 8.78 9.49 9.14 9.14 C9.49 8.78 9.49 8.22 9.14 7.86 L8.5 8.5 L7.86 9.14 Z M16.14 14.86 C15.78 14.51 15.22 14.51 14.86 14.86 C14.51 15.22 14.51 15.78 14.86 16.14 L15.5 15.5 L16.14 14.86 Z M17.36 18.64 C17.72 18.99 18.28 18.99 18.64 18.64 C18.99 18.28 18.99 17.72 18.64 17.36 L18 18 L17.36 18.64 Z M18.64 6.64 C18.99 6.28 18.99 5.72 18.64 5.36 C18.28 5.01 17.72 5.01 17.36 5.36 L18 6 L18.64 6.64 Z M14.86 7.86 C14.51 8.22 14.51 8.78 14.86 9.14 C15.22 9.49 15.78 9.49 16.14 9.14 L15.5 8.5 L14.86 7.86 Z M9.14 16.14 C9.49 15.78 9.49 15.22 9.14 14.86 C8.78 14.51 8.22 14.51 7.86 14.86 L8.5 15.5 L9.14 16.14 Z M5.36 17.36 C5.01 17.72 5.01 18.28 5.36 18.64 C5.72 18.99 6.28 18.99 6.64 18.64 L6 18 L5.36 17.36 Z M12 3 L11.1 3 L11.1 7 L12 7 L12.9 7 L12.9 3 L12 3 Z M12 17 L11.1 17 L11.1 21 L12 21 L12.9 21 L12.9 17 L12 17 Z M3 12 L3 12.9 L7 12.9 L7 12 L7 11.1 L3 11.1 L3 12 Z M17 12 L17 12.9 L21 12.9 L21 12 L21 11.1 L17 11.1 L17 12 Z M6 6 L5.36 6.64 L7.86 9.14 L8.5 8.5 L9.14 7.86 L6.64 5.36 L6 6 Z M15.5 15.5 L14.86 16.14 L17.36 18.64 L18 18 L18.64 17.36 L16.14 14.86 L15.5 15.5 Z M18 6 L17.36 5.36 L14.86 7.86 L15.5 8.5 L16.14 9.14 L18.64 6.64 L18 6 Z M8.5 15.5 L7.86 14.86 L5.36 17.36 L6 18 L6.64 18.64 L9.14 16.14 L8.5 15.5 Z"/></svg></span>3 deadlines</p>
+            </div>
+            <ul class="tasks" id="tasks"></ul>
+            <div class="progress">
+              <div class="progress__top"><span>Week progress</span><span id="progress-text" aria-live="polite">2 of 4 done</span></div>
+              <div class="track" id="track" role="progressbar" aria-label="Week progress" aria-valuemin="0" aria-valuemax="4" aria-valuenow="2"><i id="bar"></i></div>
+            </div>
+          </section>
+          <div class="reminder">
+            <span class="reminder__icon"><span class="i i--bell"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 16.5 L6.64 17.14 C6.81 16.97 6.9 16.74 6.9 16.5 L6 16.5 Z M6 11 L5.1 11 L6 11 Z M12 5 L12 4.1 L12 5 Z M18 11 L18.9 11 L18 11 Z M18 16.5 L17.1 16.5 C17.1 16.74 17.19 16.97 17.36 17.14 L18 16.5 Z M19.5 18 L19.5 18.9 C19.86 18.9 20.19 18.68 20.33 18.34 C20.47 18.01 20.39 17.62 20.14 17.36 L19.5 18 Z M4.5 18 L3.86 17.36 C3.61 17.62 3.53 18.01 3.67 18.34 C3.81 18.68 4.14 18.9 4.5 18.9 L4.5 18 Z M6 16.5 L6.9 16.5 L6.9 11 L6 11 L5.1 11 L5.1 16.5 L6 16.5 Z M6 11 L6.9 11 C6.9 9.65 7.44 8.35 8.39 7.39 L7.76 6.76 L7.12 6.12 C5.83 7.41 5.1 9.17 5.1 11 L6 11 Z M7.76 6.76 L8.39 7.39 C9.35 6.44 10.65 5.9 12 5.9 L12 5 L12 4.1 C10.17 4.1 8.41 4.83 7.12 6.12 L7.76 6.76 Z M12 5 L12 5.9 C13.35 5.9 14.65 6.44 15.61 7.39 L16.24 6.76 L16.88 6.12 C15.59 4.83 13.83 4.1 12 4.1 L12 5 Z M16.24 6.76 L15.61 7.39 C16.56 8.35 17.1 9.65 17.1 11 L18 11 L18.9 11 C18.9 9.17 18.17 7.41 16.88 6.12 L16.24 6.76 Z M18 11 L17.1 11 L17.1 16.5 L18 16.5 L18.9 16.5 L18.9 11 L18 11 Z M18 16.5 L17.36 17.14 L18.86 18.64 L19.5 18 L20.14 17.36 L18.64 15.86 L18 16.5 Z M19.5 18 L19.5 17.1 L4.5 17.1 L4.5 18 L4.5 18.9 L19.5 18.9 L19.5 18 Z M4.5 18 L5.14 18.64 L6.64 17.14 L6 16.5 L5.36 15.86 L3.86 17.36 L4.5 18 Z"/><path d="M10 20.1 C9.5 20.1 9.1 20.5 9.1 21 C9.1 21.5 9.5 21.9 10 21.9 L10 21 L10 20.1 Z M14 21.9 C14.5 21.9 14.9 21.5 14.9 21 C14.9 20.5 14.5 20.1 14 20.1 L14 21 L14 21.9 Z M10 21 L10 21.9 L14 21.9 L14 21 L14 20.1 L10 20.1 L10 21 Z"/></svg></span></span>
+            <div><b>Essay due in 2 days</b><span>Psychology · Friday 18 Oct</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <div class="heading">
+          <p class="badge"><span class="i i--sparkle"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.9 3 C12.9 2.5 12.5 2.1 12 2.1 C11.5 2.1 11.1 2.5 11.1 3 L12 3 L12.9 3 Z M11.1 7 C11.1 7.5 11.5 7.9 12 7.9 C12.5 7.9 12.9 7.5 12.9 7 L12 7 L11.1 7 Z M12.9 17 C12.9 16.5 12.5 16.1 12 16.1 C11.5 16.1 11.1 16.5 11.1 17 L12 17 L12.9 17 Z M11.1 21 C11.1 21.5 11.5 21.9 12 21.9 C12.5 21.9 12.9 21.5 12.9 21 L12 21 L11.1 21 Z M3 11.1 C2.5 11.1 2.1 11.5 2.1 12 C2.1 12.5 2.5 12.9 3 12.9 L3 12 L3 11.1 Z M7 12.9 C7.5 12.9 7.9 12.5 7.9 12 C7.9 11.5 7.5 11.1 7 11.1 L7 12 L7 12.9 Z M17 11.1 C16.5 11.1 16.1 11.5 16.1 12 C16.1 12.5 16.5 12.9 17 12.9 L17 12 L17 11.1 Z M21 12.9 C21.5 12.9 21.9 12.5 21.9 12 C21.9 11.5 21.5 11.1 21 11.1 L21 12 L21 12.9 Z M6.64 5.36 C6.28 5.01 5.72 5.01 5.36 5.36 C5.01 5.72 5.01 6.28 5.36 6.64 L6 6 L6.64 5.36 Z M7.86 9.14 C8.22 9.49 8.78 9.49 9.14 9.14 C9.49 8.78 9.49 8.22 9.14 7.86 L8.5 8.5 L7.86 9.14 Z M16.14 14.86 C15.78 14.51 15.22 14.51 14.86 14.86 C14.51 15.22 14.51 15.78 14.86 16.14 L15.5 15.5 L16.14 14.86 Z M17.36 18.64 C17.72 18.99 18.28 18.99 18.64 18.64 C18.99 18.28 18.99 17.72 18.64 17.36 L18 18 L17.36 18.64 Z M18.64 6.64 C18.99 6.28 18.99 5.72 18.64 5.36 C18.28 5.01 17.72 5.01 17.36 5.36 L18 6 L18.64 6.64 Z M14.86 7.86 C14.51 8.22 14.51 8.78 14.86 9.14 C15.22 9.49 15.78 9.49 16.14 9.14 L15.5 8.5 L14.86 7.86 Z M9.14 16.14 C9.49 15.78 9.49 15.22 9.14 14.86 C8.78 14.51 8.22 14.51 7.86 14.86 L8.5 15.5 L9.14 16.14 Z M5.36 17.36 C5.01 17.72 5.01 18.28 5.36 18.64 C5.72 18.99 6.28 18.99 6.64 18.64 L6 18 L5.36 17.36 Z M12 3 L11.1 3 L11.1 7 L12 7 L12.9 7 L12.9 3 L12 3 Z M12 17 L11.1 17 L11.1 21 L12 21 L12.9 21 L12.9 17 L12 17 Z M3 12 L3 12.9 L7 12.9 L7 12 L7 11.1 L3 11.1 L3 12 Z M17 12 L17 12.9 L21 12.9 L21 12 L21 11.1 L17 11.1 L17 12 Z M6 6 L5.36 6.64 L7.86 9.14 L8.5 8.5 L9.14 7.86 L6.64 5.36 L6 6 Z M15.5 15.5 L14.86 16.14 L17.36 18.64 L18 18 L18.64 17.36 L16.14 14.86 L15.5 15.5 Z M18 6 L17.36 5.36 L14.86 7.86 L15.5 8.5 L16.14 9.14 L18.64 6.64 L18 6 Z M8.5 15.5 L7.86 14.86 L5.36 17.36 L6 18 L6.64 18.64 L9.14 16.14 L8.5 15.5 Z"/></svg></span>Features</p>
+          <h2 id="features-title">Everything you need to stay on top</h2>
+          <p>Simple tools that help you plan your week, remember deadlines and focus.</p>
+        </div>
+        <ul class="cards">
+          <li class="card"><span class="tile"><span class="i i--calendar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5 L6 5.9 L18 5.9 L18 5 L18 4.1 L6 4.1 L6 5 Z M18 5 L18 5.9 C18.88 5.9 19.6 6.62 19.6 7.5 L20.5 7.5 L21.4 7.5 C21.4 5.62 19.88 4.1 18 4.1 L18 5 Z M20.5 7.5 L19.6 7.5 L19.6 18 L20.5 18 L21.4 18 L21.4 7.5 L20.5 7.5 Z M20.5 18 L19.6 18 C19.6 18.88 18.88 19.6 18 19.6 L18 20.5 L18 21.4 C19.88 21.4 21.4 19.88 21.4 18 L20.5 18 Z M18 20.5 L18 19.6 L6 19.6 L6 20.5 L6 21.4 L18 21.4 L18 20.5 Z M6 20.5 L6 19.6 C5.12 19.6 4.4 18.88 4.4 18 L3.5 18 L2.6 18 C2.6 19.88 4.12 21.4 6 21.4 L6 20.5 Z M3.5 18 L4.4 18 L4.4 7.5 L3.5 7.5 L2.6 7.5 L2.6 18 L3.5 18 Z M3.5 7.5 L4.4 7.5 C4.4 6.62 5.12 5.9 6 5.9 L6 5 L6 4.1 C4.12 4.1 2.6 5.62 2.6 7.5 L3.5 7.5 Z"/><path d="M3.5 9.1 C3 9.1 2.6 9.5 2.6 10 C2.6 10.5 3 10.9 3.5 10.9 L3.5 10 L3.5 9.1 Z M20.5 10.9 C21 10.9 21.4 10.5 21.4 10 C21.4 9.5 21 9.1 20.5 9.1 L20.5 10 L20.5 10.9 Z M8.9 3 C8.9 2.5 8.5 2.1 8 2.1 C7.5 2.1 7.1 2.5 7.1 3 L8 3 L8.9 3 Z M7.1 7 C7.1 7.5 7.5 7.9 8 7.9 C8.5 7.9 8.9 7.5 8.9 7 L8 7 L7.1 7 Z M16.9 3 C16.9 2.5 16.5 2.1 16 2.1 C15.5 2.1 15.1 2.5 15.1 3 L16 3 L16.9 3 Z M15.1 7 C15.1 7.5 15.5 7.9 16 7.9 C16.5 7.9 16.9 7.5 16.9 7 L16 7 L15.1 7 Z M3.5 10 L3.5 10.9 L20.5 10.9 L20.5 10 L20.5 9.1 L3.5 9.1 L3.5 10 Z M8 3 L7.1 3 L7.1 7 L8 7 L8.9 7 L8.9 3 L8 3 Z M16 3 L15.1 3 L15.1 7 L16 7 L16.9 7 L16.9 3 L16 3 Z"/></svg></span></span><h3>Weekly planner</h3><p>Turn your modules and deadlines into a clear plan for each day of the week.</p></li>
+          <li class="card"><span class="tile"><span class="i i--bell"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 16.5 L6.64 17.14 C6.81 16.97 6.9 16.74 6.9 16.5 L6 16.5 Z M6 11 L5.1 11 L6 11 Z M12 5 L12 4.1 L12 5 Z M18 11 L18.9 11 L18 11 Z M18 16.5 L17.1 16.5 C17.1 16.74 17.19 16.97 17.36 17.14 L18 16.5 Z M19.5 18 L19.5 18.9 C19.86 18.9 20.19 18.68 20.33 18.34 C20.47 18.01 20.39 17.62 20.14 17.36 L19.5 18 Z M4.5 18 L3.86 17.36 C3.61 17.62 3.53 18.01 3.67 18.34 C3.81 18.68 4.14 18.9 4.5 18.9 L4.5 18 Z M6 16.5 L6.9 16.5 L6.9 11 L6 11 L5.1 11 L5.1 16.5 L6 16.5 Z M6 11 L6.9 11 C6.9 9.65 7.44 8.35 8.39 7.39 L7.76 6.76 L7.12 6.12 C5.83 7.41 5.1 9.17 5.1 11 L6 11 Z M7.76 6.76 L8.39 7.39 C9.35 6.44 10.65 5.9 12 5.9 L12 5 L12 4.1 C10.17 4.1 8.41 4.83 7.12 6.12 L7.76 6.76 Z M12 5 L12 5.9 C13.35 5.9 14.65 6.44 15.61 7.39 L16.24 6.76 L16.88 6.12 C15.59 4.83 13.83 4.1 12 4.1 L12 5 Z M16.24 6.76 L15.61 7.39 C16.56 8.35 17.1 9.65 17.1 11 L18 11 L18.9 11 C18.9 9.17 18.17 7.41 16.88 6.12 L16.24 6.76 Z M18 11 L17.1 11 L17.1 16.5 L18 16.5 L18.9 16.5 L18.9 11 L18 11 Z M18 16.5 L17.36 17.14 L18.86 18.64 L19.5 18 L20.14 17.36 L18.64 15.86 L18 16.5 Z M19.5 18 L19.5 17.1 L4.5 17.1 L4.5 18 L4.5 18.9 L19.5 18.9 L19.5 18 Z M4.5 18 L5.14 18.64 L6.64 17.14 L6 16.5 L5.36 15.86 L3.86 17.36 L4.5 18 Z"/><path d="M10 20.1 C9.5 20.1 9.1 20.5 9.1 21 C9.1 21.5 9.5 21.9 10 21.9 L10 21 L10 20.1 Z M14 21.9 C14.5 21.9 14.9 21.5 14.9 21 C14.9 20.5 14.5 20.1 14 20.1 L14 21 L14 21.9 Z M10 21 L10 21.9 L14 21.9 L14 21 L14 20.1 L10 20.1 L10 21 Z"/></svg></span></span><h3>Deadline reminders</h3><p>Get a reminder a few days before every essay, lab report or exam.</p></li>
+          <li class="card"><span class="tile"><span class="i i--timer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.5 13 L18.6 13 C18.6 16.65 15.65 19.6 12 19.6 L12 20.5 L12 21.4 C16.64 21.4 20.4 17.64 20.4 13 L19.5 13 Z M12 20.5 L12 19.6 C8.35 19.6 5.4 16.65 5.4 13 L4.5 13 L3.6 13 C3.6 17.64 7.36 21.4 12 21.4 L12 20.5 Z M4.5 13 L5.4 13 C5.4 9.35 8.35 6.4 12 6.4 L12 5.5 L12 4.6 C7.36 4.6 3.6 8.36 3.6 13 L4.5 13 Z M12 5.5 L12 6.4 C15.65 6.4 18.6 9.35 18.6 13 L19.5 13 L20.4 13 C20.4 8.36 16.64 4.6 12 4.6 L12 5.5 Z"/><path d="M12.9 9.5 C12.9 9 12.5 8.6 12 8.6 C11.5 8.6 11.1 9 11.1 9.5 L12 9.5 L12.9 9.5 Z M12 13 L11.1 13 C11.1 13.27 11.22 13.53 11.44 13.7 L12 13 Z M13.94 15.7 C14.33 16.01 14.89 15.95 15.2 15.56 C15.51 15.17 15.45 14.61 15.06 14.3 L14.5 15 L13.94 15.7 Z M9.5 1.6 C9 1.6 8.6 2 8.6 2.5 C8.6 3 9 3.4 9.5 3.4 L9.5 2.5 L9.5 1.6 Z M14.5 3.4 C15 3.4 15.4 3 15.4 2.5 C15.4 2 15 1.6 14.5 1.6 L14.5 2.5 L14.5 3.4 Z M12 9.5 L11.1 9.5 L11.1 13 L12 13 L12.9 13 L12.9 9.5 L12 9.5 Z M12 13 L11.44 13.7 L13.94 15.7 L14.5 15 L15.06 14.3 L12.56 12.3 L12 13 Z M9.5 2.5 L9.5 3.4 L14.5 3.4 L14.5 2.5 L14.5 1.6 L9.5 1.6 L9.5 2.5 Z"/></svg></span></span><h3>Focus timer</h3><p>Study in short, focused blocks with a simple built-in timer and breaks.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="heading">
+          <p class="badge"><span class="i i--sparkle"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.9 3 C12.9 2.5 12.5 2.1 12 2.1 C11.5 2.1 11.1 2.5 11.1 3 L12 3 L12.9 3 Z M11.1 7 C11.1 7.5 11.5 7.9 12 7.9 C12.5 7.9 12.9 7.5 12.9 7 L12 7 L11.1 7 Z M12.9 17 C12.9 16.5 12.5 16.1 12 16.1 C11.5 16.1 11.1 16.5 11.1 17 L12 17 L12.9 17 Z M11.1 21 C11.1 21.5 11.5 21.9 12 21.9 C12.5 21.9 12.9 21.5 12.9 21 L12 21 L11.1 21 Z M3 11.1 C2.5 11.1 2.1 11.5 2.1 12 C2.1 12.5 2.5 12.9 3 12.9 L3 12 L3 11.1 Z M7 12.9 C7.5 12.9 7.9 12.5 7.9 12 C7.9 11.5 7.5 11.1 7 11.1 L7 12 L7 12.9 Z M17 11.1 C16.5 11.1 16.1 11.5 16.1 12 C16.1 12.5 16.5 12.9 17 12.9 L17 12 L17 11.1 Z M21 12.9 C21.5 12.9 21.9 12.5 21.9 12 C21.9 11.5 21.5 11.1 21 11.1 L21 12 L21 12.9 Z M6.64 5.36 C6.28 5.01 5.72 5.01 5.36 5.36 C5.01 5.72 5.01 6.28 5.36 6.64 L6 6 L6.64 5.36 Z M7.86 9.14 C8.22 9.49 8.78 9.49 9.14 9.14 C9.49 8.78 9.49 8.22 9.14 7.86 L8.5 8.5 L7.86 9.14 Z M16.14 14.86 C15.78 14.51 15.22 14.51 14.86 14.86 C14.51 15.22 14.51 15.78 14.86 16.14 L15.5 15.5 L16.14 14.86 Z M17.36 18.64 C17.72 18.99 18.28 18.99 18.64 18.64 C18.99 18.28 18.99 17.72 18.64 17.36 L18 18 L17.36 18.64 Z M18.64 6.64 C18.99 6.28 18.99 5.72 18.64 5.36 C18.28 5.01 17.72 5.01 17.36 5.36 L18 6 L18.64 6.64 Z M14.86 7.86 C14.51 8.22 14.51 8.78 14.86 9.14 C15.22 9.49 15.78 9.49 16.14 9.14 L15.5 8.5 L14.86 7.86 Z M9.14 16.14 C9.49 15.78 9.49 15.22 9.14 14.86 C8.78 14.51 8.22 14.51 7.86 14.86 L8.5 15.5 L9.14 16.14 Z M5.36 17.36 C5.01 17.72 5.01 18.28 5.36 18.64 C5.72 18.99 6.28 18.99 6.64 18.64 L6 18 L5.36 17.36 Z M12 3 L11.1 3 L11.1 7 L12 7 L12.9 7 L12.9 3 L12 3 Z M12 17 L11.1 17 L11.1 21 L12 21 L12.9 21 L12.9 17 L12 17 Z M3 12 L3 12.9 L7 12.9 L7 12 L7 11.1 L3 11.1 L3 12 Z M17 12 L17 12.9 L21 12.9 L21 12 L21 11.1 L17 11.1 L17 12 Z M6 6 L5.36 6.64 L7.86 9.14 L8.5 8.5 L9.14 7.86 L6.64 5.36 L6 6 Z M15.5 15.5 L14.86 16.14 L17.36 18.64 L18 18 L18.64 17.36 L16.14 14.86 L15.5 15.5 Z M18 6 L17.36 5.36 L14.86 7.86 L15.5 8.5 L16.14 9.14 L18.64 6.64 L18 6 Z M8.5 15.5 L7.86 14.86 L5.36 17.36 L6 18 L6.64 18.64 L9.14 16.14 L8.5 15.5 Z"/></svg></span>How it works</p>
+          <h2 id="how-title">Set up your week in three steps</h2>
+          <p>No long forms. Most students are ready in about 5 minutes.</p>
+        </div>
+        <ol class="steps">
+          <li><span class="num">1</span><h3>Add your modules</h3><p>Type in the modules you’re taking this term.</p></li>
+          <li><span class="num">2</span><h3>Add your deadlines</h3><p>Add essays, reports and exams with their due dates.</p></li>
+          <li><span class="num">3</span><h3>Get your weekly plan</h3><p>Studyflow spreads the work across your week, so nothing is left to the last night.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="reviews" aria-labelledby="reviews-title">
+      <div class="wrap">
+        <div class="heading">
+          <p class="badge"><span class="i i--sparkle"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.9 3 C12.9 2.5 12.5 2.1 12 2.1 C11.5 2.1 11.1 2.5 11.1 3 L12 3 L12.9 3 Z M11.1 7 C11.1 7.5 11.5 7.9 12 7.9 C12.5 7.9 12.9 7.5 12.9 7 L12 7 L11.1 7 Z M12.9 17 C12.9 16.5 12.5 16.1 12 16.1 C11.5 16.1 11.1 16.5 11.1 17 L12 17 L12.9 17 Z M11.1 21 C11.1 21.5 11.5 21.9 12 21.9 C12.5 21.9 12.9 21.5 12.9 21 L12 21 L11.1 21 Z M3 11.1 C2.5 11.1 2.1 11.5 2.1 12 C2.1 12.5 2.5 12.9 3 12.9 L3 12 L3 11.1 Z M7 12.9 C7.5 12.9 7.9 12.5 7.9 12 C7.9 11.5 7.5 11.1 7 11.1 L7 12 L7 12.9 Z M17 11.1 C16.5 11.1 16.1 11.5 16.1 12 C16.1 12.5 16.5 12.9 17 12.9 L17 12 L17 11.1 Z M21 12.9 C21.5 12.9 21.9 12.5 21.9 12 C21.9 11.5 21.5 11.1 21 11.1 L21 12 L21 12.9 Z M6.64 5.36 C6.28 5.01 5.72 5.01 5.36 5.36 C5.01 5.72 5.01 6.28 5.36 6.64 L6 6 L6.64 5.36 Z M7.86 9.14 C8.22 9.49 8.78 9.49 9.14 9.14 C9.49 8.78 9.49 8.22 9.14 7.86 L8.5 8.5 L7.86 9.14 Z M16.14 14.86 C15.78 14.51 15.22 14.51 14.86 14.86 C14.51 15.22 14.51 15.78 14.86 16.14 L15.5 15.5 L16.14 14.86 Z M17.36 18.64 C17.72 18.99 18.28 18.99 18.64 18.64 C18.99 18.28 18.99 17.72 18.64 17.36 L18 18 L17.36 18.64 Z M18.64 6.64 C18.99 6.28 18.99 5.72 18.64 5.36 C18.28 5.01 17.72 5.01 17.36 5.36 L18 6 L18.64 6.64 Z M14.86 7.86 C14.51 8.22 14.51 8.78 14.86 9.14 C15.22 9.49 15.78 9.49 16.14 9.14 L15.5 8.5 L14.86 7.86 Z M9.14 16.14 C9.49 15.78 9.49 15.22 9.14 14.86 C8.78 14.51 8.22 14.51 7.86 14.86 L8.5 15.5 L9.14 16.14 Z M5.36 17.36 C5.01 17.72 5.01 18.28 5.36 18.64 C5.72 18.99 6.28 18.99 6.64 18.64 L6 18 L5.36 17.36 Z M12 3 L11.1 3 L11.1 7 L12 7 L12.9 7 L12.9 3 L12 3 Z M12 17 L11.1 17 L11.1 21 L12 21 L12.9 21 L12.9 17 L12 17 Z M3 12 L3 12.9 L7 12.9 L7 12 L7 11.1 L3 11.1 L3 12 Z M17 12 L17 12.9 L21 12.9 L21 12 L21 11.1 L17 11.1 L17 12 Z M6 6 L5.36 6.64 L7.86 9.14 L8.5 8.5 L9.14 7.86 L6.64 5.36 L6 6 Z M15.5 15.5 L14.86 16.14 L17.36 18.64 L18 18 L18.64 17.36 L16.14 14.86 L15.5 15.5 Z M18 6 L17.36 5.36 L14.86 7.86 L15.5 8.5 L16.14 9.14 L18.64 6.64 L18 6 Z M8.5 15.5 L7.86 14.86 L5.36 17.36 L6 18 L6.64 18.64 L9.14 16.14 L8.5 15.5 Z"/></svg></span>Reviews</p>
+          <h2 id="reviews-title">Students like how simple it is</h2>
+          <p>What students said after trying Studyflow for a term.</p>
+        </div>
+        <ul class="quotes">
+          <li class="card quote">
+            <p class="stars" role="img" aria-label="5 out of 5 stars"><span class="i i--star"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8 L12.5 7 L18.2 7.8 L14.1 11.8 L15.1 17.4 L10 14.7 L4.9 17.4 L5.9 11.8 L1.8 7.8 L7.5 7 L10 1.8 Z"/></svg></span><span class="i i--star"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8 L12.5 7 L18.2 7.8 L14.1 11.8 L15.1 17.4 L10 14.7 L4.9 17.4 L5.9 11.8 L1.8 7.8 L7.5 7 L10 1.8 Z"/></svg></span><span class="i i--star"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8 L12.5 7 L18.2 7.8 L14.1 11.8 L15.1 17.4 L10 14.7 L4.9 17.4 L5.9 11.8 L1.8 7.8 L7.5 7 L10 1.8 Z"/></svg></span><span class="i i--star"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8 L12.5 7 L18.2 7.8 L14.1 11.8 L15.1 17.4 L10 14.7 L4.9 17.4 L5.9 11.8 L1.8 7.8 L7.5 7 L10 1.8 Z"/></svg></span><span class="i i--star"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8 L12.5 7 L18.2 7.8 L14.1 11.8 L15.1 17.4 L10 14.7 L4.9 17.4 L5.9 11.8 L1.8 7.8 L7.5 7 L10 1.8 Z"/></svg></span></p>
+            <blockquote>“I used to plan my week on sticky notes. Now I open Studyflow on Sunday night and I know exactly what to do each day.”</blockquote>
+            <div class="person"><span class="avatar" aria-hidden="true">PK</span><div><b>Priya K.</b><span>2nd-year Psychology</span></div></div>
+          </li>
+          <li class="card quote">
+            <p class="stars" role="img" aria-label="5 out of 5 stars"><span class="i i--star"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8 L12.5 7 L18.2 7.8 L14.1 11.8 L15.1 17.4 L10 14.7 L4.9 17.4 L5.9 11.8 L1.8 7.8 L7.5 7 L10 1.8 Z"/></svg></span><span class="i i--star"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8 L12.5 7 L18.2 7.8 L14.1 11.8 L15.1 17.4 L10 14.7 L4.9 17.4 L5.9 11.8 L1.8 7.8 L7.5 7 L10 1.8 Z"/></svg></span><span class="i i--star"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8 L12.5 7 L18.2 7.8 L14.1 11.8 L15.1 17.4 L10 14.7 L4.9 17.4 L5.9 11.8 L1.8 7.8 L7.5 7 L10 1.8 Z"/></svg></span><span class="i i--star"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8 L12.5 7 L18.2 7.8 L14.1 11.8 L15.1 17.4 L10 14.7 L4.9 17.4 L5.9 11.8 L1.8 7.8 L7.5 7 L10 1.8 Z"/></svg></span><span class="i i--star"><svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8 L12.5 7 L18.2 7.8 L14.1 11.8 L15.1 17.4 L10 14.7 L4.9 17.4 L5.9 11.8 L1.8 7.8 L7.5 7 L10 1.8 Z"/></svg></span></p>
+            <blockquote>“The reminders are the best part. I haven’t missed a deadline since I started using it, and it only took a few minutes to set up.”</blockquote>
+            <div class="person"><span class="avatar" aria-hidden="true">TR</span><div><b>Tom R.</b><span>1st-year Engineering</span></div></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--cta" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta">
+          <h2 id="cta-title">Ready to plan your week?</h2>
+          <p>It takes about 5 minutes to set up. Free for students.</p>
+          <button type="button" class="btn btn--outline btn--lg" data-start>Start planning free<span class="arrow"><span class="i i--arrow-right"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 11.1 C4.5 11.1 4.1 11.5 4.1 12 C4.1 12.5 4.5 12.9 5 12.9 L5 12 L5 11.1 Z M19 12 L19.64 12.64 C19.99 12.28 19.99 11.72 19.64 11.36 L19 12 Z M13.64 5.36 C13.28 5.01 12.72 5.01 12.36 5.36 C12.01 5.72 12.01 6.28 12.36 6.64 L13 6 L13.64 5.36 Z M12.36 17.36 C12.01 17.72 12.01 18.28 12.36 18.64 C12.72 18.99 13.28 18.99 13.64 18.64 L13 18 L12.36 17.36 Z M5 12 L5 12.9 L19 12.9 L19 12 L19 11.1 L5 11.1 L5 12 Z M13 6 L12.36 6.64 L18.36 12.64 L19 12 L19.64 11.36 L13.64 5.36 L13 6 Z M19 12 L18.36 11.36 L12.36 17.36 L13 18 L13.64 18.64 L19.64 12.64 L19 12 Z"/></svg></span></span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="logo" href="#top" aria-label="Studyflow, back to top"><span class="logo__mark"><span class="i i--check"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.64 11.86 C5.28 11.51 4.72 11.51 4.36 11.86 C4.01 12.22 4.01 12.78 4.36 13.14 L5 12.5 L5.64 11.86 Z M9.5 17 L8.86 17.64 C9.22 17.99 9.78 17.99 10.14 17.64 L9.5 17 Z M19.64 8.14 C19.99 7.78 19.99 7.22 19.64 6.86 C19.28 6.51 18.72 6.51 18.36 6.86 L19 7.5 L19.64 8.14 Z M5 12.5 L4.36 13.14 L8.86 17.64 L9.5 17 L10.14 16.36 L5.64 11.86 L5 12.5 Z M9.5 17 L10.14 17.64 L19.64 8.14 L19 7.5 L18.36 6.86 L8.86 16.36 L9.5 17 Z"/></svg></span></span><span class="logo__name">Studyflow</span></a>
+          <p>A simple study planner for students.</p>
+        </div>
+        <div class="footer__cols">
+          <div><h2>Product</h2><a href="#features">Features</a><a href="#how">How it works</a><a href="#reviews">Reviews</a></div>
+          <div><h2>Help</h2><button type="button" class="linkish" data-note="faq">FAQ</button><button type="button" class="linkish" data-note="contact">Contact</button><button type="button" class="linkish" data-note="privacy">Privacy</button></div>
+          <div><h2>Follow</h2><button type="button" class="linkish" data-note="social">Instagram</button><button type="button" class="linkish" data-note="social">TikTok</button><button type="button" class="linkish" data-note="social">LinkedIn</button></div>
+        </div>
+      </div>
+      <div class="footer__bottom"><p>© 2026 Studyflow. A student design project.</p><p>Made in Coventry</p></div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">The planner preview needs JavaScript turned on.</p></noscript>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+INST 0,0 393x54 'Chrome/Status Bar'
+  TEXT 30,17 54x20 [Inter Semi Bold 16 #17171a] "9:41"
+  FRAM 134,11 125x37 bg=#000000 r=20 'Dynamic Island'
+  FRAM 302,21 74x13 'Indicators'
+    FRAM 302,22 18x11 'signal'
+      ROUN 302,29 3x4 bg=#17171a r=1 'Rectangle'
+      ROUN 307,27 3x6 bg=#17171a r=1 'Rectangle'
+      ROUN 312,25 3x8 bg=#17171a r=1 'Rectangle'
+      ROUN 317,23 3x10 bg=#17171a r=1 'Rectangle'
+    FRAM 327,22 17x12 'wifi'
+      VECT 328,23 15x12 bg=#17171a 'Vector'
+    FRAM 351,21 25x13 'battery'
+      ROUN 351,21 23x13 bd=#17171a@0.35/1 r=4 'Rectangle'
+      ROUN 353,23 19x9 bg=#17171a r=2 'Rectangle'
+      ROUN 374,26 2x4 bg=#17171a@0.35 r=1 'Rectangle'
+FRAM 0,54 393x1442 'Content'
+  FRAM 20,62 353x60 'Frame'
+    TEXT 20,62 182x34 [Inter Bold 28/34 #17171a] "Your Journey"
+    TEXT 20,100 353x22 [Inter Regular 15/22 #6b6b73] "A guided path to settling into Coventry."
+  FRAM 20,146 353x100 bg=#ffffff bd=#e7e7eb/1 r=18 'Summary'
+    FRAM 38,164 317x42 'Frame'
+      FRAM 38,164 266x42 'Frame'
+        TEXT 38,164 128x22 [Inter Semi Bold 16/22 #17171a] "Overall progress"
+        TEXT 38,188 148x18 [Inter Medium 13/18 #6b6b73] "12 of 18 steps complete"
+      TEXT 304,171 51x28 [Inter Bold 24/28 #17171a] "67%"
+    FRAM 38,218 317x10 bg=#f1f1f4 r=999 'Frame'
+      ROUN 38,218 211x10 bg=#3730a3 r=999 'Rectangle'
+  FRAM 20,270 353x210 'Stage/Before arrival'
+    FRAM 20,270 353x32 'Frame'
+      TEXT 20,270 272x24 [Inter Semi Bold 18/24 #17171a] "Before arrival"
+      INST 300,271 73x22 bg=#f0fdf4 r=999 'Status / Badge'
+        TEXT 308,274 57x16 [Inter Semi Bold 12/16 #15803d] "Complete"
+    FRAM 20,306 353x174 'Items'
+      ROUN 33,320 2x116 bg=#d6d6dc r=2 'Rectangle'
+      FRAM 20,306 353x58 'Frame'
+        FRAM 20,314 28x28 'Frame'
+          FRAM 20,314 28x28 bg=#3730a3 r=999 'Frame'
+            INST 26,320 16x16 'Icon/check'
+              VECT 29,324 11x7 bd=#808080/2 'Vector'
+        FRAM 62,314 311x42 'Frame'
+          TEXT 62,316 311x20 [Inter Semi Bold 15/20 #6b6b73] "Confirm accommodation"
+          TEXT 62,338 311x18 [Inter Medium 13/18 #6b6b73] "Priory Hall · Coventry"
+      FRAM 20,364 353x58 'Frame'
+        FRAM 20,372 28x28 'Frame'
+          FRAM 20,372 28x28 bg=#3730a3 r=999 'Frame'
+            INST 26,378 16x16 'Icon/check'
+              VECT 29,382 11x7 bd=#808080/2 'Vector'
+        FRAM 62,372 311x42 'Frame'
+          TEXT 62,374 311x20 [Inter Semi Bold 15/20 #6b6b73] "Prepare documents"
+          TEXT 62,396 311x18 [Inter Medium 13/18 #6b6b73] "Passport, visa, CAS letter"
+      FRAM 20,422 353x58 'Frame'
+        FRAM 20,430 28x28 'Frame'
+          FRAM 20,430 28x28 bg=#3730a3 r=999 'Frame'
+            INST 26,436 16x16 'Icon/check'
+              VECT 29,440 11x7 bd=#808080/2 'Vector'
+        FRAM 62,430 311x42 'Frame'
+          TEXT 62,432 311x20 [Inter Semi Bold 15/20 #6b6b73] "Arrange airport transport"
+          TEXT 62,454 311x18 [Inter Medium 13/18 #6b6b73] "National Express to Coventry"
+  FRAM 20,504 353x268 'Stage/First 24 hours'
+    FRAM 20,504 353x32 'Frame'
+      TEXT 20,504 272x24 [Inter Semi Bold 18/24 #17171a] "First 24 hours"
+      INST 300,505 73x22 bg=#f0fdf4 r=999 'Status / Badge'
+        TEXT 308,508 57x16 [Inter Semi Bold 12/16 #15803d] "Complete"
+    FRAM 20,540 353x232 'Items'
+      ROUN 33,554 2x174 bg=#d6d6dc r=2 'Rectangle'
+      FRAM 20,540 353x58 'Frame'
+        FRAM 20,548 28x28 'rail'
+          FRAM 20,548 28x28 bg=#3730a3 r=999 'Frame'
+            INST 26,554 16x16 'Icon/check'
+              VECT 29,558 11x7 bd=#808080/2 'Vector'
+        FRAM 62,548 311x42 'Frame'
+          TEXT 62,550 311x20 [Inter Semi Bold 15/20 #6b6b73] "Collect accommodation keys"
+          TEXT 62,572 311x18 [Inter Medium 13/18 #6b6b73] "Priory Hall reception"
+      FRAM 20,598 353x58 'Frame'
+        FRAM 20,606 28x28 'rail'
+          FRAM 20,606 28x28 bg=#3730a3 r=999 'Frame'
+            INST 26,612 16x16 'Icon/check'
+              VECT 29,616 11x7 bd=#808080/2 'Vector'
+        FRAM 62,606 311x42 'Frame'
+          TEXT 62,608 311x20 [Inter Semi Bold 15/20 #6b6b73] "Get a UK SIM card"
+          TEXT 62,630 311x18 [Inter Medium 13/18 #6b6b73] "giffgaff · picked up at Tesco"
+      FRAM 20,656 353x58 'Frame'
+        FRAM 20,664 28x28 'rail'
+          FRAM 20,664 28x28 bg=#3730a3 r=999 'Frame'
+            INST 26,670 16x16 'Icon/check'
+              VECT 29,674 11x7 bd=#808080/2 'Vector'
+        FRAM 62,664 311x42 'Frame'
+          TEXT 62,666 311x20 [Inter Semi Bold 15/20 #6b6b73] "Find your nearest supermarket"
+          TEXT 62,688 311x18 [Inter Medium 13/18 #6b6b73] "Tesco Express · 8 min walk"
+      FRAM 20,714 353x58 'Frame'
+        FRAM 20,722 28x28 'rail'
+          FRAM 20,722 28x28 bg=#3730a3 r=999 'Frame'
+            INST 26,728 16x16 'Icon/check'
+              VECT 29,732 11x7 bd=#808080/2 'Vector'
+        FRAM 62,722 311x42 'Frame'
+          TEXT 62,724 311x20 [Inter Semi Bold 15/20 #6b6b73] "Connect to campus Wi-Fi"
+          TEXT 62,746 311x18 [Inter Medium 13/18 #6b6b73] "eduroam"
+  FRAM 20,796 353x268 'Stage/First week'
+    FRAM 20,796 353x32 'Frame'
+      TEXT 20,796 263x24 [Inter Semi Bold 18/24 #17171a] "First week"
+      INST 291,797 82x22 bg=#fffbeb r=999 'Status / Badge'
+        TEXT 299,800 66x16 [Inter Semi Bold 12/16 #b45309] "In progress"
+    FRAM 20,832 353x232 'Items'
+      ROUN 33,846 2x174 bg=#d6d6dc r=2 'Rectangle'
+      FRAM 20,832 353x58 'Frame'
+        FRAM 20,840 28x28 'Frame'
+          FRAM 20,840 28x28 bg=#ffffff bd=#3730a3/2.5 r=999 'Frame'
+            ELLI 29,849 10x10 bg=#3730a3 'Ellipse'
+        FRAM 62,840 311x42 'Frame'
+          TEXT 62,842 311x20 [Inter Semi Bold 15/20 #17171a] "University registration"
+          TEXT 62,864 311x18 [Inter Medium 13/18 #6b6b73] "In progress · opens 9:00 AM today"
+      FRAM 20,890 353x58 'Frame'
+        FRAM 20,898 28x28 'Frame'
+          FRAM 20,898 28x28 bg=#ffffff bd=#d6d6dc/2 r=999 'Frame'
+        FRAM 62,898 311x42 'Frame'
+          TEXT 62,900 311x20 [Inter Semi Bold 15/20 #17171a] "Open a UK bank account"
+          TEXT 62,922 311x18 [Inter Medium 13/18 #6b6b73] "Bring your BRP + student letter"
+      FRAM 20,948 353x58 'Frame'
+        FRAM 20,956 28x28 'Frame'
+          FRAM 20,956 28x28 bg=#ffffff bd=#d6d6dc/2 r=999 'Frame'
+        FRAM 62,956 311x42 'Frame'
+          TEXT 62,958 311x20 [Inter Semi Bold 15/20 #17171a] "Get your student ID card"
+          TEXT 62,980 311x18 [Inter Medium 13/18 #6b6b73] "Coventry Uni Library, ground floor"
+      FRAM 20,1006 353x58 'Frame'
+        FRAM 20,1014 28x28 'Frame'
+          FRAM 20,1014 28x28 bg=#ffffff bd=#d6d6dc/2 r=999 'Frame'
+        FRAM 62,1014 311x42 'Frame'
+          TEXT 62,1016 311x20 [Inter Semi Bold 15/20 #17171a] "Register with a GP"
+          TEXT 62,1038 311x18 [Inter Medium 13/18 #6b6b73] "University Health Centre"
+  FRAM 20,1088 353x268 'Stage/First month'
+    FRAM 20,1088 353x32 'Frame'
+      TEXT 20,1088 269x24 [Inter Semi Bold 18/24 #17171a] "First month"
+      INST 297,1089 76x22 bg=#f1f1f4 r=999 'Status / Badge'
+        TEXT 305,1092 60x16 [Inter Semi Bold 12/16 #6b6b73] "Upcoming"
+    FRAM 20,1124 353x232 'Items'
+      ROUN 33,1138 2x174 bg=#d6d6dc r=2 'Rectangle'
+      FRAM 20,1124 353x58 'Frame'
+        FRAM 20,1132 28x28 'Frame'
+          FRAM 20,1132 28x28 bg=#ffffff bd=#d6d6dc/2 r=999 'Frame'
+        FRAM 62,1132 311x42 'Frame'
+          TEXT 62,1134 311x20 [Inter Semi Bold 15/20 #17171a] "Find part-time work"
+          TEXT 62,1156 311x18 [Inter Medium 13/18 #6b6b73] "Match jobs to your timetable"
+      FRAM 20,1182 353x58 'Frame'
+        FRAM 20,1190 28x28 'Frame'
+          FRAM 20,1190 28x28 bg=#ffffff bd=#d6d6dc/2 r=999 'Frame'
+        FRAM 62,1190 311x42 'Frame'
+          TEXT 62,1192 311x20 [Inter Semi Bold 15/20 #17171a] "Join societies"
+          TEXT 62,1214 311x18 [Inter Medium 13/18 #6b6b73] "Freshers Fair · 24 Sep"
+      FRAM 20,1240 353x58 'Frame'
+        FRAM 20,1248 28x28 'Frame'
+          FRAM 20,1248 28x28 bg=#ffffff bd=#d6d6dc/2 r=999 'Frame'
+        FRAM 62,1248 311x42 'Frame'
+          TEXT 62,1250 311x20 [Inter Semi Bold 15/20 #17171a] "Set up recurring payments"
+          TEXT 62,1272 311x18 [Inter Medium 13/18 #6b6b73] "Rent & bills"
+      FRAM 20,1298 353x58 'Frame'
+        FRAM 20,1306 28x28 'Frame'
+          FRAM 20,1306 28x28 bg=#ffffff bd=#d6d6dc/2 r=999 'Frame'
+        FRAM 62,1306 311x42 'Frame'
+          TEXT 62,1308 311x20 [Inter Semi Bold 15/20 #17171a] "Explore the city"
+          TEXT 62,1330 311x18 [Inter Medium 13/18 #6b6b73] "War Memorial Park, city centre"
+ROUN 0,754 393x98 bg=#ffffff 'Rectangle'
+INST 0,754 393x64 bg=#ffffff 'Navigation / Bottom'
+  FRAM 0,754 79x64 'Tab/Home'
+    INST 27,771 24x24 'Icon/home'
+      VECT 30,773 18x20 bd=#6b6b73/2 'Vector'
+      VECT 36,783 6x10 bd=#6b6b73/2 'Vector'
+    TEXT 23,799 32x14 [Inter Medium 11/14 #6b6b73] "Home"
+  FRAM 79,754 79x64 'Tab/Journey'
+    INST 106,771 24x24 'Icon/route'
+      VECT 109,787 6x6 bd=#808080/2 'Vector'
+      VECT 109,776 18x14 bd=#808080/2 'Vector'
+      VECT 121,773 6x6 bd=#808080/2 'Vector'
+    TEXT 96,799 43x14 [Inter Medium 11/14 #3730a3] "Journey"
+  FRAM 157,754 79x64 'Tab/Explore'
+    INST 184,771 24x24 'Icon/compass'
+      VECT 192,779 8x8 bd=#6b6b73/2 'Vector'
+      VECT 186,773 20x20 bd=#6b6b73/2 'Vector'
+    TEXT 176,799 40x14 [Inter Medium 11/14 #6b6b73] "Explore"
+  FRAM 236,754 79x64 'Tab/Community'
+    INST 263,771 24x24 'Icon/users'
+      VECT 265,786 14x6 bd=#6b6b73/2 'Vector'
+      VECT 268,774 8x8 bd=#6b6b73/2 'Vector'
+      VECT 282,786 3x6 bd=#6b6b73/2 'Vector'
+      VECT 279,774 3x8 bd=#6b6b73/2 'Vector'
+    TEXT 245,799 61x14 [Inter Medium 11/14 #6b6b73] "Community"
+  FRAM 314,754 79x64 'Tab/Profile'
+    INST 342,771 24x24 'Icon/user'
+      VECT 347,786 14x6 bd=#6b6b73/2 'Vector'
+      VECT 350,774 8x8 bd=#6b6b73/2 'Vector'
+    TEXT 337,799 34x14 [Inter Medium 11/14 #6b6b73] "Profile"
+  ROUN 0,754 393x1 bg=#e7e7eb 'Rectangle'
+INST 0,818 393x34 'Chrome/Home Indicator'
+  ROUN 127,839 139x5 bg=#17171a r=3 'Rectangle'

@@ -1,0 +1,78 @@
+INST 0,0 393x54 'Chrome/Status Bar'
+  TEXT 30,17 54x20 [Inter Semi Bold 16 #17171a] "9:41"
+  FRAM 134,11 125x37 bg=#000000 r=20 'Dynamic Island'
+  FRAM 302,21 74x13 'Indicators'
+    FRAM 302,22 18x11 'signal'
+      ROUN 302,29 3x4 bg=#17171a r=1 'Rectangle'
+      ROUN 307,27 3x6 bg=#17171a r=1 'Rectangle'
+      ROUN 312,25 3x8 bg=#17171a r=1 'Rectangle'
+      ROUN 317,23 3x10 bg=#17171a r=1 'Rectangle'
+    FRAM 327,22 17x12 'wifi'
+      VECT 328,23 15x12 bg=#17171a 'Vector'
+    FRAM 351,21 25x13 'battery'
+      ROUN 351,21 23x13 bd=#17171a@0.35/1 r=4 'Rectangle'
+      ROUN 353,23 19x9 bg=#17171a r=2 'Rectangle'
+      ROUN 374,26 2x4 bg=#17171a@0.35 r=1 'Rectangle'
+INST 0,54 393x56 bg=#ffffff 'Navigation / Header'
+  INST 8,60 44x44 r=12 'Control / Icon Button'
+    INST 18,70 24x24 'Icon/chevron-left'
+      VECT 27,76 6x12 bd=#808080/2 'Vector'
+  TEXT 0,70 393x24 [Inter Semi Bold 18/24 #17171a] "Bus · 18 min"
+  INST 397,60 44x44 r=12 'Control / Icon Button'
+    INST 407,70 24x24 'Icon/star'
+      VECT 411,72 17x17 bd=#808080/2 'Vector'
+FRAM 0,110 393x608 'Frame'
+  FRAM 20,118 353x124 bg=#3730a3 r=18 'Frame'
+    TEXT 40,138 56x18 [Inter Semi Bold 13/18 #ffffff] "Next bus"
+    TEXT 40,162 224x34 [Inter Bold 28/34 #ffffff] "Departs in 6 min"
+    TEXT 40,202 315x20 [Inter Medium 14/20 #ffffff] "09:12 Priory Hall  →  09:30 Coventry University"
+  TEXT 20,260 353x24 [Inter Semi Bold 18/24 #17171a] "Your journey"
+  FRAM 20,302 353x180 'Steps'
+    ROUN 39,330 2x124 bg=#d6d6dc r=2 'Rectangle'
+    FRAM 20,302 353x56 'Frame'
+      FRAM 20,310 40x40 bg=#eef2ff r=999 'Frame'
+        INST 30,320 20x20 'Icon/walk'
+          VECT 39,323 2x2 bd=#808080/2 'Vector'
+          VECT 38,332 5x5 bd=#808080/2 'Vector'
+          VECT 35,327 10x2 bd=#808080/2 'Vector'
+          VECT 40,328 0x3 bd=#808080/2 'Vector'
+      FRAM 74,310 299x40 'Frame'
+        TEXT 74,310 155x20 [Inter Semi Bold 15/20 #17171a] "Walk to Pool Meadow"
+        TEXT 74,332 86x18 [Inter Medium 13/18 #6b6b73] "4 min · 300 m"
+    FRAM 20,364 353x56 'Frame'
+      FRAM 20,372 40x40 bg=#3730a3 r=999 'Frame'
+        INST 30,382 20x20 'Icon/bus'
+          VECT 37,387 0x5 bd=#808080/2 'Vector'
+          VECT 42,387 0x5 bd=#808080/2 'Vector'
+          VECT 32,392 16x0 bd=#808080/2 'Vector'
+          VECT 32,387 16x10 bd=#808080/2 'Vector'
+          VECT 34,395 3x3 bd=#808080/2 'Vector'
+          VECT 38,397 4x0 bd=#808080/2 'Vector'
+          VECT 42,395 3x3 bd=#808080/2 'Vector'
+      FRAM 74,372 299x40 'Frame'
+        TEXT 74,372 75x20 [Inter Semi Bold 15/20 #17171a] "Bus 11 / 12"
+        TEXT 74,394 187x18 [Inter Medium 13/18 #6b6b73] "10 min · 6 stops · every 12 min"
+    FRAM 20,426 353x56 'Frame'
+      FRAM 20,434 40x40 bg=#eef2ff r=999 'Frame'
+        INST 30,444 20x20 'Icon/walk'
+          VECT 39,447 2x2 bd=#808080/2 'Vector'
+          VECT 38,456 5x5 bd=#808080/2 'Vector'
+          VECT 35,451 10x2 bd=#808080/2 'Vector'
+          VECT 40,452 0x3 bd=#808080/2 'Vector'
+      FRAM 74,434 299x40 'Frame'
+        TEXT 74,434 207x20 [Inter Semi Bold 15/20 #17171a] "Walk to Engineering building"
+        TEXT 74,456 85x18 [Inter Medium 13/18 #6b6b73] "3 min · 220 m"
+  FRAM 20,500 353x98 bg=#ffffff bd=#e7e7eb/1 r=16 'Frame'
+    TEXT 36,516 223x20 [Inter Semi Bold 15/20 #17171a] "Live departures · Pool Meadow"
+    FRAM 36,548 321x34 'Frame'
+      FRAM 36,548 75x34 bg=#eef2ff r=999 'Frame'
+        ELLI 48,562 7x7 bg=#16a34a 'Ellipse'
+        TEXT 61,556 38x18 [Inter Semi Bold 14/18 #3730a3] "6 min"
+      FRAM 119,548 68x34 bg=#f1f1f4 r=999 'Frame'
+        TEXT 131,556 44x18 [Inter Semi Bold 14/18 #6b6b73] "18 min"
+      FRAM 195,548 71x34 bg=#f1f1f4 r=999 'Frame'
+        TEXT 207,556 47x18 [Inter Semi Bold 14/18 #6b6b73] "30 min"
+INST 20,772 353x52 bg=#3730a3 r=12 'Button'
+  TEXT 146,788 101x20 [Inter Semi Bold 16/20 #ffffff] "Start journey"
+INST 0,818 393x34 'Chrome/Home Indicator'
+  ROUN 127,839 139x5 bg=#17171a r=3 'Rectangle'

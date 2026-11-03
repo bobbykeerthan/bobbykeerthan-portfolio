@@ -1,0 +1,77 @@
+INST 0,0 393x54 'Chrome/Status Bar'
+  TEXT 30,17 54x20 [Inter Semi Bold 16 #17171a] "9:41"
+  FRAM 134,11 125x37 bg=#000000 r=20 'Dynamic Island'
+  FRAM 302,21 74x13 'Indicators'
+    FRAM 302,22 18x11 'signal'
+      ROUN 302,29 3x4 bg=#17171a r=1 'Rectangle'
+      ROUN 307,27 3x6 bg=#17171a r=1 'Rectangle'
+      ROUN 312,25 3x8 bg=#17171a r=1 'Rectangle'
+      ROUN 317,23 3x10 bg=#17171a r=1 'Rectangle'
+    FRAM 327,22 17x12 'wifi'
+      VECT 328,23 15x12 bg=#17171a 'Vector'
+    FRAM 351,21 25x13 'battery'
+      ROUN 351,21 23x13 bd=#17171a@0.35/1 r=4 'Rectangle'
+      ROUN 353,23 19x9 bg=#17171a r=2 'Rectangle'
+      ROUN 374,26 2x4 bg=#17171a@0.35 r=1 'Rectangle'
+INST 0,54 393x56 bg=#ffffff 'Navigation / Header'
+  INST 8,60 44x44 r=12 'Control / Icon Button'
+    INST 18,70 24x24 'Icon/chevron-left'
+      VECT 27,76 6x12 bd=#808080/2 'Vector'
+  TEXT 0,70 393x24 [Inter Semi Bold 18/24 #17171a] ""
+  INST 397,60 44x44 r=12 'Control / Icon Button'
+    INST 407,70 24x24 'Icon/heart'
+      VECT 409,73 20x18 bd=#808080/2 'Vector'
+FRAM 0,110 393x752 'Frame'
+  FRAM 20,114 353x186 'Frame'
+    FRAM 164,114 64x64 bg=#eef2ff r=16 'Frame'
+      INST 180,130 32x32 'Icon/coffee'
+        VECT 194,133 0x3 bd=#808080/2 'Vector'
+        VECT 199,133 0x3 bd=#808080/2 'Vector'
+        VECT 184,141 25x17 bd=#808080/2 'Vector'
+        VECT 188,133 0x3 bd=#808080/2 'Vector'
+    TEXT 152,190 90x32 [Inter Bold 26/32 #17171a] "Barista"
+    TEXT 67,234 259x20 [Inter Medium 15/20 #6b6b73] "Costa Coffee · Coventry City Centre"
+    FRAM 56,266 280x34 'Frame'
+      FRAM 56,266 91x34 bg=#f1f1f4 r=999 'Frame'
+        TEXT 68,274 67x18 [Inter Semi Bold 14/18 #17171a] "£12.60/hr"
+      FRAM 156,266 107x34 bg=#f1f1f4 r=999 'Frame'
+        TEXT 168,274 83x18 [Inter Semi Bold 14/18 #17171a] "15 hrs/week"
+      FRAM 270,266 66x34 bg=#f1f1f4 r=999 'Frame'
+        TEXT 282,274 42x18 [Inter Semi Bold 14/18 #17171a] "2.4 mi"
+  FRAM 20,318 353x284 bg=#f0fdf4 r=18 'Frame'
+    FRAM 38,336 317x26 'Frame'
+      INST 38,338 22x22 'Icon/check-circle'
+        VECT 40,340 18x18 bd=#808080/2 'Vector'
+        VECT 46,342 12x9 bd=#808080/2 'Vector'
+      TEXT 68,337 231x24 [Inter Bold 17/24 #15803d] "Great schedule match"
+      TEXT 307,336 48x26 [Inter Bold 22/26 #15803d] "92%"
+    TEXT 38,376 317x40 [Inter Medium 14/20 #166534] "This role needs 3 evening shifts — all inside your availability."
+    FRAM 38,430 317x42 bg=#ffffff r=12 'Frame'
+      FRAM 50,440 22x22 bg=#16a34a r=999 'Frame'
+        INST 54,444 13x13 'Icon/check'
+          VECT 57,448 9x6 bd=#808080/2 'Vector'
+      TEXT 82,441 168x20 [Inter Semi Bold 15/20 #17171a] "Monday"
+      TEXT 260,442 83x18 [Inter Medium 14/18 #6b6b73] "17:00–22:00"
+    FRAM 38,486 317x42 bg=#ffffff r=12 'Frame'
+      FRAM 50,496 22x22 bg=#16a34a r=999 'Frame'
+        INST 54,500 13x13 'Icon/check'
+          VECT 57,504 9x6 bd=#808080/2 'Vector'
+      TEXT 82,497 168x20 [Inter Semi Bold 15/20 #17171a] "Wednesday"
+      TEXT 260,498 83x18 [Inter Medium 14/18 #6b6b73] "17:00–22:00"
+    FRAM 38,542 317x42 bg=#ffffff r=12 'Frame'
+      FRAM 50,552 22x22 bg=#16a34a r=999 'Frame'
+        INST 54,556 13x13 'Icon/check'
+          VECT 57,560 9x6 bd=#808080/2 'Vector'
+      TEXT 82,553 168x20 [Inter Semi Bold 15/20 #17171a] "Saturday"
+      TEXT 260,554 83x18 [Inter Medium 14/18 #6b6b73] "10:00–16:00"
+  FRAM 20,620 353x122 'Frame'
+    TEXT 20,620 117x24 [Inter Semi Bold 17/24 #17171a] "About the role"
+    TEXT 20,650 353x92 [Inter Regular 15/23 #6b6b73] "Join a friendly team making great coffee. No experience needed — full training provided. Perfect for students: evening and weekend shifts that fit around your timetable."
+FRAM 0,754 393x98 bg=#ffffff bd=#e7e7eb/1 'Frame'
+INST 20,766 52x52 bg=#f1f1f4 r=12 'Control / Icon Button'
+  INST 34,780 24x24 'Icon/heart'
+    VECT 36,783 20x18 bd=#808080/2 'Vector'
+INST 84,766 289x52 bg=#3730a3 r=12 'Button'
+  TEXT 188,782 82x20 [Inter Semi Bold 16/20 #ffffff] "Apply now"
+INST 0,818 393x34 'Chrome/Home Indicator'
+  ROUN 127,839 139x5 bg=#17171a r=3 'Rectangle'

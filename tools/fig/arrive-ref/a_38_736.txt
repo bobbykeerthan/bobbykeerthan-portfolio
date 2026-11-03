@@ -1,0 +1,7 @@
+FRAM 132,332 130x146 'Frame'
+  FRAM 152,332 88x88 bg=#ffffff r=24.64 'Frame'
+    INST 174,354 44x44 'Icon/map-pin'
+      VECT 182,358 29x37 bd=#808080/2 'Vector'
+      VECT 191,367 11x11 bd=#808080/2 'Vector'
+  TEXT 132,438 130x40 [Inter Bold 34/40 #ffffff] "ARRIVE"
+TEXT 81,498 231x22 [Inter Medium 16/22 #ffffff] "Your student life, in one place."

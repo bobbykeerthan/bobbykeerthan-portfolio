@@ -1,0 +1,120 @@
+FRAM 0,0 390x38 'Frame'
+  TEXT 24,14 30x18 [Inter Semi Bold 14 #38392b] "9:41"
+  FRAM 302,16 64x15 'Frame'
+    FRAM 302,16 15x15 'Frame'
+      VECT 303,17 12x6 bd=#38392b/1.1875 'Vector'
+    FRAM 323,16 15x15 'Frame'
+      VECT 326,19 10x6 bd=#38392b/1.1875 'Vector'
+    ROUN 344,18 22x11 bg=#38392b r=3 'Rectangle'
+FRAM 0,38 390x52 'Frame'
+  TEXT 20,50 316x29 [Inter Bold 22 #38392b] "Dog Records"
+  FRAM 336,44 40x40 r=100 'Frame'
+    FRAM 344,52 23x23 'Frame'
+      VECT 348,56 15x15 bd=#38392b/1.82083 'Vector'
+FRAM 0,90 390x670 'Frame'
+  FRAM 20,96 350x33 'Frame'
+    FRAM 20,96 47x33 bg=#4b612d bd=#4b612d/1.2 r=100 'Filter'
+      TEXT 35,104 17x17 [Inter Semi Bold 13 #ffffff] "All"
+    FRAM 75,96 109x33 bg=#ffffff bd=#d7d9d0/1.2 r=100 'Filter'
+      TEXT 90,104 79x17 [Inter Medium 13 #6f7263] "In Treatment"
+    FRAM 192,96 87x33 bg=#ffffff bd=#d7d9d0/1.2 r=100 'Filter'
+      TEXT 207,104 57x17 [Inter Medium 13 #6f7263] "Released"
+  FRAM 20,141 350x72 bg=#ffffff bd=#d7d9d0/1 r=16 'Record · Dog #2145'
+    FRAM 34,154 46x46 bg=GRADIE bd=#d7d9d0/1.4 r=23 'Frame'
+      FRAM 42,163 30x30 'Frame'
+        VECT 48,167 18x18 bd=#5c4a30/2.125 'Vector'
+    FRAM 93,156 231x43 'Frame'
+      FRAM 93,156 172x22 'Frame'
+        TEXT 93,156 85x21 [Inter Bold 16 #38392b] "Dog #2145"
+        FRAM 186,156 79x22 bg=#e5ebda r=100 'Frame'
+          ELLI 195,164 6x6 bg=#4b612d 'Ellipse'
+          TEXT 206,160 49x14 [Inter Semi Bold 11 #4b612d] "Released"
+      FRAM 93,182 129x16 'Frame'
+        FRAM 93,184 14x14 'Frame'
+          VECT 96,186 8x10 bd=#6f7263/1.10833 'Vector'
+        TEXT 112,182 110x16 [Inter Medium 12 #6f7263] "Sector 17  ·  14 Aug"
+    FRAM 337,168 19x19 'Frame'
+      VECT 344,171 6x11 bd=#6f7263/1.50417 'Vector'
+  FRAM 20,225 350x72 bg=#ffffff bd=#d7d9d0/1 r=16 'Record · Dog #2146'
+    FRAM 34,238 46x46 bg=GRADIE bd=#d7d9d0/1.4 r=23 'Frame'
+      FRAM 42,247 30x30 'Frame'
+        VECT 48,251 18x18 bd=#5c4a30/2.125 'Vector'
+    FRAM 93,240 231x43 'Frame'
+      FRAM 93,240 173x22 'Frame'
+        TEXT 93,240 85x21 [Inter Bold 16 #38392b] "Dog #2146"
+        FRAM 186,240 80x22 bg=#f7f0db r=100 'Frame'
+          ELLI 195,248 6x6 bg=#b98a3c 'Ellipse'
+          TEXT 206,244 50x14 [Inter Semi Bold 11 #b98a3c] "In Transit"
+      FRAM 93,266 131x16 'Frame'
+        FRAM 93,268 14x14 'Frame'
+          VECT 96,270 8x10 bd=#6f7263/1.10833 'Vector'
+        TEXT 112,266 112x16 [Inter Medium 12 #6f7263] "Sector 22  ·  14 Aug"
+    FRAM 337,252 19x19 'Frame'
+      VECT 344,255 6x11 bd=#6f7263/1.50417 'Vector'
+  FRAM 20,309 350x72 bg=#ffffff bd=#d7d9d0/1 r=16 'Record · Dog #2144'
+    FRAM 34,322 46x46 bg=GRADIE bd=#d7d9d0/1.4 r=23 'Frame'
+      FRAM 42,331 30x30 'Frame'
+        VECT 48,335 18x18 bd=#5c4a30/2.125 'Vector'
+    FRAM 93,324 231x43 'Frame'
+      FRAM 93,324 173x22 'Frame'
+        TEXT 93,324 86x21 [Inter Bold 16 #38392b] "Dog #2144"
+        FRAM 187,324 79x22 bg=#e5ebda r=100 'Frame'
+          ELLI 196,332 6x6 bg=#4b612d 'Ellipse'
+          TEXT 207,328 49x14 [Inter Semi Bold 11 #4b612d] "Released"
+      FRAM 93,350 124x16 'Frame'
+        FRAM 93,352 14x14 'Frame'
+          VECT 96,354 8x10 bd=#6f7263/1.10833 'Vector'
+        TEXT 112,350 105x16 [Inter Medium 12 #6f7263] "Sector 9  ·  13 Aug"
+    FRAM 337,336 19x19 'Frame'
+      VECT 344,339 6x11 bd=#6f7263/1.50417 'Vector'
+  FRAM 20,393 350x72 bg=#ffffff bd=#d7d9d0/1 r=16 'Record · Dog #2143'
+    FRAM 34,406 46x46 bg=GRADIE bd=#d7d9d0/1.4 r=23 'Frame'
+      FRAM 42,415 30x30 'Frame'
+        VECT 48,419 18x18 bd=#5c4a30/2.125 'Vector'
+    FRAM 93,408 231x43 'Frame'
+      FRAM 93,408 191x22 'Frame'
+        TEXT 93,408 85x21 [Inter Bold 16 #38392b] "Dog #2143"
+        FRAM 186,408 98x22 bg=#f7f0db r=100 'Frame'
+          ELLI 195,416 6x6 bg=#b98a3c 'Ellipse'
+          TEXT 206,412 68x14 [Inter Semi Bold 11 #b98a3c] "In Treatment"
+      FRAM 93,434 131x16 'Frame'
+        FRAM 93,436 14x14 'Frame'
+          VECT 96,438 8x10 bd=#6f7263/1.10833 'Vector'
+        TEXT 112,434 112x16 [Inter Medium 12 #6f7263] "Sector 35  ·  13 Aug"
+    FRAM 337,420 19x19 'Frame'
+      VECT 344,423 6x11 bd=#6f7263/1.50417 'Vector'
+  FRAM 20,477 350x72 bg=#ffffff bd=#d7d9d0/1 r=16 'Record · Dog #2142'
+    FRAM 34,490 46x46 bg=GRADIE bd=#d7d9d0/1.4 r=23 'Frame'
+      FRAM 42,499 30x30 'Frame'
+        VECT 48,503 18x18 bd=#5c4a30/2.125 'Vector'
+    FRAM 93,492 231x43 'Frame'
+      FRAM 93,492 172x22 'Frame'
+        TEXT 93,492 85x21 [Inter Bold 16 #38392b] "Dog #2142"
+        FRAM 186,492 79x22 bg=#e5ebda r=100 'Frame'
+          ELLI 195,500 6x6 bg=#4b612d 'Ellipse'
+          TEXT 206,496 49x14 [Inter Semi Bold 11 #4b612d] "Released"
+      FRAM 93,518 128x16 'Frame'
+        FRAM 93,520 14x14 'Frame'
+          VECT 96,522 8x10 bd=#6f7263/1.10833 'Vector'
+        TEXT 112,518 109x16 [Inter Medium 12 #6f7263] "Sector 17  ·  12 Aug"
+    FRAM 337,504 19x19 'Frame'
+      VECT 344,507 6x11 bd=#6f7263/1.50417 'Vector'
+INST 0,760 390x84 bg=#ffffff bd=#d7d9d0/1 'Bottom Nav'
+  FRAM 0,760 390x74 bg=#ffffff 'items'
+    FRAM 24,772 31x44 bg=#ffffff 'Home'
+      FRAM 28,774 24x24 'Frame'
+        VECT 31,778 17x16 bd=#8a8c7e/1.9 'Vector'
+      TEXT 24,803 31x13 [Inter Medium 11 #8a8c7e] "Home"
+    FRAM 125,772 24x44 bg=#ffffff 'Map'
+      FRAM 125,774 24x24 'Frame'
+        VECT 130,778 14x18 bd=#8a8c7e/1.9 'Vector'
+      TEXT 125,803 23x13 [Inter Medium 11 #8a8c7e] "Map"
+    FRAM 218,772 44x54 bg=#ffffff 'Records'
+      FRAM 228,774 24x24 'Frame'
+        VECT 235,778 11x17 bd=#4b612d/1.9 'Vector'
+      TEXT 218,803 44x13 [Inter Semi Bold 11 #4b612d] "Records"
+      ELLI 238,821 5x5 bg=#4b612d 'Ellipse'
+    FRAM 332,772 34x44 bg=#ffffff 'Profile'
+      FRAM 337,774 24x24 'Frame'
+        VECT 342,779 13x15 bd=#8a8c7e/1.9 'Vector'
+      TEXT 332,803 34x13 [Inter Medium 11 #8a8c7e] "Profile"

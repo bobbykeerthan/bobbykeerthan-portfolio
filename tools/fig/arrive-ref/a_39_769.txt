@@ -1,0 +1,62 @@
+INST 0,0 393x54 'Chrome/Status Bar'
+  TEXT 30,17 54x20 [Inter Semi Bold 16 #17171a] "9:41"
+  FRAM 134,11 125x37 bg=#000000 r=20 'Dynamic Island'
+  FRAM 302,21 74x13 'Indicators'
+    FRAM 302,22 18x11 'signal'
+      ROUN 302,29 3x4 bg=#17171a r=1 'Rectangle'
+      ROUN 307,27 3x6 bg=#17171a r=1 'Rectangle'
+      ROUN 312,25 3x8 bg=#17171a r=1 'Rectangle'
+      ROUN 317,23 3x10 bg=#17171a r=1 'Rectangle'
+    FRAM 327,22 17x12 'wifi'
+      VECT 328,23 15x12 bg=#17171a 'Vector'
+    FRAM 351,21 25x13 'battery'
+      ROUN 351,21 23x13 bd=#17171a@0.35/1 r=4 'Rectangle'
+      ROUN 353,23 19x9 bg=#17171a r=2 'Rectangle'
+      ROUN 374,26 2x4 bg=#17171a@0.35 r=1 'Rectangle'
+FRAM 0,54 393x720 'Frame'
+  FRAM 24,62 345x44 'Frame'
+    INST 24,62 44x44 bg=#f1f1f4 r=12 'Control / Icon Button'
+      INST 34,72 24x24 'Icon/chevron-left'
+        VECT 43,78 6x12 bd=#808080/2 'Vector'
+    FRAM 80,80 245x8 'Frame'
+      FRAM 170,80 8x8 bg=#f1f1f4 r=999 'Frame'
+      FRAM 184,80 24x8 bg=#3730a3 r=999 'Frame'
+      FRAM 214,80 8x8 bg=#f1f1f4 r=999 'Frame'
+      FRAM 228,80 8x8 bg=#f1f1f4 r=999 'Frame'
+    TEXT 337,74 32x20 [Inter Semi Bold 15/20 #6b6b73] "Skip"
+  FRAM 24,130 345x88 'Frame'
+    TEXT 24,130 345x34 [Inter Bold 28/34 #17171a] "What are you into?"
+    TEXT 24,170 345x48 [Inter Regular 16/24 #6b6b73] "Pick a few and we'll tailor events, groups and places near you."
+  FRAM 24,242 345x250 'Frame'
+    FRAM 24,242 82x42 bg=#eef2ff bd=#3730a3/1.5 r=999 'Frame'
+      TEXT 40,253 50x20 [Inter Medium 15/20 #3730a3] "Design"
+    FRAM 116,242 125x42 bg=#eef2ff bd=#3730a3/1.5 r=999 'Frame'
+      TEXT 132,253 93x20 [Inter Medium 15/20 #3730a3] "Photography"
+    FRAM 251,242 81x42 bg=#eef2ff bd=#3730a3/1.5 r=999 'Frame'
+      TEXT 267,253 49x20 [Inter Medium 15/20 #3730a3] "Coffee"
+    FRAM 24,294 90x42 bg=#ffffff bd=#e7e7eb/1 r=999 'Frame'
+      TEXT 40,305 58x20 [Inter Medium 15/20 #17171a] "Football"
+    FRAM 124,294 87x42 bg=#ffffff bd=#e7e7eb/1 r=999 'Frame'
+      TEXT 140,305 55x20 [Inter Medium 15/20 #17171a] "Gaming"
+    FRAM 221,294 75x42 bg=#eef2ff bd=#3730a3/1.5 r=999 'Frame'
+      TEXT 237,305 43x20 [Inter Medium 15/20 #3730a3] "Music"
+    FRAM 24,346 144x42 bg=#ffffff bd=#e7e7eb/1 r=999 'Frame'
+      TEXT 40,357 112x20 [Inter Medium 15/20 #17171a] "Anime & Manga"
+    FRAM 178,346 92x42 bg=#ffffff bd=#e7e7eb/1 r=999 'Frame'
+      TEXT 194,357 60x20 [Inter Medium 15/20 #17171a] "Cooking"
+    FRAM 280,346 84x42 bg=#eef2ff bd=#3730a3/1.5 r=999 'Frame'
+      TEXT 296,357 52x20 [Inter Medium 15/20 #3730a3] "Fitness"
+    FRAM 24,398 84x42 bg=#ffffff bd=#e7e7eb/1 r=999 'Frame'
+      TEXT 40,409 52x20 [Inter Medium 15/20 #17171a] "Coding"
+    FRAM 118,398 62x42 bg=#ffffff bd=#e7e7eb/1 r=999 'Frame'
+      TEXT 134,409 30x20 [Inter Medium 15/20 #17171a] "Film"
+    FRAM 190,398 76x42 bg=#eef2ff bd=#3730a3/1.5 r=999 'Frame'
+      TEXT 206,409 44x20 [Inter Medium 15/20 #3730a3] "Travel"
+    FRAM 24,450 124x42 bg=#ffffff bd=#e7e7eb/1 r=999 'Frame'
+      TEXT 40,461 92x20 [Inter Medium 15/20 #17171a] "Volunteering"
+    FRAM 158,450 55x42 bg=#ffffff bd=#e7e7eb/1 r=999 'Frame'
+      TEXT 174,461 23x20 [Inter Medium 15/20 #17171a] "Art"
+INST 24,770 345x52 bg=#3730a3 r=12 'Button'
+  TEXT 161,786 71x20 [Inter Semi Bold 16/20 #ffffff] "Continue"
+INST 0,818 393x34 'Chrome/Home Indicator'
+  ROUN 127,839 139x5 bg=#17171a r=3 'Rectangle'

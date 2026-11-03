@@ -1,0 +1,153 @@
+{
+ "fonts": {
+  "ui-ux": [
+   [
+    "Anton",
+    "Regular"
+   ],
+   [
+    "Archivo",
+    "Medium"
+   ],
+   [
+    "Archivo",
+    "Regular"
+   ],
+   [
+    "Archivo",
+    "SemiBold"
+   ],
+   [
+    "Bebas Neue",
+    "Regular"
+   ],
+   [
+    "Cormorant Garamond",
+    "Italic"
+   ],
+   [
+    "Cormorant Garamond",
+    "Medium"
+   ],
+   [
+    "Cormorant Garamond",
+    "SemiBold"
+   ],
+   [
+    "Fraunces",
+    "Light"
+   ],
+   [
+    "Fraunces",
+    "Regular"
+   ],
+   [
+    "IBM Plex Mono",
+    "Regular"
+   ],
+   [
+    "Inter",
+    "Bold"
+   ],
+   [
+    "Inter",
+    "Medium"
+   ],
+   [
+    "Inter",
+    "Regular"
+   ],
+   [
+    "Inter",
+    "Semi Bold"
+   ]
+  ],
+  "graphic": [
+   [
+    "Anton",
+    "Regular"
+   ],
+   [
+    "Archivo",
+    "Black"
+   ],
+   [
+    "Archivo",
+    "Bold"
+   ],
+   [
+    "Archivo",
+    "ExtraBold"
+   ],
+   [
+    "Archivo",
+    "Medium"
+   ],
+   [
+    "Archivo",
+    "Regular"
+   ],
+   [
+    "Archivo",
+    "SemiBold"
+   ],
+   [
+    "Archivo Black",
+    "Regular"
+   ],
+   [
+    "Dancing Script",
+    "Medium"
+   ],
+   [
+    "Fraunces",
+    "Light"
+   ],
+   [
+    "Fraunces",
+    "Light Italic"
+   ],
+   [
+    "Fraunces",
+    "Regular"
+   ],
+   [
+    "Inter",
+    "Black"
+   ],
+   [
+    "Inter",
+    "Regular"
+   ],
+   [
+    "Inter",
+    "Semi Bold"
+   ],
+   [
+    "Playfair Display",
+    "Black"
+   ],
+   [
+    "Playfair Display",
+    "Bold"
+   ],
+   [
+    "Playfair Display",
+    "Bold Italic"
+   ],
+   [
+    "Playfair Display",
+    "Medium"
+   ],
+   [
+    "Playfair Display",
+    "Medium Italic"
+   ],
+   [
+    "Space Mono",
+    "Regular"
+   ]
+  ]
+ },
+ "alt_missing": []
+}

@@ -1,0 +1,76 @@
+FRAM 0,0 390x38 'Frame'
+  TEXT 24,14 30x18 [Inter Semi Bold 14 #38392b] "9:41"
+  FRAM 302,16 64x15 'Frame'
+    FRAM 302,16 15x15 'Frame'
+      VECT 303,17 12x6 bd=#38392b/1.1875 'Vector'
+    FRAM 323,16 15x15 'Frame'
+      VECT 326,19 10x6 bd=#38392b/1.1875 'Vector'
+    ROUN 344,18 22x11 bg=#38392b r=3 'Rectangle'
+FRAM 0,38 390x56 'Frame'
+  FRAM 12,44 40x40 r=100 'Back'
+    FRAM 20,52 23x23 'Frame'
+      VECT 28,57 7x13 bd=#38392b/1.82083 'Vector'
+  TEXT 52,52 286x24 [Inter Semi Bold 18 #38392b] "Capture Dog"
+  FRAM 338,44 40x40 r=100 'Frame'
+    FRAM 346,52 23x23 'Frame'
+      VECT 352,56 12x15 bd=#38392b/1.82083 'Vector'
+FRAM 0,94 390x750 'Frame'
+  FRAM 20,104 350x86 'Frame'
+    TEXT 20,104 70x17 [Inter Semi Bold 13 #6f7263] "LOCATION"
+    FRAM 20,132 350x58 bg=#ffffff bd=#d7d9d0/1.4 r=14 'Frame'
+      FRAM 34,151 20x20 'Frame'
+        VECT 38,154 12x15 bd=#4b612d/1.58333 'Vector'
+      TEXT 64,151 254x20 [Inter Medium 15 #38392b] "Sector 17, Chandigarh"
+      FRAM 328,146 30x30 r=100 'Frame'
+        FRAM 332,150 23x23 'Frame'
+          VECT 334,152 17x17 bd=#4b612d/1.82083 'Vector'
+  FRAM 20,208 350x66 'Frame'
+    TEXT 20,208 27x17 [Inter Semi Bold 13 #6f7263] "SEX"
+    FRAM 20,236 350x38 'Frame'
+      FRAM 20,236 84x38 bg=#4b612d bd=#4b612d/1.4 r=100 'Chip/Selected'
+        FRAM 34,248 15x15 'Frame'
+          VECT 37,252 9x6 bd=#ffffff/1.1875 'Vector'
+        TEXT 55,246 33x18 [Inter Semi Bold 14 #ffffff] "Male"
+      FRAM 114,236 80x38 bg=#ffffff bd=#d7d9d0/1.4 r=100 'Chip'
+        TEXT 130,246 48x18 [Inter Medium 14 #38392b] "Female"
+      FRAM 204,236 95x38 bg=#ffffff bd=#d7d9d0/1.4 r=100 'Chip'
+        TEXT 220,246 63x18 [Inter Medium 14 #38392b] "Unknown"
+  FRAM 20,292 350x66 'Frame'
+    TEXT 20,292 104x17 [Inter Semi Bold 13 #6f7263] "SIZE (APPROX.)"
+    FRAM 20,320 350x38 'Frame'
+      FRAM 20,320 69x38 bg=#ffffff bd=#d7d9d0/1.4 r=100 'Chip'
+        TEXT 36,330 37x18 [Inter Medium 14 #38392b] "Small"
+      FRAM 99,320 106x38 bg=#4b612d bd=#4b612d/1.4 r=100 'Chip/Selected'
+        FRAM 113,332 15x15 'Frame'
+          VECT 116,336 9x6 bd=#ffffff/1.1875 'Vector'
+        TEXT 134,330 55x18 [Inter Semi Bold 14 #ffffff] "Medium"
+      FRAM 215,320 70x38 bg=#ffffff bd=#d7d9d0/1.4 r=100 'Chip'
+        TEXT 231,330 38x18 [Inter Medium 14 #38392b] "Large"
+  FRAM 20,376 350x114 'Frame'
+    TEXT 20,376 78x17 [Inter Semi Bold 13 #6f7263] "CONDITION"
+    FRAM 20,404 350x86 'Frame'
+      FRAM 20,404 100x38 bg=#4b612d bd=#4b612d/1.4 r=100 'Chip/Selected'
+        FRAM 34,416 15x15 'Frame'
+          VECT 37,420 9x6 bd=#ffffff/1.1875 'Vector'
+        TEXT 55,414 49x18 [Inter Semi Bold 14 #ffffff] "Normal"
+      FRAM 130,404 79x38 bg=#ffffff bd=#d7d9d0/1.4 r=100 'Chip'
+        TEXT 146,414 47x18 [Inter Medium 14 #38392b] "Injured"
+      FRAM 219,404 107x38 bg=#ffffff bd=#d7d9d0/1.4 r=100 'Chip'
+        TEXT 235,414 75x18 [Inter Medium 14 #38392b] "Aggressive"
+      FRAM 20,452 153x38 bg=#ffffff bd=#d7d9d0/1.4 r=100 'Chip'
+        TEXT 36,462 121x18 [Inter Medium 14 #38392b] "Suspected Rabies"
+  FRAM 20,508 350x124 'Frame'
+    TEXT 20,508 48x17 [Inter Semi Bold 13 #6f7263] "PHOTO"
+    FRAM 20,536 350x96 bg=#eaeae3 bd=#d7d9d0/1.4 r=14 'Take Photo'
+      FRAM 182,558 26x26 'Frame'
+        VECT 186,565 18x14 bd=#4b612d/2.05833 'Vector'
+      TEXT 157,592 76x18 [Inter Semi Bold 14 #4b612d] "Take Photo"
+  FRAM 20,650 350x76 'Frame'
+    TEXT 20,650 46x17 [Inter Semi Bold 13 #6f7263] "NOTES"
+    FRAM 20,678 350x48 bg=#ffffff bd=#d7d9d0/1.4 r=14 'Frame'
+      TEXT 34,692 322x20 [Inter Regular 15 #6f7263] "Add notes (optional)"
+  FRAM 20,744 100x8 'Frame'
+  FRAM 20,770 350x56 bg=#4b612d r=15 'CTA · Continue'
+    TEXT 140,788 83x20 [Inter Bold 15 #ffffff] "CONTINUE"
+    FRAM 230,788 20x20 'Frame'
+      VECT 238,792 6x12 bd=#ffffff/1.58333 'Vector'

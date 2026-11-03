@@ -1,0 +1,162 @@
+INST 0,0 393x54 'Chrome/Status Bar'
+  TEXT 30,17 54x20 [Inter Semi Bold 16 #17171a] "9:41"
+  FRAM 134,11 125x37 bg=#000000 r=20 'Dynamic Island'
+  FRAM 302,21 74x13 'Indicators'
+    FRAM 302,22 18x11 'signal'
+      ROUN 302,29 3x4 bg=#17171a r=1 'Rectangle'
+      ROUN 307,27 3x6 bg=#17171a r=1 'Rectangle'
+      ROUN 312,25 3x8 bg=#17171a r=1 'Rectangle'
+      ROUN 317,23 3x10 bg=#17171a r=1 'Rectangle'
+    FRAM 327,22 17x12 'wifi'
+      VECT 328,23 15x12 bg=#17171a 'Vector'
+    FRAM 351,21 25x13 'battery'
+      ROUN 351,21 23x13 bd=#17171a@0.35/1 r=4 'Rectangle'
+      ROUN 353,23 19x9 bg=#17171a r=2 'Rectangle'
+      ROUN 374,26 2x4 bg=#17171a@0.35 r=1 'Rectangle'
+FRAM 0,54 393x1000 'Content'
+  FRAM 20,62 353x60 'Frame'
+    TEXT 20,62 160x34 [Inter Bold 28/34 #17171a] "Community"
+    TEXT 20,100 353x22 [Inter Regular 15/22 #6b6b73] "Meet people and find your crowd."
+  INST 20,138 353x44 bg=#f1f1f4 r=12 'Control / Segmented'
+    FRAM 24,142 172x36 bg=#ffffff r=8 'Seg'
+      TEXT 87,151 47x18 [Inter Semi Bold 14/18 #17171a] "Events"
+    FRAM 196,142 172x36 r=8 'Seg'
+      TEXT 258,151 49x18 [Inter Medium 14/18 #6b6b73] "Groups"
+  INST 20,198 353x260 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Event'
+    FRAM 20,198 353x132 bg=GRADIE 'Cover'
+      INST 244,242 112x112 'Icon/music'
+        VECT 253,245 12x15 bd=#ffffff@0.16/2 'Vector'
+        VECT 247,257 6x6 bd=#ffffff@0.16/2 'Vector'
+        VECT 259,255 6x6 bd=#ffffff@0.16/2 'Vector'
+      FRAM 34,212 46x60 bg=#ffffff r=10 'Date'
+        TEXT 48,218 17x14 [Inter Bold 11/14 #6b6b73] "FRI"
+        TEXT 46,232 21x20 [Inter Bold 18/20 #17171a] "12"
+        TEXT 46,252 22x14 [Inter Bold 11/14 #6b6b73] "SEP"
+      FRAM 323,212 36x36 bg=#ffffff@0.92 r=999 'Save'
+        INST 331,220 20x20 'Icon/heart'
+          VECT 333,223 20x18 bd=#808080/2 'Vector'
+    FRAM 20,330 353x128 'Content'
+      TEXT 36,344 321x24 [Inter Semi Bold 17/24 #17171a] "Freshers Design Social"
+      FRAM 36,376 252x18 'Frame'
+        INST 36,378 15x15 'Icon/map-pin'
+          VECT 40,380 16x20 bd=#808080/2 'Vector'
+          VECT 45,384 6x6 bd=#808080/2 'Vector'
+        TEXT 57,376 231x18 [Inter Medium 13/18 #6b6b73] "Coventry SU · Today 7:00 PM · 2.1 km"
+      FRAM 36,402 321x40 'Frame'
+        FRAM 36,412 56x24 'Attendees'
+          ELLI 36,412 24x24 bg=#c7b5fc bd=#ffffff/2 'Ellipse'
+          ELLI 52,412 24x24 bg=#a6d9bf bd=#ffffff/2 'Ellipse'
+          ELLI 68,412 24x24 bg=#fccc99 bd=#ffffff/2 'Ellipse'
+        TEXT 100,415 184x18 [Inter Semi Bold 13/18 #6b6b73] "+128 going"
+        FRAM 292,406 65x36 bg=#3730a3 r=999 'Join'
+          TEXT 310,415 29x18 [Inter Semi Bold 14/18 #ffffff] "Join"
+  INST 20,474 353x260 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Event'
+    FRAM 20,474 353x132 bg=GRADIE 'Cover'
+      INST 244,518 112x112 'Icon/globe'
+        VECT 253,527 93x93 bd=#ffffff@0.16/2 'Vector'
+        VECT 281,527 37x93 bd=#ffffff@0.16/2 'Vector'
+        VECT 253,574 93x0 bd=#ffffff@0.16/2 'Vector'
+      FRAM 34,488 48x60 bg=#ffffff r=10 'Date'
+        TEXT 50,494 17x14 [Inter Bold 11/14 #6b6b73] "FRI"
+        TEXT 46,508 24x20 [Inter Bold 18/20 #17171a] "20"
+        TEXT 47,528 22x14 [Inter Bold 11/14 #6b6b73] "SEP"
+      FRAM 323,488 36x36 bg=#ffffff@0.92 r=999 'Save'
+        INST 331,496 20x20 'Icon/heart'
+          VECT 333,499 20x18 bd=#808080/2 'Vector'
+    FRAM 20,606 353x128 'Content'
+      TEXT 36,620 321x24 [Inter Semi Bold 17/24 #17171a] "International Students Mixer"
+      FRAM 36,652 212x18 'Frame'
+        INST 36,654 15x15 'Icon/map-pin'
+          VECT 40,656 16x20 bd=#808080/2 'Vector'
+          VECT 45,660 6x6 bd=#808080/2 'Vector'
+        TEXT 57,652 191x18 [Inter Medium 13/18 #6b6b73] "The Hub · Sat 8:00 PM · 1.4 km"
+      FRAM 36,678 321x40 'Frame'
+        FRAM 36,688 56x24 'Attendees'
+          ELLI 36,688 24x24 bg=#c7b5fc bd=#ffffff/2 'Ellipse'
+          ELLI 52,688 24x24 bg=#a6d9bf bd=#ffffff/2 'Ellipse'
+          ELLI 68,688 24x24 bg=#fccc99 bd=#ffffff/2 'Ellipse'
+        TEXT 100,691 184x18 [Inter Semi Bold 13/18 #6b6b73] "+128 going"
+        FRAM 292,682 65x36 bg=#3730a3 r=999 'Join'
+          TEXT 310,691 29x18 [Inter Semi Bold 14/18 #ffffff] "Join"
+  INST 20,750 353x24 'Pattern / Section Header'
+    TEXT 20,750 290x24 [Inter Semi Bold 18/24 #17171a] "Popular groups"
+    FRAM 310,753 63x18 'Frame'
+      TEXT 310,753 45x18 [Inter Medium 14/18 #3730a3] "See all"
+      INST 357,754 16x16 'Icon/chevron-right'
+        VECT 366,760 6x12 bd=#808080/2 'Vector'
+  FRAM 20,790 353x124 'Groups'
+    FRAM 20,790 104x124 bg=#ffffff bd=#e7e7eb/1 r=16 'Group/Photography'
+      FRAM 48,806 48x48 bg=#eef2ff r=999 'Frame'
+        INST 60,818 24x24 'Icon/camera'
+          VECT 62,822 20x16 bd=#808080/2 'Vector'
+          VECT 69,828 6x6 bd=#808080/2 'Vector'
+      TEXT 32,862 80x36 [Inter Semi Bold 14/18 #17171a] "Photography"
+      TEXT 32,906 80x16 [Inter Medium 12/16 #6b6b73] "1.2k members"
+    FRAM 136,790 104x124 bg=#ffffff bd=#e7e7eb/1 r=16 'Group/Gaming'
+      FRAM 164,806 48x48 bg=#eef2ff r=999 'Frame'
+        INST 176,818 24x24 'Icon/gamepad'
+          VECT 182,830 4x0 bd=#808080/2 'Vector'
+          VECT 184,828 0x4 bd=#808080/2 'Vector'
+          VECT 191,831 0x0 bd=#808080/2 'Vector'
+          VECT 194,829 0x0 bd=#808080/2 'Vector'
+          VECT 178,824 20x12 bd=#808080/2 'Vector'
+      TEXT 148,862 80x18 [Inter Semi Bold 14/18 #17171a] "Gaming"
+      TEXT 148,888 80x16 [Inter Medium 12/16 #6b6b73] "980 members"
+    FRAM 252,790 104x124 bg=#ffffff bd=#e7e7eb/1 r=16 'Group/Sports'
+      FRAM 280,806 48x48 bg=#eef2ff r=999 'Frame'
+        INST 292,818 24x24 'Icon/dumbbell'
+          VECT 302,828 5x5 bd=#808080/2 'Vector'
+          VECT 303,829 11x11 bd=#808080/2 'Vector'
+          VECT 312,838 1x1 bd=#808080/2 'Vector'
+          VECT 294,820 1x1 bd=#808080/2 'Vector'
+          VECT 294,820 11x11 bd=#808080/2 'Vector'
+      TEXT 264,862 80x18 [Inter Semi Bold 14/18 #17171a] "Sports"
+      TEXT 264,888 80x16 [Inter Medium 12/16 #6b6b73] "2.1k members"
+    FRAM 368,790 104x124 bg=#ffffff bd=#e7e7eb/1 r=16 'Group/Design'
+      FRAM 396,806 48x48 bg=#eef2ff r=999 'Frame'
+        INST 408,818 24x24 'Icon/book-open'
+          VECT 420,825 0x14 bd=#808080/2 'Vector'
+          VECT 410,821 20x18 bd=#808080/2 'Vector'
+      TEXT 380,862 80x18 [Inter Semi Bold 14/18 #17171a] "Design"
+      TEXT 380,888 80x32 [Inter Medium 12/16 #6b6b73] "640 members"
+    FRAM 484,790 104x124 bg=#ffffff bd=#e7e7eb/1 r=16 'Group/International'
+      FRAM 512,806 48x48 bg=#eef2ff r=999 'Frame'
+        INST 524,818 24x24 'Icon/globe'
+          VECT 526,820 20x20 bd=#808080/2 'Vector'
+          VECT 532,820 8x20 bd=#808080/2 'Vector'
+          VECT 526,830 20x0 bd=#808080/2 'Vector'
+      TEXT 496,862 80x36 [Inter Semi Bold 14/18 #17171a] "International"
+      TEXT 496,906 80x32 [Inter Medium 12/16 #6b6b73] "3.4k members"
+ROUN 0,754 393x98 bg=#ffffff 'Rectangle'
+INST 0,754 393x64 bg=#ffffff 'Navigation / Bottom'
+  FRAM 0,754 79x64 'Tab/Home'
+    INST 27,771 24x24 'Icon/home'
+      VECT 30,773 18x20 bd=#6b6b73/2 'Vector'
+      VECT 36,783 6x10 bd=#6b6b73/2 'Vector'
+    TEXT 23,799 32x14 [Inter Medium 11/14 #6b6b73] "Home"
+  FRAM 79,754 79x64 'Tab/Journey'
+    INST 106,771 24x24 'Icon/route'
+      VECT 109,787 6x6 bd=#6b6b73/2 'Vector'
+      VECT 109,776 18x14 bd=#6b6b73/2 'Vector'
+      VECT 121,773 6x6 bd=#6b6b73/2 'Vector'
+    TEXT 96,799 43x14 [Inter Medium 11/14 #6b6b73] "Journey"
+  FRAM 157,754 79x64 'Tab/Explore'
+    INST 184,771 24x24 'Icon/compass'
+      VECT 192,779 8x8 bd=#6b6b73/2 'Vector'
+      VECT 186,773 20x20 bd=#6b6b73/2 'Vector'
+    TEXT 176,799 40x14 [Inter Medium 11/14 #6b6b73] "Explore"
+  FRAM 236,754 79x64 'Tab/Community'
+    INST 263,771 24x24 'Icon/users'
+      VECT 265,786 14x6 bd=#808080/2 'Vector'
+      VECT 268,774 8x8 bd=#808080/2 'Vector'
+      VECT 282,786 3x6 bd=#808080/2 'Vector'
+      VECT 279,774 3x8 bd=#808080/2 'Vector'
+    TEXT 245,799 61x14 [Inter Medium 11/14 #3730a3] "Community"
+  FRAM 314,754 79x64 'Tab/Profile'
+    INST 342,771 24x24 'Icon/user'
+      VECT 347,786 14x6 bd=#6b6b73/2 'Vector'
+      VECT 350,774 8x8 bd=#6b6b73/2 'Vector'
+    TEXT 337,799 34x14 [Inter Medium 11/14 #6b6b73] "Profile"
+  ROUN 0,754 393x1 bg=#e7e7eb 'Rectangle'
+INST 0,818 393x34 'Chrome/Home Indicator'
+  ROUN 127,839 139x5 bg=#17171a r=3 'Rectangle'

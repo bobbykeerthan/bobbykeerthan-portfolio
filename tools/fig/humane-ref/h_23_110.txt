@@ -1,0 +1,13 @@
+FRAM 28,242 334x361 bg=#ffffff r=24 'Dialog'
+  FRAM 163,270 64x64 bg=#e5ebda r=100 'Frame'
+    FRAM 179,286 32x32 'Frame'
+      VECT 186,290 19x23 bd=#4b612d/2.53333 'Vector'
+  TEXT 96,348 199x28 [Inter Bold 20 #38392b] "Release Dog #2145?"
+  TEXT 52,390 286x57 [Inter Regular 14 #6f7263] "This marks the dog as released at Sector 17, Chandigarh and closes its active POD. This action can't be undone."
+  FRAM 52,460 286x120 'Frame'
+    FRAM 52,464 286x53 bg=#4b612d r=14 'CTA · Confirm'
+      FRAM 118,482 19x19 'Frame'
+        VECT 121,487 11x8 bd=#ffffff/1.74167 'Vector'
+      TEXT 144,480 128x21 [Inter Bold 15 #ffffff] "Yes, Release Dog"
+    FRAM 52,528 286x53 bg=#ffffff bd=#d7d9d0/1.4 r=14 'Btn · Cancel'
+      TEXT 170,544 51x21 [Inter Semi Bold 15 #6f7263] "Cancel"

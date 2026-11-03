@@ -1,0 +1,24 @@
+ROUN 0,0 393x395 bg=IMG 'Rectangle 5'
+INST 24,466 348x25 'Component 2'
+  TEXT 24,466 69x24 [Linden  Regular 18 #000000] "Biography"
+  TEXT 163,466 56x24 [Linden  Regular 18 #000000] "Practice"
+  TEXT 302,466 53x24 [Linden  Regular 18 #000000] "Themes"
+  ROUN 24,489 344x1 bg=#ac7f5e@0.31 'Rectangle'
+  ROUN 302,487 66x4 bg=#ac7f5e r=82 'Rectangle'
+TEXT 6,404 369x29 [Cormora Bold 24 #000000] "Peter Eugene Ball"
+TEXT 24,510 344x379 [Cormora Light 16 #000000] "• Spiritual reflection and devotion  • Human vulnerability and transcendence  • Material presence and tactility  • Stillness within architectural space  • Relationship between body and sacred environment"
+INST 0,780 393x72 bg=#56453c r=11 'bottom nav'
+  FRAM 17,800 359x32 'Frame 20'
+    INST 17,800 32x32 'mdi:home-outline'
+      VECT 20,804 27x23 bg=#ffffff 'Vector'
+    INST 99,800 32x32 'material-symbols:search-ro'
+      VECT 103,804 23x23 bg=#ffffff 'Vector'
+    INST 180,800 32x32 'tdesign:statue-of-jesus'
+      FRAM 184,803 24x27 'Group'
+        VECT 191,824 11x5 bd=#ffffff/1 'Vector'
+        VECT 184,803 24x27 bd=#ffffff/2 'Vector'
+    FRAM 262,800 32x32 'painting'
+      VECT 267,802 21x29 bg=#ffffff 'Vector'
+      VECT 277,806 13x13 bg=#ffffff 'Vector'
+    INST 344,800 32x32 'wordpress:post-author'
+      VECT 349,803 21x24 bg=#ffffff 'Vector'

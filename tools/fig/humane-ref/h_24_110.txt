@@ -1,0 +1,37 @@
+FRAM 0,0 390x39 'Frame'
+  TEXT 24,14 30x19 [Inter Semi Bold 14 #38392b] "9:41"
+  FRAM 302,16 64x15 'Frame'
+    FRAM 302,16 15x15 'Frame'
+      VECT 303,18 12x6 bd=#38392b/1.1875 'Vector'
+    FRAM 323,16 15x15 'Frame'
+      VECT 326,20 10x6 bd=#38392b/1.1875 'Vector'
+    ROUN 344,18 22x11 bg=#38392b r=3 'Rectangle'
+FRAM 0,39 390x805 'Frame'
+  FRAM 135,59 120x94 bg=#4b612d@0.1 r=100 'Frame'
+    FRAM 148,59 94x94 bg=#4b612d@0.16 r=100 'Frame'
+      FRAM 160,71 70x70 bg=#4b612d r=100 'Frame'
+        FRAM 176,87 38x38 'Frame'
+          VECT 184,98 22x15 bd=#ffffff/4.11667 'Vector'
+  FRAM 58,169 274x57 'Frame'
+    TEXT 98,169 193x32 [Inter Bold 24 #4b612d] "DOG RELEASED"
+    TEXT 58,207 274x19 [Inter Medium 14 #6f7263] "Dog #2145 safely returned to its territory"
+  FRAM 26,242 338x149 bg=#ffffff bd=#d7d9d0/1 r=18 'Frame'
+    FRAM 44,248 302x45 'Frame'
+      TEXT 44,261 79x19 [Inter Medium 14 #6f7263] "Released at"
+      TEXT 198,261 148x19 [Inter Semi Bold 14 #38392b] "Sector 17, Chandigarh"
+    ROUN 44,293 100x1 bg=#d7d9d0 'Rectangle'
+    FRAM 44,294 302x45 'Frame'
+      TEXT 44,307 59x19 [Inter Medium 14 #6f7263] "Distance"
+      TEXT 223,307 123x19 [Inter Semi Bold 14 #38392b] "21 m from capture"
+    ROUN 44,339 100x1 bg=#d7d9d0 'Rectangle'
+    FRAM 44,340 302x45 'Frame'
+      TEXT 44,353 34x19 [Inter Medium 14 #6f7263] "Time"
+      TEXT 211,353 135x19 [Inter Semi Bold 14 #38392b] "14 Aug 2026, 09:40"
+  FRAM 26,407 338x58 bg=#e5ebda r=12 'Frame'
+    FRAM 40,426 20x20 'Frame'
+      VECT 44,429 12x15 bd=#4b612d/1.58333 'Vector'
+    TEXT 69,419 281x34 [Inter Medium 13 #4b612d] "Full lifecycle recorded — capture to release is now traceable."
+  FRAM 145,481 100x236 'Frame'
+  FRAM 26,733 338x56 bg=#4b612d r=15 'CTA · View Record'
+    TEXT 118,751 154x20 [Inter Bold 15 #ffffff] "VIEW FULL RECORD"
+  TEXT 148,805 94x19 [Inter Semi Bold 14 #4b612d] "Back to Home"

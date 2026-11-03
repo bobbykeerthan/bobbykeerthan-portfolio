@@ -1,0 +1,163 @@
+INST 0,0 248x1024 bg=#000000 'Sidebar'
+  FRAM 16,24 122x64 'Logo'
+    FRAM 24,28 32x32 bg=#ad343e r=9 'Frame'
+      INST 31,35 18x18 'icon/bag'
+        FRAM 31,35 24x24 'glyph'
+          VECT 36,43 14x12 bd=#ffffff/1.8 'Vector'
+          VECT 40,38 6x4 bd=#ffffff/1.8 'Vector'
+    FRAM 66,24 72x40 'Frame'
+      TEXT 66,24 72x24 [Figtree SemiBold 16/24 #ffffff] "Shopdesk"
+      TEXT 66,48 52x16 [Figtree Regular 12/16 #94a3b8] "Kiln & Co."
+  TEXT 16,94 36x16 [Figtree SemiBold 12/16 #94a3b8] "MENU"
+  FRAM 16,116 216x44 r=10 'Nav · Overview'
+    INST 28,128 20x20 'icon/grid'
+      FRAM 28,128 24x24 'glyph'
+        VECT 32,132 7x7 bd=#94a3b8/1.8 'Vector'
+        VECT 42,132 7x7 bd=#94a3b8/1.8 'Vector'
+        VECT 32,142 7x7 bd=#94a3b8/1.8 'Vector'
+        VECT 42,142 7x7 bd=#94a3b8/1.8 'Vector'
+    TEXT 60,128 160x20 [Figtree Regular 14/20 #94a3b8] "Overview"
+  FRAM 16,166 216x44 bg=#474747 r=10 'Nav · Orders'
+    INST 28,178 20x20 'icon/bag'
+      FRAM 28,178 24x24 'glyph'
+        VECT 33,186 14x12 bd=#f2af29/1.8 'Vector'
+        VECT 37,182 6x4 bd=#f2af29/1.8 'Vector'
+    TEXT 60,178 120x20 [Figtree SemiBold 14/20 #ffffff] "Orders"
+    FRAM 192,178 28x20 bg=#f2af29 r=999 'Frame'
+      TEXT 200,180 12x16 [Figtree SemiBold 12/16 #000000] "12"
+  FRAM 16,216 216x44 r=10 'Nav · Products'
+    INST 28,228 20x20 'icon/box'
+      FRAM 28,228 24x24 'glyph'
+        VECT 32,231 17x18 bd=#94a3b8/1.8 'Vector'
+        VECT 32,236 17x14 bd=#94a3b8/1.8 'Vector'
+    TEXT 60,228 160x20 [Figtree Regular 14/20 #94a3b8] "Products"
+  FRAM 16,266 216x44 r=10 'Nav · Customers'
+    INST 28,278 20x20 'icon/users'
+      FRAM 28,278 24x24 'glyph'
+        VECT 34,282 7x7 bd=#94a3b8/1.8 'Vector'
+        VECT 30,292 13x6 bd=#94a3b8/1.8 'Vector'
+        VECT 44,283 2x6 bd=#94a3b8/1.8 'Vector'
+        VECT 46,292 4x6 bd=#94a3b8/1.8 'Vector'
+    TEXT 60,278 160x20 [Figtree Regular 14/20 #94a3b8] "Customers"
+  FRAM 16,316 10x622 'Spacer'
+  FRAM 16,944 216x60 bg=#474747 r=12 'Owner'
+    INST 28,958 32x32 bg=#e0e0ce r=16 'Avatar'
+      TEXT 36,966 17x16 [Figtree SemiBold 12/16 #000000] "EH"
+    FRAM 70,956 66x36 'Frame'
+      TEXT 70,956 58x20 [Figtree SemiBold 14/20 #ffffff] "Ellie Hart"
+      TEXT 70,976 66x16 [Figtree Regular 12/16 #e0e0ce] "Store owner"
+FRAM 248,0 1192x704 'Main'
+  INST 248,0 1192x76 bg=#ffffff bd=#e2e8f0/0 'Top bar'
+    FRAM 280,10 598x56 'Heading'
+      TEXT 280,10 162x36 [Figtree Bold 28/36 #000000] "Order #1048"
+      TEXT 280,46 250x20 [Figtree Regular 14/20 #474747] "Placed on 24 Oct at 10:42 · paid by card"
+    INST 894,18 280x40 bg=#f6f6f1 bd=#e2e8f0/1 r=10 'Search'
+      INST 907,28 18x18 'icon/search'
+        FRAM 907,28 24x24 'glyph'
+          VECT 912,33 13x13 bd=#474747/1.8 'Vector'
+          VECT 923,44 4x4 bd=#474747/1.8 'Vector'
+      TEXT 933,28 159x20 [Figtree Regular 14/20 #474747] "Search orders, products…"
+    INST 1190,18 170x40 'Date picker'
+      FRAM 1190,18 170x40 bg=#ffffff bd=#e2e8f0/1 r=10 'Trigger'
+        INST 1203,28 18x18 'icon/calendar'
+          FRAM 1203,28 24x24 'glyph'
+            VECT 1206,34 17x16 bd=#000000/1.8 'Vector'
+            VECT 1206,32 17x7 bd=#000000/1.8 'Vector'
+        TEXT 1229,28 94x20 [Figtree SemiBold 14/20 #000000] "Last 7 days"
+        INST 1331,28 18x18 'icon/chevron-down'
+          FRAM 1331,28 24x24 'glyph'
+            VECT 1337,38 12x6 bd=#000000/1.8 'Vector'
+    INST 1376,22 32x32 bg=#e0e0ce r=16 'Avatar'
+      TEXT 1384,30 17x16 [Figtree SemiBold 12/16 #000000] "EH"
+  FRAM 248,76 1192x628 'Content'
+    FRAM 280,104 116x20 'Back to orders'
+      INST 280,105 18x18 'icon/chevron-left'
+        FRAM 280,105 18x18 'glyph'
+          VECT 286,110 4x9 bd=#000000/1.8 'Vector'
+      TEXT 304,104 92x20 [Figtree SemiBold 14/20 #ad343e] "Back to orders"
+    FRAM 280,148 1128x516 'Columns'
+      FRAM 280,148 724x330 'Frame'
+        FRAM 280,148 724x330 bg=#ffffff bd=#e2e8f0/1 r=16 'Items (3)'
+          FRAM 305,169 674x24 'Frame'
+            TEXT 305,169 1078x24 [Figtree SemiBold 16/24 #000000] "Items (3)"
+            INST 1383,169 77x24 bg=#f2af29 r=999 'Status badge'
+              INST 1391,174 14x14 'icon/box'
+                FRAM 1391,174 24x24 'glyph'
+                  VECT 1394,177 17x18 bd=#000000/1.8 'Vector'
+                  VECT 1394,182 17x14 bd=#000000/1.8 'Vector'
+              TEXT 1411,173 39x16 [Figtree SemiBold 12/16 #000000] "To ship"
+          INST 305,205 674x61 bd=#e2e8f0/0 'Product row'
+            INST 305,215 40x40 bg=#e0e0ce r=10 'Product thumb'
+              INST 315,225 20x20 'icon/box'
+                FRAM 315,225 24x24 'glyph'
+                  VECT 318,228 17x18 bd=#474747/1.8 'Vector'
+                  VECT 318,232 17x14 bd=#474747/1.8 'Vector'
+            FRAM 357,216 563x38 'Frame'
+              TEXT 357,216 563x20 [Figtree SemiBold 14/20 #000000] "Speckled mug"
+              TEXT 357,238 563x16 [Figtree Regular 12/16 #474747] "2 × £22.50"
+            TEXT 932,225 47x20 [Figtree SemiBold 14/20 #000000] "£45.00"
+          INST 305,278 674x61 bd=#e2e8f0/0 'Product row'
+            INST 305,288 40x40 bg=#e0e0ce r=10 'Product thumb'
+              INST 315,298 20x20 'icon/box'
+                FRAM 315,298 24x24 'glyph'
+                  VECT 318,301 17x18 bd=#474747/1.8 'Vector'
+                  VECT 318,306 17x14 bd=#474747/1.8 'Vector'
+            FRAM 357,289 563x38 'Frame'
+              TEXT 357,289 563x20 [Figtree SemiBold 14/20 #000000] "Ripple bowl"
+              TEXT 357,311 563x16 [Figtree Regular 12/16 #474747] "1 × £28.00"
+            TEXT 932,298 47x20 [Figtree SemiBold 14/20 #000000] "£28.00"
+          FRAM 305,351 674x104 'Summary'
+            INST 305,359 674x32 'Summary row'
+              TEXT 305,365 54x20 [Figtree Regular 14/20 #474747] "Subtotal"
+              TEXT 934,365 45x20 [Figtree SemiBold 14/20 #000000] "£73.00"
+            INST 305,391 674x32 'Summary row'
+              TEXT 305,397 51x20 [Figtree Regular 14/20 #474747] "Delivery"
+              TEXT 940,397 39x20 [Figtree SemiBold 14/20 #000000] "£8.00"
+            INST 305,423 674x32 'Summary row'
+              TEXT 305,429 32x20 [Figtree SemiBold 14/20 #000000] "Total"
+              TEXT 928,429 51x24 [Figtree SemiBold 16/24 #000000] "£81.00"
+      FRAM 1028,148 380x516 'Frame'
+        FRAM 1028,148 380x176 bg=#ffffff bd=#e2e8f0/1 r=16 'Customer'
+          TEXT 1053,169 330x24 [Figtree SemiBold 16/24 #000000] "Customer"
+          FRAM 1053,205 330x36 'Frame'
+            INST 1053,207 32x32 bg=#e0e0ce r=16 'Avatar'
+              TEXT 1060,215 18x16 [Figtree SemiBold 12/16 #000000] "AO"
+            FRAM 1097,205 116x36 'Frame'
+              TEXT 1097,205 89x20 [Figtree SemiBold 14/20 #000000] "Amara Okafor"
+              TEXT 1097,225 116x16 [Figtree Regular 12/16 #474747] "amara@example.com"
+          TEXT 1053,253 330x16 [Figtree SemiBold 12/16 #474747] "Delivery address"
+          TEXT 1053,281 330x20 [Figtree Regular 14/20 #000000] "12 Park Row, Leeds LS1 5HD"
+        FRAM 1028,348 380x316 bg=#ffffff bd=#e2e8f0/1 r=16 'Order progress'
+          TEXT 1053,369 330x24 [Figtree SemiBold 16/24 #000000] "Order progress"
+          INST 1053,405 330x36 'Timeline step'
+            FRAM 1053,405 24x24 bg=#15803d r=12 'Dot'
+              INST 1058,410 14x14 'icon/check'
+                FRAM 1058,410 24x24 'glyph'
+                  VECT 1063,418 14x10 bd=#ffffff/1.8 'Vector'
+            FRAM 1089,405 84x36 'Frame'
+              TEXT 1089,405 84x20 [Figtree SemiBold 14/20 #000000] "Order placed"
+              TEXT 1089,425 73x16 [Figtree Regular 12/16 #474747] "24 Oct, 10:42"
+          INST 1053,453 330x36 'Timeline step'
+            FRAM 1053,453 24x24 bg=#15803d r=12 'Dot'
+              INST 1058,458 14x14 'icon/check'
+                FRAM 1058,458 24x24 'glyph'
+                  VECT 1063,466 14x10 bd=#ffffff/1.8 'Vector'
+            FRAM 1089,453 115x36 'Frame'
+              TEXT 1089,453 115x20 [Figtree SemiBold 14/20 #000000] "Payment received"
+              TEXT 1089,473 73x16 [Figtree Regular 12/16 #474747] "24 Oct, 10:42"
+          INST 1053,501 330x36 'Timeline step'
+            FRAM 1053,501 24x24 bg=#f2af29 r=12 'Dot'
+              INST 1058,506 14x14 'icon/alert'
+                FRAM 1058,506 24x24 'glyph'
+                  VECT 1060,510 19x16 bd=#000000/1.8 'Vector'
+                  VECT 1070,516 0x7 bd=#000000/1.8 'Vector'
+            FRAM 1089,501 140x36 'Frame'
+              TEXT 1089,501 140x20 [Figtree SemiBold 14/20 #000000] "Waiting to be shipped"
+              TEXT 1089,521 80x16 [Figtree Regular 12/16 #474747] "Ship by 26 Oct"
+          INST 1053,549 330x36 'Timeline step'
+            FRAM 1053,549 24x24 bg=#ffffff bd=#94a3b8/1.5 r=12 'Dot'
+            FRAM 1089,549 61x36 'Frame'
+              TEXT 1089,549 61x20 [Figtree SemiBold 14/20 #474747] "Delivered"
+              TEXT 1089,569 14x16 [Figtree Regular 12/16 #474747] "—"
+          INST 1053,597 330x44 bg=#ad343e r=10 'Mark as shipped'
+            TEXT 1166,609 103x20 [Figtree SemiBold 14/20 #ffffff] "Mark as shipped"

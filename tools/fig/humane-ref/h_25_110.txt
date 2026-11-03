@@ -1,0 +1,46 @@
+FRAM 0,0 390x39 'Frame'
+  TEXT 24,14 30x19 [Inter Semi Bold 14 #38392b] "9:41"
+  FRAM 302,16 64x15 'Frame'
+    FRAM 302,16 15x15 'Frame'
+      VECT 303,18 12x6 bd=#38392b/1.1875 'Vector'
+    FRAM 323,16 15x15 'Frame'
+      VECT 326,20 10x6 bd=#38392b/1.1875 'Vector'
+    ROUN 344,18 22x11 bg=#38392b r=3 'Rectangle'
+FRAM 0,39 390x54 'Frame'
+  FRAM 12,45 40x40 r=100 'Back'
+    FRAM 20,54 23x23 'Frame'
+      VECT 28,58 7x13 bd=#38392b/1.82083 'Vector'
+  TEXT 52,53 286x24 [Inter Semi Bold 18 #38392b] "Active PODs"
+  FRAM 338,45 40x40 r=100 'Frame'
+    FRAM 346,54 23x23 'Frame'
+      VECT 350,56 15x15 bd=#6f7263/1.82083 'Vector'
+FRAM 0,93 390x667 'Frame'
+  FRAM 135,288 120x120 bg=#eaeae3 r=100 'Frame'
+    FRAM 167,320 56x56 'Frame'
+      VECT 176,330 37x35 bd=#a8aa9c/3.73333 'Vector'
+  FRAM 32,426 326x72 'Frame'
+    TEXT 124,426 143x26 [Inter Bold 19 #38392b] "No active PODs"
+    TEXT 32,460 326x38 [Inter Regular 14 #6f7263] "All PODs are currently available. Capture a dog to assign one and start a new record."
+  FRAM 102,516 186x49 bg=#4b612d r=14 'CTA · Capture Dog'
+    FRAM 128,531 19x19 'Frame'
+      VECT 132,535 11x11 bd=#ffffff/1.74167 'Vector'
+    TEXT 156,531 106x19 [Inter Bold 14 #ffffff] "CAPTURE DOG"
+INST 0,760 390x84 bg=#ffffff bd=#d7d9d0/1 'Bottom Nav'
+  FRAM 0,760 390x74 bg=#ffffff 'items'
+    FRAM 24,772 32x54 bg=#ffffff 'Home'
+      FRAM 28,774 24x24 'Frame'
+        VECT 32,778 17x16 bd=#4b612d/1.9 'Vector'
+      TEXT 24,803 32x13 [Inter Semi Bold 11 #4b612d] "Home"
+      ELLI 38,821 5x5 bg=#4b612d 'Ellipse'
+    FRAM 125,772 24x44 bg=#ffffff 'Map'
+      FRAM 125,774 24x24 'Frame'
+        VECT 130,778 14x18 bd=#8a8c7e/1.9 'Vector'
+      TEXT 126,803 23x13 [Inter Medium 11 #8a8c7e] "Map"
+    FRAM 219,772 44x44 bg=#ffffff 'Records'
+      FRAM 229,774 24x24 'Frame'
+        VECT 235,778 11x17 bd=#8a8c7e/1.9 'Vector'
+      TEXT 219,803 44x13 [Inter Medium 11 #8a8c7e] "Records"
+    FRAM 332,772 34x44 bg=#ffffff 'Profile'
+      FRAM 337,774 24x24 'Frame'
+        VECT 342,779 13x15 bd=#8a8c7e/1.9 'Vector'
+      TEXT 332,803 34x13 [Inter Medium 11 #8a8c7e] "Profile"

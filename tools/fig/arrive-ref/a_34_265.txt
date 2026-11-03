@@ -1,0 +1,179 @@
+INST 0,0 393x54 'Chrome/Status Bar'
+  TEXT 30,17 54x20 [Inter Semi Bold 16 #17171a] "9:41"
+  FRAM 134,11 125x37 bg=#000000 r=20 'Dynamic Island'
+  FRAM 302,21 74x13 'Indicators'
+    FRAM 302,22 18x11 'signal'
+      ROUN 302,29 3x4 bg=#17171a r=1 'Rectangle'
+      ROUN 307,27 3x6 bg=#17171a r=1 'Rectangle'
+      ROUN 312,25 3x8 bg=#17171a r=1 'Rectangle'
+      ROUN 317,23 3x10 bg=#17171a r=1 'Rectangle'
+    FRAM 327,22 17x12 'wifi'
+      VECT 328,23 15x12 bg=#17171a 'Vector'
+    FRAM 351,21 25x13 'battery'
+      ROUN 351,21 23x13 bd=#17171a@0.35/1 r=4 'Rectangle'
+      ROUN 353,23 19x9 bg=#17171a r=2 'Rectangle'
+      ROUN 374,26 2x4 bg=#17171a@0.35 r=1 'Rectangle'
+FRAM 0,54 393x1044 'Content'
+  FRAM 20,62 353x58 'Frame'
+    TEXT 20,62 104x34 [Inter Bold 28/34 #17171a] "Explore"
+    FRAM 20,100 151x20 'Frame'
+      INST 20,102 16x16 'Icon/map-pin'
+        VECT 23,103 11x13 bd=#808080/2 'Vector'
+        VECT 26,107 4x4 bd=#808080/2 'Vector'
+      TEXT 41,100 130x20 [Inter Medium 14/20 #6b6b73] "Coventry · CV1 5FB"
+  INST 20,136 353x42 bg=#f1f1f4 r=12 'Input / Search Field'
+    INST 34,147 20x20 'Icon/search'
+      VECT 37,150 16x16 bd=#808080/2 'Vector'
+      VECT 51,164 4x4 bd=#808080/2 'Vector'
+    TEXT 62,147 297x20 [Inter Regular 15/20 #6b6b73] "Search places, events, jobs"
+  FRAM 20,194 353x36 'Categories'
+    INST 20,194 49x36 bg=#eef2ff bd=#3730a3/1.5 r=999 'Control / Filter Chip'
+      TEXT 36,203 17x18 [Inter Medium 14/18 #3730a3] "All"
+    INST 77,194 66x36 bg=#ffffff bd=#e7e7eb/1 r=999 'Control / Filter Chip'
+      TEXT 93,203 34x18 [Inter Medium 14/18 #6b6b73] "Food"
+    INST 151,194 97x36 bg=#ffffff bd=#e7e7eb/1 r=999 'Control / Filter Chip'
+      TEXT 167,203 65x18 [Inter Medium 14/18 #6b6b73] "Groceries"
+    INST 256,194 98x36 bg=#ffffff bd=#e7e7eb/1 r=999 'Control / Filter Chip'
+      TEXT 272,203 66x18 [Inter Medium 14/18 #6b6b73] "Transport"
+    INST 362,194 72x36 bg=#ffffff bd=#e7e7eb/1 r=999 'Control / Filter Chip'
+      TEXT 378,203 40x18 [Inter Medium 14/18 #6b6b73] "Study"
+    INST 442,194 76x36 bg=#ffffff bd=#e7e7eb/1 r=999 'Control / Filter Chip'
+      TEXT 458,203 44x18 [Inter Medium 14/18 #6b6b73] "Health"
+  TEXT 20,246 353x24 [Inter Semi Bold 18/24 #17171a] "Open now near you"
+  FRAM 20,286 353x356 'Places'
+    INST 20,286 353x80 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Place'
+      FRAM 32,298 56x56 bg=#eef2ff r=12 'Thumb'
+        INST 47,313 26x26 'Icon/shopping-cart'
+          VECT 54,333 2x2 bd=#808080/2 'Vector'
+          VECT 65,333 2x2 bd=#808080/2 'Vector'
+          VECT 49,315 20x14 bd=#808080/2 'Vector'
+      FRAM 100,305 225x42 'Frame'
+        FRAM 100,305 225x22 'Frame'
+          TEXT 100,305 113x22 [Inter Semi Bold 16/22 #17171a] "Tesco Express"
+          INST 221,305 48x22 bg=#f0fdf4 r=999 'Status / Badge'
+            TEXT 229,308 32x16 [Inter Semi Bold 12/16 #15803d] "Open"
+        FRAM 100,331 239x16 'Frame'
+          INST 100,332 14x14 'Icon/map-pin'
+            VECT 104,334 16x20 bd=#808080/2 'Vector'
+            VECT 109,339 6x6 bd=#808080/2 'Vector'
+          TEXT 120,331 67x16 [Inter Medium 13/16 #6b6b73] "8 min walk"
+          TEXT 193,331 146x16 [Inter Regular 13/16 #6b6b73] "· Groceries · Until 23:00"
+      INST 337,316 20x20 'Icon/chevron-right'
+        VECT 346,322 6x12 bd=#808080/2 'Vector'
+    INST 20,378 353x80 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Place'
+      FRAM 32,390 56x56 bg=#eef2ff r=12 'Thumb'
+        INST 47,405 26x26 'Icon/coffee'
+          VECT 58,407 0x2 bd=#808080/2 'Vector'
+          VECT 62,407 0x2 bd=#808080/2 'Vector'
+          VECT 50,414 21x14 bd=#808080/2 'Vector'
+          VECT 54,407 0x2 bd=#808080/2 'Vector'
+      FRAM 100,397 225x42 'Frame'
+        FRAM 100,397 225x22 'Frame'
+          TEXT 100,397 102x22 [Inter Semi Bold 16/22 #17171a] "Costa Coffee"
+          INST 210,397 48x22 bg=#f0fdf4 r=999 'Status / Badge'
+            TEXT 218,400 32x16 [Inter Semi Bold 12/16 #15803d] "Open"
+        FRAM 100,423 208x16 'Frame'
+          INST 100,424 14x14 'Icon/map-pin'
+            VECT 104,426 16x20 bd=#808080/2 'Vector'
+            VECT 109,431 6x6 bd=#808080/2 'Vector'
+          TEXT 120,423 67x16 [Inter Medium 13/16 #6b6b73] "5 min walk"
+          TEXT 193,423 115x16 [Inter Regular 13/16 #6b6b73] "· Café · Until 20:00"
+      INST 337,408 20x20 'Icon/chevron-right'
+        VECT 346,414 6x12 bd=#808080/2 'Vector'
+    INST 20,470 353x80 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Place'
+      FRAM 32,482 56x56 bg=#eef2ff r=12 'Thumb'
+        INST 47,497 26x26 'Icon/book-open'
+          VECT 60,505 0x15 bd=#808080/2 'Vector'
+          VECT 49,500 22x20 bd=#808080/2 'Vector'
+      FRAM 100,489 225x42 'Frame'
+        FRAM 100,489 225x22 'Frame'
+          TEXT 100,489 160x22 [Inter Semi Bold 16/22 #17171a] "Coventry Uni Library"
+          INST 268,489 43x22 bg=#f0fdf4 r=999 'Status / Badge'
+            TEXT 276,492 27x16 [Inter Semi Bold 12/16 #15803d] "24/7"
+        FRAM 100,515 214x16 'Frame'
+          INST 100,516 14x14 'Icon/map-pin'
+            VECT 104,518 16x20 bd=#808080/2 'Vector'
+            VECT 109,523 6x6 bd=#808080/2 'Vector'
+          TEXT 120,515 71x16 [Inter Medium 13/16 #6b6b73] "On campus"
+          TEXT 197,515 117x16 [Inter Regular 13/16 #6b6b73] "· Study · Open now"
+      INST 337,500 20x20 'Icon/chevron-right'
+        VECT 346,506 6x12 bd=#808080/2 'Vector'
+    INST 20,562 353x80 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Place'
+      FRAM 32,574 56x56 bg=#eef2ff r=12 'Thumb'
+        INST 47,589 26x26 'Icon/shield'
+          VECT 51,591 17x22 bd=#808080/2 'Vector'
+      FRAM 100,581 225x42 'Frame'
+        FRAM 100,581 225x22 'Frame'
+          TEXT 100,581 191x22 [Inter Semi Bold 16/22 #17171a] "University Health Centre"
+          INST 299,581 91x22 bg=#fffbeb r=999 'Tone=Warning'
+            TEXT 307,584 75x16 [Inter Semi Bold 12/16 #b45309] "Closes 17:00"
+        FRAM 100,607 202x16 'Frame'
+          INST 100,608 14x14 'Icon/map-pin'
+            VECT 104,610 16x20 bd=#808080/2 'Vector'
+            VECT 109,615 6x6 bd=#808080/2 'Vector'
+          TEXT 120,607 73x16 [Inter Medium 13/16 #6b6b73] "12 min walk"
+          TEXT 199,607 103x16 [Inter Regular 13/16 #6b6b73] "· Healthcare · GP"
+      INST 337,592 20x20 'Icon/chevron-right'
+        VECT 346,598 6x12 bd=#808080/2 'Vector'
+  TEXT 20,658 353x24 [Inter Semi Bold 18/24 #17171a] "Happening tonight"
+  INST 20,698 353x260 bg=#ffffff bd=#e7e7eb/1 r=16 'Card / Event'
+    FRAM 20,698 353x132 bg=GRADIE 'Cover'
+      INST 244,742 112x112 'Icon/music'
+        VECT 253,745 12x15 bd=#ffffff@0.16/2 'Vector'
+        VECT 247,757 6x6 bd=#ffffff@0.16/2 'Vector'
+        VECT 259,755 6x6 bd=#ffffff@0.16/2 'Vector'
+      FRAM 34,712 46x60 bg=#ffffff r=10 'Date'
+        TEXT 48,718 17x14 [Inter Bold 11/14 #6b6b73] "FRI"
+        TEXT 46,732 21x20 [Inter Bold 18/20 #17171a] "12"
+        TEXT 46,752 22x14 [Inter Bold 11/14 #6b6b73] "SEP"
+      FRAM 323,712 36x36 bg=#ffffff@0.92 r=999 'Save'
+        INST 331,720 20x20 'Icon/heart'
+          VECT 333,723 20x18 bd=#808080/2 'Vector'
+    FRAM 20,830 353x128 'Content'
+      TEXT 36,844 321x24 [Inter Semi Bold 17/24 #17171a] "Freshers Design Social"
+      FRAM 36,876 252x18 'Frame'
+        INST 36,878 15x15 'Icon/map-pin'
+          VECT 40,880 16x20 bd=#808080/2 'Vector'
+          VECT 45,884 6x6 bd=#808080/2 'Vector'
+        TEXT 57,876 231x18 [Inter Medium 13/18 #6b6b73] "Coventry SU · Today 7:00 PM · 2.1 km"
+      FRAM 36,902 321x40 'Frame'
+        FRAM 36,912 56x24 'Attendees'
+          ELLI 36,912 24x24 bg=#c7b5fc bd=#ffffff/2 'Ellipse'
+          ELLI 52,912 24x24 bg=#a6d9bf bd=#ffffff/2 'Ellipse'
+          ELLI 68,912 24x24 bg=#fccc99 bd=#ffffff/2 'Ellipse'
+        TEXT 100,915 184x18 [Inter Semi Bold 13/18 #6b6b73] "+128 going"
+        FRAM 292,906 65x36 bg=#3730a3 r=999 'Join'
+          TEXT 310,915 29x18 [Inter Semi Bold 14/18 #ffffff] "Join"
+ROUN 0,754 393x98 bg=#ffffff 'Rectangle'
+INST 0,754 393x64 bg=#ffffff 'Navigation / Bottom'
+  FRAM 0,754 79x64 'Tab/Home'
+    INST 27,771 24x24 'Icon/home'
+      VECT 30,773 18x20 bd=#6b6b73/2 'Vector'
+      VECT 36,783 6x10 bd=#6b6b73/2 'Vector'
+    TEXT 23,799 32x14 [Inter Medium 11/14 #6b6b73] "Home"
+  FRAM 79,754 79x64 'Tab/Journey'
+    INST 106,771 24x24 'Icon/route'
+      VECT 109,787 6x6 bd=#6b6b73/2 'Vector'
+      VECT 109,776 18x14 bd=#6b6b73/2 'Vector'
+      VECT 121,773 6x6 bd=#6b6b73/2 'Vector'
+    TEXT 96,799 43x14 [Inter Medium 11/14 #6b6b73] "Journey"
+  FRAM 157,754 79x64 'Tab/Explore'
+    INST 184,771 24x24 'Icon/compass'
+      VECT 192,779 8x8 bd=#808080/2 'Vector'
+      VECT 186,773 20x20 bd=#808080/2 'Vector'
+    TEXT 176,799 40x14 [Inter Medium 11/14 #3730a3] "Explore"
+  FRAM 236,754 79x64 'Tab/Community'
+    INST 263,771 24x24 'Icon/users'
+      VECT 265,786 14x6 bd=#6b6b73/2 'Vector'
+      VECT 268,774 8x8 bd=#6b6b73/2 'Vector'
+      VECT 282,786 3x6 bd=#6b6b73/2 'Vector'
+      VECT 279,774 3x8 bd=#6b6b73/2 'Vector'
+    TEXT 245,799 61x14 [Inter Medium 11/14 #6b6b73] "Community"
+  FRAM 314,754 79x64 'Tab/Profile'
+    INST 342,771 24x24 'Icon/user'
+      VECT 347,786 14x6 bd=#6b6b73/2 'Vector'
+      VECT 350,774 8x8 bd=#6b6b73/2 'Vector'
+    TEXT 337,799 34x14 [Inter Medium 11/14 #6b6b73] "Profile"
+  ROUN 0,754 393x1 bg=#e7e7eb 'Rectangle'
+INST 0,818 393x34 'Chrome/Home Indicator'
+  ROUN 127,839 139x5 bg=#17171a r=3 'Rectangle'

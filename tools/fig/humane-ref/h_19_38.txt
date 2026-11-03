@@ -1,0 +1,97 @@
+FRAM 0,0 390x38 'Frame'
+  TEXT 24,14 30x18 [Inter Semi Bold 14 #38392b] "9:41"
+  FRAM 302,16 64x15 'Frame'
+    FRAM 302,16 15x15 'Frame'
+      VECT 303,17 12x6 bd=#38392b/1.1875 'Vector'
+    FRAM 323,16 15x15 'Frame'
+      VECT 326,19 10x6 bd=#38392b/1.1875 'Vector'
+    ROUN 344,18 22x11 bg=#38392b r=3 'Rectangle'
+FRAM 0,38 390x54 'Frame'
+  FRAM 12,44 40x40 r=100 'Back'
+    FRAM 20,52 23x23 'Frame'
+      VECT 28,57 7x13 bd=#38392b/1.82083 'Vector'
+  TEXT 52,52 286x23 [Inter Semi Bold 18 #38392b] "Dog #2145"
+  FRAM 338,44 40x40 r=100 'Frame'
+    FRAM 346,52 23x23 'Frame'
+      VECT 350,56 15x15 bd=#6f7263/1.82083 'Vector'
+FRAM 0,92 390x668 'Frame'
+  FRAM 20,98 350x74 bg=#ffffff bd=#d7d9d0/1 r=16 'Frame'
+    FRAM 34,111 48x48 bg=GRADIE bd=#d7d9d0/1.4 r=24 'Frame'
+      FRAM 42,120 32x32 'Frame'
+        VECT 49,124 19x20 bd=#5c4a30/2.26667 'Vector'
+    FRAM 95,116 160x37 'Frame'
+      TEXT 95,116 135x17 [Inter Semi Bold 13 #38392b] "Male · Medium · 18 kg"
+      TEXT 95,138 126x16 [Inter Medium 12 #6f7263] "Sector 17, Chandigarh"
+    FRAM 268,122 88x26 bg=#e5ebda r=100 'Frame'
+      ELLI 278,132 7x7 bg=#4b612d 'Ellipse'
+      TEXT 291,127 54x16 [Inter Semi Bold 12 #4b612d] "Released"
+  TEXT 20,186 140x17 [Inter Semi Bold 13 #6f7263] "LIFECYCLE TIMELINE"
+  FRAM 20,217 350x449 'Frame'
+    FRAM 20,217 350x93 'Frame'
+      FRAM 20,217 30x77 'Frame'
+        FRAM 20,217 30x30 bg=#4b612d r=100 'Frame'
+          FRAM 27,224 16x16 'Frame'
+            VECT 31,227 8x9 bd=#ffffff/1.33333 'Vector'
+        ROUN 34,247 2x47 bg=#ccd6bd 'Rectangle'
+      FRAM 63,217 307x77 bg=#ffffff bd=#d7d9d0/1 r=14 'Frame'
+        TEXT 77,228 81x14 [Inter Bold 11 #4b612d] "11 AUG · 14:23"
+        TEXT 77,245 68x19 [Inter Semi Bold 15 #38392b] "Captured"
+        TEXT 77,267 126x16 [Inter Medium 12 #6f7263] "Sector 17, Chandigarh"
+    FRAM 20,310 350x93 'Frame'
+      FRAM 20,310 30x77 'Frame'
+        FRAM 20,310 30x30 bg=#4b612d r=100 'Frame'
+          FRAM 27,317 16x16 'Frame'
+            VECT 30,320 11x10 bd=#ffffff/1.33333 'Vector'
+        ROUN 34,340 2x47 bg=#ccd6bd 'Rectangle'
+      FRAM 63,310 307x77 bg=#ffffff bd=#d7d9d0/1 r=14 'Frame'
+        TEXT 77,321 81x14 [Inter Bold 11 #4b612d] "11 AUG · 15:02"
+        TEXT 77,338 128x19 [Inter Semi Bold 15 #38392b] "ABC Centre Entry"
+        TEXT 77,360 116x16 [Inter Medium 12 #6f7263] "Assigned to POD 04"
+    FRAM 20,403 350x93 'Frame'
+      FRAM 20,403 30x77 'Frame'
+        FRAM 20,403 30x30 bg=#4b612d r=100 'Frame'
+          FRAM 27,410 16x16 'Frame'
+            VECT 30,413 11x9 bd=#ffffff/1.33333 'Vector'
+        ROUN 34,433 2x47 bg=#ccd6bd 'Rectangle'
+      FRAM 63,403 307x77 bg=#ffffff bd=#d7d9d0/1 r=14 'Frame'
+        TEXT 77,414 84x14 [Inter Bold 11 #4b612d] "12 AUG · 10:30"
+        TEXT 77,431 69x19 [Inter Semi Bold 15 #38392b] "Sterilised"
+        TEXT 77,453 124x16 [Inter Medium 12 #6f7263] "Surgery by Dr. Meena"
+    FRAM 20,496 350x93 'Frame'
+      FRAM 20,496 30x77 'Frame'
+        FRAM 20,496 30x30 bg=#4b612d r=100 'Frame'
+          FRAM 27,503 16x16 'Frame'
+            VECT 30,505 11x10 bd=#ffffff/1.33333 'Vector'
+        ROUN 34,526 2x47 bg=#ccd6bd 'Rectangle'
+      FRAM 63,496 307x77 bg=#ffffff bd=#d7d9d0/1 r=14 'Frame'
+        TEXT 77,507 79x14 [Inter Bold 11 #4b612d] "12 AUG · 11:15"
+        TEXT 77,524 135x19 [Inter Semi Bold 15 #38392b] "Rabies Vaccinated"
+        TEXT 77,546 86x16 [Inter Medium 12 #6f7263] "Batch RV-1208"
+    FRAM 20,589 350x77 'Frame'
+      FRAM 20,589 30x77 'Frame'
+        FRAM 20,589 30x30 bg=#4b612d r=100 'Frame'
+          FRAM 27,596 16x16 'Frame'
+            VECT 30,598 9x12 bd=#ffffff/1.33333 'Vector'
+      FRAM 63,589 307x77 bg=#ffffff bd=#d7d9d0/1 r=14 'Frame'
+        TEXT 77,600 86x14 [Inter Bold 11 #4b612d] "14 AUG · 09:40"
+        TEXT 77,617 67x19 [Inter Semi Bold 15 #38392b] "Released"
+        TEXT 77,639 137x16 [Inter Medium 12 #6f7263] "21 m from capture point"
+INST 0,760 390x84 bg=#ffffff bd=#d7d9d0/1 'Bottom Nav'
+  FRAM 0,760 390x74 bg=#ffffff 'items'
+    FRAM 24,772 31x44 bg=#ffffff 'Home'
+      FRAM 28,774 24x24 'Frame'
+        VECT 31,778 17x16 bd=#8a8c7e/1.9 'Vector'
+      TEXT 24,803 31x13 [Inter Medium 11 #8a8c7e] "Home"
+    FRAM 125,772 24x44 bg=#ffffff 'Map'
+      FRAM 125,774 24x24 'Frame'
+        VECT 130,778 14x18 bd=#8a8c7e/1.9 'Vector'
+      TEXT 125,803 23x13 [Inter Medium 11 #8a8c7e] "Map"
+    FRAM 218,772 44x54 bg=#ffffff 'Records'
+      FRAM 228,774 24x24 'Frame'
+        VECT 235,778 11x17 bd=#4b612d/1.9 'Vector'
+      TEXT 218,803 44x13 [Inter Semi Bold 11 #4b612d] "Records"
+      ELLI 238,821 5x5 bg=#4b612d 'Ellipse'
+    FRAM 332,772 34x44 bg=#ffffff 'Profile'
+      FRAM 337,774 24x24 'Frame'
+        VECT 342,779 13x15 bd=#8a8c7e/1.9 'Vector'
+      TEXT 332,803 34x13 [Inter Medium 11 #8a8c7e] "Profile"

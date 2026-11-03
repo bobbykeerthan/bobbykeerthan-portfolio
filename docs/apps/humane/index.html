@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <title>HUMANE — working demo</title>
+  <meta name="description" content="A working demo of HUMANE, an ABC field-management app designed by Bobby Keerthan. Sample data only.">
+  <meta name="theme-color" content="#F5F5F0">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="device">
+    <div class="status-bar" aria-hidden="true">
+      <span class="status-bar__time">9:41</span>
+      <svg class="status-bar__icons" width="66" height="12" viewBox="0 0 66 12" fill="none"><rect x="0" y="8" width="3" height="4" rx="1" fill="#38392B"/><rect x="5" y="6" width="3" height="6" rx="1" fill="#38392B"/><rect x="10" y="3" width="3" height="9" rx="1" fill="#38392B"/><rect x="15" y="1" width="3" height="11" rx="1" fill="#38392B"/><path d="M24.2 4.4a8 8 0 0 1 11.6 0" stroke="#38392B" stroke-width="1.6" stroke-linecap="round"/><circle cx="30" cy="9.6" r="1.5" fill="#38392B"/><rect x="42" y="0.5" width="21" height="11" rx="3" fill="#38392B"/></svg>
+    </div>
+    <main class="app" id="app"></main>
+    <div class="sr-only" id="live" aria-live="polite"></div>
+  </div>
+  <noscript><p class="noscript">This demo needs JavaScript turned on.</p></noscript>
+  <script src="icons.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

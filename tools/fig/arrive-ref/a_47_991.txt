@@ -1,0 +1,73 @@
+FRAM 0,0 393x300 bg=GRADIE 'Cover'
+  INST 210,120 180x180 'Icon/music'
+    VECT 278,142 90x112 bd=#ffffff@0.15/2 'Vector'
+    VECT 232,232 45x45 bd=#ffffff@0.15/2 'Vector'
+    VECT 322,218 45x45 bd=#ffffff@0.15/2 'Vector'
+  FRAM 16,62 40x40 bg=#ffffff@0.92 r=999 'Frame'
+    INST 26,72 20x20 'Icon/chevron-left'
+      VECT 34,77 5x10 bd=#808080/2 'Vector'
+  FRAM 337,62 40x40 bg=#ffffff@0.92 r=999 'Frame'
+    INST 347,72 20x20 'Icon/heart'
+      VECT 349,74 17x15 bd=#808080/2 'Vector'
+  FRAM 16,234 158x34 bg=#ffffff@0.92 r=999 'Frame'
+    INST 28,243 16x16 'Icon/clock'
+      VECT 29,244 13x13 bd=#808080/2 'Vector'
+      VECT 36,247 3x5 bd=#808080/2 'Vector'
+    TEXT 50,242 110x18 [Inter Semi Bold 13/18 #17171a] "Tonight · 7:00 PM"
+FRAM 0,280 393x668 bg=#f8f8fa r=24 'Frame'
+  FRAM 20,300 353x64 bg=#f0fdf4 r=14 'Frame'
+    INST 34,321 22x22 'Icon/check-circle'
+      VECT 36,323 18x18 bd=#808080/2 'Vector'
+      VECT 42,325 12x9 bd=#808080/2 'Vector'
+    TEXT 66,312 293x40 [Inter Semi Bold 14/20 #15803d] "You're going! Added to your Journey and calendar."
+  FRAM 20,382 353x64 'Frame'
+    TEXT 20,382 353x32 [Inter Bold 26/32 #17171a] "Freshers Design Social"
+    FRAM 20,422 270x24 'Frame'
+      FRAM 20,422 24x24 bg=#eef2ff r=999 'Frame'
+        TEXT 28,427 9x14 [Inter Bold 11/14 #3730a3] "D"
+      TEXT 52,424 238x20 [Inter Medium 14/20 #6b6b73] "Hosted by Coventry Design Society"
+  FRAM 20,464 353x174 bg=#ffffff bd=#e7e7eb/1 r=16 'Frame'
+    FRAM 36,480 321x38 'Frame'
+      FRAM 36,480 38x38 bg=#eef2ff r=10 'Frame'
+        INST 45,489 20x20 'Icon/clock'
+          VECT 47,491 17x17 bd=#808080/2 'Vector'
+          VECT 55,494 3x7 bd=#808080/2 'Vector'
+      FRAM 86,480 271x37 'Frame'
+        TEXT 86,480 67x16 [Inter Medium 12/16 #6b6b73] "Date & time"
+        TEXT 86,498 271x20 [Inter Semi Bold 15/20 #17171a] "Friday 12 Sep · 7:00–10:00 PM"
+    FRAM 36,532 321x38 'Frame'
+      FRAM 36,532 38x38 bg=#eef2ff r=10 'Frame'
+        INST 45,541 20x20 'Icon/map-pin'
+          VECT 48,543 13x17 bd=#808080/2 'Vector'
+          VECT 52,547 5x5 bd=#808080/2 'Vector'
+      FRAM 86,532 271x37 'Frame'
+        TEXT 86,532 50x16 [Inter Medium 12/16 #6b6b73] "Location"
+        TEXT 86,550 271x20 [Inter Semi Bold 15/20 #17171a] "Coventry SU, The Hub · 2.1 km"
+    FRAM 36,584 321x38 'Frame'
+      FRAM 36,584 38x38 bg=#eef2ff r=10 'Frame'
+        INST 45,593 20x20 'Icon/ticket'
+          VECT 47,597 17x12 bd=#808080/2 'Vector'
+          VECT 56,597 0x2 bd=#808080/2 'Vector'
+          VECT 56,607 0x2 bd=#808080/2 'Vector'
+          VECT 56,602 0x2 bd=#808080/2 'Vector'
+      FRAM 86,584 271x37 'Frame'
+        TEXT 86,584 31x16 [Inter Medium 12/16 #6b6b73] "Entry"
+        TEXT 86,602 271x20 [Inter Semi Bold 15/20 #17171a] "Free · bring your student ID"
+  FRAM 20,656 353x122 'Frame'
+    TEXT 20,656 51x24 [Inter Semi Bold 17/24 #17171a] "About"
+    TEXT 20,686 353x92 [Inter Regular 15/23 #6b6b73] "New to Coventry? Come and meet other design students over free pizza and music. A relaxed evening to make friends before term properly kicks off — everyone welcome."
+  FRAM 20,796 353x32 'Frame'
+    FRAM 20,796 98x32 'Frame'
+      ELLI 20,796 32x32 bg=#c7b5fc bd=#f8f8fa/2 'Ellipse'
+      ELLI 42,796 32x32 bg=#a6d9bf bd=#f8f8fa/2 'Ellipse'
+      ELLI 64,796 32x32 bg=#fccc99 bd=#f8f8fa/2 'Ellipse'
+      ELLI 86,796 32x32 bg=#99bffa bd=#f8f8fa/2 'Ellipse'
+    TEXT 130,802 130x20 [Inter Semi Bold 14/20 #17171a] "128 students going"
+FRAM 0,754 393x98 bg=#ffffff bd=#e7e7eb/1 'Frame'
+FRAM 20,772 100x41 'Frame'
+  TEXT 20,772 31x16 [Inter Medium 12/16 #6b6b73] "Entry"
+  TEXT 20,789 39x24 [Inter Bold 18/24 #17171a] "Free"
+INST 150,766 223x52 bg=#ffffff bd=#d6d6dc/1.5 r=12 'Button'
+  TEXT 230,782 64x20 [Inter Semi Bold 16/20 #3730a3] "Going ✓"
+INST 0,818 393x34 'Chrome/Home Indicator'
+  ROUN 127,839 139x5 bg=#17171a r=3 'Rectangle'

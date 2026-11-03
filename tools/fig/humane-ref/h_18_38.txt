@@ -1,0 +1,61 @@
+FRAM 0,0 390x38 'Frame'
+  TEXT 24,14 30x18 [Inter Semi Bold 14 #38392b] "9:41"
+  FRAM 302,16 64x15 'Frame'
+    FRAM 302,16 15x15 'Frame'
+      VECT 303,17 12x6 bd=#38392b/1.1875 'Vector'
+    FRAM 323,16 15x15 'Frame'
+      VECT 326,19 10x6 bd=#38392b/1.1875 'Vector'
+    ROUN 344,18 22x11 bg=#38392b r=3 'Rectangle'
+FRAM 0,38 390x54 'Frame'
+  FRAM 12,44 40x40 r=100 'Back'
+    FRAM 20,52 23x23 'Frame'
+      VECT 28,57 7x13 bd=#38392b/1.82083 'Vector'
+  TEXT 52,52 286x24 [Inter Semi Bold 18 #38392b] "Return & Release"
+  FRAM 338,44 40x40 'Frame'
+FRAM 0,92 390x752 'Frame'
+  FRAM 20,100 350x71 'Frame'
+    TEXT 20,100 207x17 [Inter Semi Bold 13 #6f7263] "ORIGINAL CAPTURE LOCATION"
+    FRAM 20,125 350x46 bg=#ffffff bd=#d7d9d0/1.4 r=14 'Frame'
+      FRAM 34,138 20x20 'Frame'
+        VECT 38,141 12x15 bd=#4b612d/1.58333 'Vector'
+      TEXT 64,138 292x20 [Inter Semi Bold 15 #38392b] "Sector 17, Chandigarh"
+  FRAM 20,187 350x208 bg=#ffffff bd=#d7d9d0/1 r=18 'Map'
+    FRAM 20,187 350x208 'Frame'
+      VECT 20,187 350x208 bg=#e7e8e0 'Vector'
+      VECT 38,203 96x60 bg=#dbe1cd 'Vector'
+      VECT 270,315 86x64 bg=#dbe1cd 'Vector'
+      VECT 270,203 86x52 bg=#e1e2da 'Vector'
+      VECT 38,307 96x72 bg=#e1e2da 'Vector'
+      VECT 20,287 350x0 bd=#f5f5f0/16 'Vector'
+      VECT 178,187 0x208 bd=#f5f5f0/16 'Vector'
+      VECT 20,287 350x0 bd=#cfd2c7/2 'Vector'
+      VECT 178,187 0x208 bd=#cfd2c7/2 'Vector'
+      VECT 20,357 120x38 bd=#f5f5f0/12 'Vector'
+    ELLI 103,212 150x150 bg=#4b612d@0.1 bd=#4b612d@0.5/1.5 'Ellipse'
+    FRAM 163,253 30x37 'Frame'
+      VECT 165,253 26x36 bg=#4b612d 'Vector'
+      VECT 173,261 11x11 bg=#ffffff 'Vector'
+    FRAM 132,229 103x25 bg=#ffffff r=100 'Frame'
+      ELLI 140,238 7x7 bg=#4b612d 'Ellipse'
+      TEXT 152,234 73x15 [Inter Semi Bold 11 #4b612d] "Capture point"
+    ELLI 189,292 38x38 bg=#3e7c74@0.18 'Ellipse'
+    ELLI 199,302 18x18 bg=#ffffff bd=#3e7c74/3 'Ellipse'
+    ELLI 204,306 9x9 bg=#3e7c74 'Ellipse'
+    FRAM 222,303 97x25 bg=#ffffff r=100 'Frame'
+      ELLI 230,312 7x7 bg=#3e7c74 'Ellipse'
+      TEXT 242,308 67x15 [Inter Semi Bold 11 #3e7c74] "You are here"
+  FRAM 20,411 350x40 'Frame'
+    TEXT 90,411 68x40 [Inter Bold 30 #38392b] "21 m"
+    TEXT 166,421 133x20 [Inter Medium 15 #6f7263] "from capture point"
+  FRAM 20,467 350x63 bg=#e5ebda bd=#b8cc9e/1.2 r=14 'Frame'
+    FRAM 35,486 24x24 bg=#4b612d r=100 'Frame'
+      FRAM 40,491 15x15 'Frame'
+        VECT 43,496 9x6 bd=#ffffff/1.625 'Vector'
+    FRAM 70,481 285x35 'Frame'
+      TEXT 70,481 172x18 [Inter Semi Bold 14 #4b612d] "Within 50 m release zone"
+      TEXT 70,500 195x16 [Inter Medium 12 #6f7263] "Correct location — safe to release"
+  FRAM 20,546 100x210 'Frame'
+  FRAM 20,772 350x56 bg=#4b612d r=15 'CTA · Confirm Release'
+    FRAM 108,790 19x19 'Frame'
+      VECT 111,793 11x14 bd=#ffffff/1.50417 'Vector'
+    TEXT 134,790 148x20 [Inter Bold 15 #ffffff] "CONFIRM RELEASE"

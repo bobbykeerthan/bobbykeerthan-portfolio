@@ -1,0 +1,43 @@
+FRAM 0,0 390x38 'Frame'
+  TEXT 24,14 30x18 [Inter Semi Bold 14 #38392b] "9:41"
+  FRAM 302,16 64x15 'Frame'
+    FRAM 302,16 15x15 'Frame'
+      VECT 303,17 12x6 bd=#38392b/1.1875 'Vector'
+    FRAM 323,16 15x15 'Frame'
+      VECT 326,19 10x6 bd=#38392b/1.1875 'Vector'
+    ROUN 344,18 22x11 bg=#38392b r=3 'Rectangle'
+FRAM 0,38 390x806 'Frame'
+  FRAM 153,56 84x84 bg=#4b612d r=100 'Frame'
+    FRAM 173,76 44x44 'Frame'
+      VECT 182,89 26x18 bd=#ffffff/4.4 'Vector'
+  TEXT 98,154 193x30 [Inter Bold 23 #4b612d] "DOG CAPTURED"
+  FRAM 130,198 131x21 'Frame'
+    TEXT 130,200 62x18 [Inter Medium 14 #6f7263] "Linked to"
+    TEXT 200,198 61x21 [Inter Bold 16 #38392b] "POD 04"
+  FRAM 141,233 108x108 bg=GRADIE bd=#4b612d/3 r=54 'Frame'
+    FRAM 160,254 69x69 'Frame'
+      VECT 175,264 40x43 bd=#5c4a30/4.8875 'Vector'
+  FRAM 24,355 342x209 bg=#ffffff bd=#d7d9d0/1 r=18 'Frame'
+    FRAM 42,361 306x46 'Frame'
+      TEXT 42,375 58x18 [Inter Medium 14 #6f7263] "Location"
+      TEXT 200,375 148x18 [Inter Semi Bold 14 #38392b] "Sector 17, Chandigarh"
+    ROUN 42,407 100x1 bg=#d7d9d0 'Rectangle'
+    FRAM 42,408 306x46 'Frame'
+      TEXT 42,422 34x18 [Inter Medium 14 #6f7263] "Time"
+      TEXT 219,422 129x18 [Inter Semi Bold 14 #38392b] "11 Aug 2026, 14:23"
+    ROUN 42,454 100x1 bg=#d7d9d0 'Rectangle'
+    FRAM 42,455 306x46 'Frame'
+      TEXT 42,469 83x18 [Inter Medium 14 #6f7263] "Captured by"
+      TEXT 246,469 102x18 [Inter Semi Bold 14 #38392b] "Team 04 – Ravi"
+    ROUN 42,501 100x1 bg=#d7d9d0 'Rectangle'
+    FRAM 42,502 306x56 'Frame'
+      TEXT 42,521 44x18 [Inter Medium 14 #6f7263] "Status"
+      FRAM 253,516 95x28 bg=#4b612d r=100 'Frame'
+        ELLI 264,527 6x6 bg=#ffffff 'Ellipse'
+        TEXT 276,522 60x16 [Inter Bold 12 #ffffff] "SECURED"
+  FRAM 145,578 100x148 'Frame'
+  FRAM 24,740 342x55 bg=#4b612d r=15 'CTA · Navigate ABC'
+    FRAM 84,758 19x19 'Frame'
+      VECT 88,761 11x14 bd=#ffffff/1.50417 'Vector'
+    TEXT 112,758 194x18 [Inter Bold 14 #ffffff] "NAVIGATE TO ABC CENTRE"
+  TEXT 143,809 104x17 [Inter Semi Bold 13 #4b612d] "View dog record"

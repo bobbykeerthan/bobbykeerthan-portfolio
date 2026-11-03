@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" class="no-js" data-mag="{{SLUG}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com 'sha256-68ovwuVEgP4KP6803CNhdg6S0jCfEydjM4sM/Qdnc5o=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU='; font-src https://fonts.gstatic.com; img-src 'self'; frame-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="theme-color" content="#F2EFE8">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:image" content="../og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts load without holding up the first paint: boot.js turns this preload into a stylesheet -->
+  <link rel="preload" as="style" href="{{FONTS}}" id="font-css">
+  <noscript><link rel="stylesheet" href="{{FONTS}}"></noscript>
+  <!-- base + magazine + pages + generated pages, bundled by build.mjs into one request -->
+  <link rel="stylesheet" href="../css/bundle-{{SLUG}}.css">
+  <script src="../js/boot.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#book">Skip to the magazine</a>
+
+  <!-- Running header on the desk (desktop only), like a printed magazine's running head -->
+  <div class="run-head" id="run-head" aria-hidden="true">
+    <span class="run-head__name">Bobby Keerthan <span>— {{LABEL}}</span></span>
+    <span class="run-head__section" data-section></span>
+  </div>
+  <main id="stage" aria-label="{{LABEL}} magazine">
+    <div id="book" tabindex="-1">
+{{PAGES}}
+    </div>
+  </main>
+
+  <nav class="mag-menu" aria-label="Magazine">
+    <a class="mag-menu__item" href="../" aria-label="Home — choose a magazine">Home</a>
+    <a class="mag-menu__item" href="#contents" data-goto="contents">Contents</a>
+    <span class="mag-menu__pager">
+      <button class="mag-menu__arrow" type="button" data-prev aria-label="Previous page">&#8249;</button>
+      <span class="mag-menu__count" aria-live="polite"><span data-current>1</span> / <span data-total>1</span></span>
+      <button class="mag-menu__arrow" type="button" data-next aria-label="Next page">&#8250;</button>
+    </span>
+    <a class="mag-menu__item mag-menu__switch" href="{{OTHER_HREF}}" aria-label="Switch to the {{OTHER_LABEL}} magazine"><span class="mag-menu__long">{{OTHER_LABEL}}</span><span class="mag-menu__short">{{OTHER_SHORT}}</span>&nbsp;&#8644;</a>
+  </nav>
+
+  <dialog class="app-dialog" id="app-dialog" aria-label="App demo">
+    <div class="app-dialog__bar">
+      <button class="app-dialog__btn" type="button" data-app-close>Close</button>
+      <button class="app-dialog__btn" type="button" data-app-reset>Reset demo</button>
+    </div>
+    <div class="app-dialog__device">
+      <div class="app-dialog__phone">
+        <iframe class="app-dialog__frame" title="App demo" referrerpolicy="no-referrer"></iframe>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="../vendor/page-flip-2.0.7/page-flip.browser.js" defer></script>
+  <script src="../js/email.js" defer></script>
+  <script src="../js/magazine.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+FRAM 0,0 390x38 'Frame'
+  TEXT 24,14 30x18 [Inter Semi Bold 14 #38392b] "9:41"
+  FRAM 302,16 64x15 'Frame'
+    FRAM 302,16 15x15 'Frame'
+      VECT 303,17 12x6 bd=#38392b/1.1875 'Vector'
+    FRAM 323,16 15x15 'Frame'
+      VECT 326,19 10x6 bd=#38392b/1.1875 'Vector'
+    ROUN 344,18 22x11 bg=#38392b r=3 'Rectangle'
+FRAM 0,38 390x44 'Frame'
+  TEXT 125,46 101x28 [Inter Bold 21 #4b612d] "HUMANE"
+  FRAM 351,48 24x24 'Frame'
+    VECT 356,52 15x18 bd=#38392b/1.9 'Vector'
+FRAM 0,82 390x678 'Frame'
+  FRAM 20,96 350x52 'Frame'
+    FRAM 20,96 165x52 'Frame'
+      TEXT 20,96 99x18 [Inter Medium 14 #6f7263] "Good morning,"
+      TEXT 20,116 165x32 [Inter Bold 24 #38392b] "Field Team 04"
+    FRAM 324,99 46x46 bg=#e5ebda bd=#4b612d/1.5 r=100 'Frame'
+      FRAM 335,110 24x24 'Frame'
+        VECT 340,115 13x15 bd=#4b612d/1.9 'Vector'
+  FRAM 20,164 350x64 bg=#4b612d r=16 'CTA · Capture Dog'
+    FRAM 116,183 26x26 bg=#ffffff r=100 'Frame'
+      FRAM 120,187 18x18 'Frame'
+        VECT 124,191 10x10 bd=#4b612d/1.425 'Vector'
+    TEXT 152,186 122x21 [Inter Bold 16 #ffffff] "CAPTURE DOG"
+  FRAM 20,244 350x80 'Frame'
+    FRAM 20,244 169x80 bg=#ffffff bd=#d7d9d0/1 r=16 'Frame'
+      FRAM 35,258 79x52 'Frame'
+        TEXT 35,258 79x15 [Inter Semi Bold 11 #6f7263] "ACTIVE PODS"
+        TEXT 35,276 17x34 [Inter Bold 26 #38392b] "2"
+      FRAM 136,264 40x40 bg=#e5ebda r=12 'Frame'
+        FRAM 145,273 22x22 'Frame'
+          VECT 149,277 15x14 bd=#4b612d/1.74167 'Vector'
+    FRAM 201,244 169x80 bg=#ffffff bd=#d7d9d0/1 r=16 'Frame'
+      FRAM 216,258 64x52 'Frame'
+        TEXT 216,258 64x15 [Inter Semi Bold 11 #6f7263] "DELIVERED"
+        TEXT 216,276 18x34 [Inter Bold 26 #38392b] "3"
+      FRAM 317,264 40x40 bg=#e5ebda r=12 'Frame'
+        FRAM 326,273 22x22 'Frame'
+          VECT 331,280 13x9 bd=#4b612d/1.74167 'Vector'
+  FRAM 20,340 350x80 'Frame'
+    FRAM 20,340 169x80 bg=#ffffff bd=#d7d9d0/1 r=16 'Frame'
+      FRAM 35,354 64x52 'Frame'
+        TEXT 35,354 64x15 [Inter Semi Bold 11 #6f7263] "AVAILABLE"
+        TEXT 35,372 13x34 [Inter Bold 26 #38392b] "1"
+      FRAM 136,360 40x40 bg=#e5ebda r=12 'Frame'
+        FRAM 145,369 22x22 'Frame'
+          VECT 149,372 14x16 bd=#4b612d/1.74167 'Vector'
+    FRAM 201,340 169x80 bg=#ffffff bd=#d7d9d0/1 r=16 'Frame'
+      FRAM 216,354 94x52 'Frame'
+        TEXT 216,354 94x15 [Inter Semi Bold 11 #6f7263] "TODAY'S ROUTE"
+        TEXT 216,372 17x34 [Inter Bold 26 #38392b] "5"
+      FRAM 317,360 40x40 bg=#e5ebda r=12 'Frame'
+        FRAM 326,369 22x22 'Frame'
+          VECT 332,372 14x14 bd=#4b612d/1.74167 'Vector'
+  FRAM 20,436 350x110 bg=#ffffff bd=#d7d9d0/1 r=16 'Frame'
+    TEXT 36,451 116x17 [Inter Semi Bold 13 #6f7263] "Today's Summary"
+    FRAM 36,480 318x51 'Frame'
+      FRAM 36,480 105x51 'Frame'
+        TEXT 81,480 16x32 [Inter Bold 24 #4b612d] "5"
+        TEXT 62,515 54x16 [Inter Medium 12 #6f7263] "Captured"
+      ROUN 141,480 1x34 bg=#d7d9d0 'Rectangle'
+      FRAM 142,480 105x51 'Frame'
+        TEXT 187,480 16x32 [Inter Bold 24 #38392b] "3"
+        TEXT 168,515 55x16 [Inter Medium 12 #6f7263] "Delivered"
+      ROUN 248,480 1x34 bg=#d7d9d0 'Rectangle'
+      FRAM 249,480 105x51 'Frame'
+        TEXT 293,480 17x32 [Inter Bold 24 #b98a3c] "0"
+        TEXT 278,515 47x16 [Inter Medium 12 #6f7263] "Pending"
+INST 0,760 390x84 bg=#ffffff bd=#d7d9d0/1 'Bottom Nav'
+  FRAM 0,760 390x74 bg=#ffffff 'items'
+    FRAM 24,772 32x54 bg=#ffffff 'Home'
+      FRAM 28,774 24x24 'Frame'
+        VECT 32,778 17x16 bd=#4b612d/1.9 'Vector'
+      TEXT 24,803 32x13 [Inter Semi Bold 11 #4b612d] "Home"
+      ELLI 38,821 5x5 bg=#4b612d 'Ellipse'
+    FRAM 125,772 24x44 bg=#ffffff 'Map'
+      FRAM 125,774 24x24 'Frame'
+        VECT 130,778 14x18 bd=#8a8c7e/1.9 'Vector'
+      TEXT 126,803 23x13 [Inter Medium 11 #8a8c7e] "Map"
+    FRAM 219,772 44x44 bg=#ffffff 'Records'
+      FRAM 229,774 24x24 'Frame'
+        VECT 235,778 11x17 bd=#8a8c7e/1.9 'Vector'
+      TEXT 219,803 44x13 [Inter Medium 11 #8a8c7e] "Records"
+    FRAM 332,772 34x44 bg=#ffffff 'Profile'
+      FRAM 337,774 24x24 'Frame'
+        VECT 342,779 13x15 bd=#8a8c7e/1.9 'Vector'
+      TEXT 332,803 34x13 [Inter Medium 11 #8a8c7e] "Profile"

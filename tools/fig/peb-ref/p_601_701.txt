@@ -1,0 +1,54 @@
+INST 161,417 72x8 'dot trans'
+  ELLI 161,417 8x8 bd=#000000/1 'Ellipse '
+  ELLI 193,417 8x8 bg=#ac7f5e bd=#000000/1 'Ellipse '
+  ELLI 225,417 8x8 bd=#000000/1 'Ellipse '
+TEXT 24,449 232x34 [Cormora Bold 28 #000000] "Small Christus"
+TEXT 24,483 307x19 [Cormora Regular 16 #000000] "2022 · Wood, pigment, gold leaf Peter Eugene Ball"
+TEXT 124,526 146x27 [Linden  Regular 20 #000000] "Material & Process"
+INST 25,524 32x32 'ep:back'
+  VECT 31,539 22x2 bg=#000000 'Vector'
+  VECT 30,530 11x20 bg=#000000 'Vector'
+INST 369,555 32x32 'ep:back'
+  VECT 375,570 22x2 bg=#000000 'Vector'
+  VECT 374,561 11x20 bg=#000000 'Vector'
+TEXT 24,719 345x279 [Cormora Light 16 #000000] "Small Christus is a devotional sculpture that reinterprets the traditional cruciform figure. Rather than presenting suffering, the figure appears upright and open, with arms extended in a gesture that suggests blessing rather than agony.\n\nThe sculpture references medieval church carvings while maintaining a contemporary sensitivity in proportion and surface detail. Its compact scale invites close viewing and quiet reflection.\n"
+TEXT 23,685 104x22 [Cormora Medium 18 #000000] "Craftsmanship"
+TEXT 24,578 67x22 [Cormora Medium 18 #000000] "Materials"
+TEXT 25,612 143x57 [Cormora Light 16 #000000] "Drifted wood\nHand-applied pigment Gold leaf detailing"
+FRAM 0,0 393x393 bg=IMG 'sculp image'
+  INST 0,0 393x44 'iPhone Status Bar'
+    FRAM 313,16 66x12 'Status Icons'
+      INST 313,17 18x10 'Cellular Signal'
+        VECT 313,23 3x4 bg=#0f0f0f 'Bar 1'
+        VECT 318,21 3x6 bg=#0f0f0f 'Bar 2'
+        VECT 323,19 3x8 bg=#0f0f0f 'Bar 3'
+        VECT 328,17 3x10 bg=#0f0f0f 'Bar 4'
+      INST 335,16 16x12 'Wifi'
+        VECT 340,24 5x4 bg=#0f0f0f 'Bar 1'
+        VECT 338,20 10x4 bg=#0f0f0f 'Bar 2'
+        VECT 335,16 16x5 bg=#0f0f0f 'Bar 3'
+      INST 355,16 24x12 'Battery'
+        VECT 355,16 21x12 bg=#0f0f0f 'border'
+        ROUN 357,18 17x8 bg=#0f0f0f r=1 'indicator'
+        VECT 377,20 2x4 bg=#0f0f0f 'cap'
+    INST 34,13 45x17 'Time'
+      FRAM 34,13 29x17 'clock'
+        TEXT 34,13 9x17 [SF Pro  Medium 14 #0f0f0f] "9"
+        TEXT 43,13 4x17 [SF Pro  Medium 14 #0f0f0f] ":"
+        TEXT 47,13 16x17 [SF Pro  Medium 14 #0f0f0f] "41"
+      VECT 67,16 12x12 bg=#0f0f0f 'location arrow'
+INST 0,780 393x72 bg=#56453c r=11 'bottom nav'
+  FRAM 17,800 359x32 'Frame 20'
+    INST 17,800 32x32 'mdi:home-outline'
+      VECT 20,804 27x23 bg=#ffffff 'Vector'
+    INST 99,800 32x32 'material-symbols:search-ro'
+      VECT 103,804 23x23 bg=#ffffff 'Vector'
+    INST 180,800 32x32 'tdesign:statue-of-jesus'
+      FRAM 184,803 24x27 'Group'
+        VECT 191,824 11x5 bd=#ffffff/1 'Vector'
+        VECT 184,803 24x27 bd=#ffffff/2 'Vector'
+    FRAM 262,800 32x32 'painting'
+      VECT 267,802 21x29 bg=#ffffff 'Vector'
+      VECT 277,806 13x13 bg=#ffffff 'Vector'
+    INST 344,800 32x32 'wordpress:post-author'
+      VECT 349,803 21x24 bg=#ffffff 'Vector'

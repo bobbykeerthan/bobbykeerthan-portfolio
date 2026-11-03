@@ -1,0 +1,83 @@
+INST 0,0 393x54 'Chrome/Status Bar'
+  TEXT 30,17 54x20 [Inter Semi Bold 16 #17171a] "9:41"
+  FRAM 134,11 125x37 bg=#000000 r=20 'Dynamic Island'
+  FRAM 302,21 74x13 'Indicators'
+    FRAM 302,22 18x11 'signal'
+      ROUN 302,29 3x4 bg=#17171a r=1 'Rectangle'
+      ROUN 307,27 3x6 bg=#17171a r=1 'Rectangle'
+      ROUN 312,25 3x8 bg=#17171a r=1 'Rectangle'
+      ROUN 317,23 3x10 bg=#17171a r=1 'Rectangle'
+    FRAM 327,22 17x12 'wifi'
+      VECT 328,23 15x12 bg=#17171a 'Vector'
+    FRAM 351,21 25x13 'battery'
+      ROUN 351,21 23x13 bd=#17171a@0.35/1 r=4 'Rectangle'
+      ROUN 353,23 19x9 bg=#17171a r=2 'Rectangle'
+      ROUN 374,26 2x4 bg=#17171a@0.35 r=1 'Rectangle'
+INST 0,54 393x56 bg=#ffffff 'Navigation / Header'
+  INST 8,60 44x44 r=12 'Control / Icon Button'
+    INST 18,70 24x24 'Icon/chevron-left'
+      VECT 27,76 6x12 bd=#808080/2 'Vector'
+  TEXT 0,70 393x24 [Inter Semi Bold 18/24 #17171a] "Task"
+  INST 397,60 44x44 r=12 'Control / Icon Button'
+    INST 407,70 24x24 'Icon/sliders'
+      VECT 421,74 7x0 bd=#808080/2 'Vector'
+      VECT 410,74 7x0 bd=#808080/2 'Vector'
+      VECT 419,82 9x0 bd=#6b6b73/2 'Vector'
+      VECT 410,82 5x0 bd=#6b6b73/2 'Vector'
+      VECT 423,90 5x0 bd=#6b6b73/2 'Vector'
+      VECT 410,90 9x0 bd=#6b6b73/2 'Vector'
+      VECT 421,72 0x4 bd=#6b6b73/2 'Vector'
+      VECT 415,80 0x4 bd=#6b6b73/2 'Vector'
+      VECT 423,88 0x4 bd=#6b6b73/2 'Vector'
+FRAM 0,110 393x789 'Frame'
+  FRAM 20,116 353x158 'Frame'
+    FRAM 20,116 52x52 bg=#eef2ff r=14 'Frame'
+      INST 32,128 28x28 'Icon/graduation-cap'
+        VECT 34,134 23x12 bd=#808080/2 'Vector'
+        VECT 58,140 0x7 bd=#808080/2 'Vector'
+        VECT 39,143 14x8 bd=#808080/2 'Vector'
+    TEXT 20,180 353x60 [Inter Bold 24/30 #17171a] "Complete university registration"
+    FRAM 20,252 189x22 'Frame'
+      INST 20,252 76x22 bg=#fffbeb r=999 'Status / Badge'
+        TEXT 28,255 60x16 [Inter Semi Bold 12/16 #b45309] "Due today"
+      INST 104,256 15x15 'Icon/clock'
+        VECT 105,257 12x12 bd=#808080/2 'Vector'
+        VECT 112,259 2x5 bd=#808080/2 'Vector'
+      TEXT 127,254 82x18 [Inter Medium 13/18 #6b6b73] "About 15 min"
+  FRAM 20,290 353x98 bg=#eef2ff r=16 'Frame'
+    TEXT 36,306 124x20 [Inter Semi Bold 15/20 #3730a3] "Why this matters"
+    TEXT 36,332 321x40 [Inter Medium 14/20 #17171a] "Registration confirms your place, unlocks your timetable, and lets you collect your student ID."
+  FRAM 20,404 353x153 bg=#ffffff bd=#e7e7eb/1 r=16 'Frame'
+    TEXT 36,420 129x22 [Inter Semi Bold 16/22 #17171a] "What you’ll need"
+    FRAM 36,454 321x21 'Frame'
+      ELLI 36,462 6x6 bg=#3730a3 'Ellipse'
+      TEXT 52,454 305x21 [Inter Medium 15/21 #6b6b73] "Your BRP or passport"
+    FRAM 36,487 321x21 'Frame'
+      ELLI 36,494 6x6 bg=#3730a3 'Ellipse'
+      TEXT 52,487 305x21 [Inter Medium 15/21 #6b6b73] "University offer letter"
+    FRAM 36,520 321x21 'Frame'
+      ELLI 36,528 6x6 bg=#3730a3 'Ellipse'
+      TEXT 52,520 305x21 [Inter Medium 15/21 #6b6b73] "A passport-style photo for your ID"
+  FRAM 20,573 353x206 bg=#ffffff bd=#e7e7eb/1 r=16 'Frame'
+    TEXT 36,589 45x22 [Inter Semi Bold 16/22 #17171a] "Steps"
+    FRAM 36,623 321x26 'Frame'
+      FRAM 36,623 26x26 bg=#f1f1f4 r=999 'Frame'
+        TEXT 46,628 7x16 [Inter Bold 13/16 #6b6b73] "1"
+      TEXT 74,626 283x20 [Inter Medium 15/20 #17171a] "Sign in to the Student Portal"
+    FRAM 36,661 321x26 'Frame'
+      FRAM 36,661 26x26 bg=#f1f1f4 r=999 'Frame'
+        TEXT 44,666 9x16 [Inter Bold 13/16 #6b6b73] "2"
+      TEXT 74,664 283x20 [Inter Medium 15/20 #17171a] "Confirm your personal details"
+    FRAM 36,699 321x26 'Frame'
+      FRAM 36,699 26x26 bg=#f1f1f4 r=999 'Frame'
+        TEXT 44,704 9x16 [Inter Bold 13/16 #6b6b73] "3"
+      TEXT 74,702 283x20 [Inter Medium 15/20 #17171a] "Upload your ID photo"
+    FRAM 36,737 321x26 'Frame'
+      FRAM 36,737 26x26 bg=#f1f1f4 r=999 'Frame'
+        TEXT 44,742 9x16 [Inter Bold 13/16 #6b6b73] "4"
+      TEXT 74,740 283x20 [Inter Medium 15/20 #17171a] "Submit and await confirmation"
+FRAM 0,754 393x98 bg=#ffffff bd=#e7e7eb/1 'Frame'
+INST 20,766 353x52 bg=#3730a3 r=12 'Button'
+  TEXT 128,782 138x20 [Inter Semi Bold 16/20 #ffffff] "Mark as complete"
+INST 0,818 393x34 'Chrome/Home Indicator'
+  ROUN 127,839 139x5 bg=#17171a r=3 'Rectangle'

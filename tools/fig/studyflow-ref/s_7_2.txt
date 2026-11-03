@@ -1,0 +1,267 @@
+INST 0,0 1440x80 bg=#ffffff bd=#e3e8e5/0 'Nav bar'
+  INST 80,22 158x34 'Logo'
+    FRAM 80,22 34x34 bg=#17694a r=10 'Mark'
+      INST 87,30 20x20 'icon/check'
+        FRAM 87,30 24x24 'glyph'
+          VECT 92,37 14x10 bd=#ffffff/1.8 'Vector'
+    TEXT 124,26 114x28 [Plus Ja ExtraBold 22/28 #13201a] "Studyflow"
+  FRAM 510,28 386x24 'Links'
+    TEXT 510,28 68x24 [Plus Ja SemiBold 16/24 #4e5d56] "Features"
+    TEXT 618,28 99x24 [Plus Ja SemiBold 16/24 #4e5d56] "How it works"
+    TEXT 757,28 65x24 [Plus Ja SemiBold 16/24 #4e5d56] "Reviews"
+    TEXT 862,28 34x24 [Plus Ja SemiBold 16/24 #4e5d56] "FAQ"
+  FRAM 1168,14 192x52 'Actions'
+    INST 1168,14 54x52 r=12 'Button'
+      TEXT 1172,28 46x24 [Plus Ja SemiBold 16/24 #17694a] "Log in"
+    INST 1238,14 122x52 bg=#17694a r=12 'Button'
+      TEXT 1262,28 74x24 [Plus Ja SemiBold 16/24 #ffffff] "Start free"
+FRAM 0,80 1440x792 bg=GRADIE 'Hero'
+  FRAM 80,255 616x426 'Text'
+    INST 80,255 163x32 bg=#c9f0da r=999 'Badge'
+      INST 92,263 16x16 'icon/sparkle'
+        FRAM 92,263 24x24 'glyph'
+          VECT 95,266 18x18 bd=#0e3b2c/1.8 'Vector'
+      TEXT 114,261 115x20 [Plus Ja SemiBold 14/20 #0e3b2c] "Free for students"
+    TEXT 80,315 616x144 [Plus Ja ExtraBold 64/72 #13201a] "Plan your study week in 5 minutes"
+    TEXT 80,487 616x64 [Plus Ja Regular 20/32 #4e5d56] "Add your modules and deadlines. Studyflow builds a simple weekly plan and reminds you before anything is due."
+    FRAM 80,579 416x52 'Buttons'
+      INST 80,579 219x52 bg=#17694a r=12 'Button'
+        TEXT 104,593 143x24 [Plus Ja SemiBold 16/24 #ffffff] "Start planning free"
+        INST 255,595 20x20 'Arrow'
+          FRAM 255,595 24x24 'glyph'
+            VECT 260,601 14x12 bd=#ffffff/1.8 'Vector'
+      INST 315,579 181x52 bg=#ffffff bd=#e3e8e5/1.5 r=12 'Button'
+        TEXT 340,593 130x24 [Plus Ja SemiBold 16/24 #13201a] "See how it works"
+    FRAM 80,659 502x22 'Trust'
+      FRAM 80,659 134x22 'Frame'
+        INST 80,661 18x18 'icon/check'
+          FRAM 80,661 18x18 'glyph'
+            VECT 84,667 10x7 bd=#17694a/1.8 'Vector'
+        TEXT 106,659 108x22 [Plus Ja Regular 14/22 #4e5d56] "No card needed"
+      FRAM 238,659 149x22 'Frame'
+        INST 238,661 18x18 'icon/check'
+          FRAM 238,661 18x18 'glyph'
+            VECT 242,667 10x7 bd=#17694a/1.8 'Vector'
+        TEXT 264,659 123x22 [Plus Ja Regular 14/22 #4e5d56] "Set up in 5 minutes"
+      FRAM 411,659 171x22 'Frame'
+        INST 411,661 18x18 'icon/check'
+          FRAM 411,661 18x18 'glyph'
+            VECT 415,667 10x7 bd=#17694a/1.8 'Vector'
+        TEXT 437,659 145x22 [Plus Ja Regular 14/22 #4e5d56] "Works on any browser"
+  FRAM 760,168 600x600 'Hero visual'
+    ROUN 840,228 520x550 bg=#c9f0da r=40 'Soft shape'
+    INST 800,168 540x530 bg=#ffffff bd=#e3e8e5/1 r=24 'Planner preview'
+      FRAM 829,197 482x52 'Header'
+        FRAM 829,197 106x52 'Frame'
+          TEXT 829,197 100x28 [Plus Ja SemiBold 20/28 #13201a] "Your week"
+          TEXT 829,227 106x22 [Plus Ja Regular 14/22 #4e5d56] "14 – 20 October"
+        INST 1185,207 126x32 bg=#c9f0da r=999 'Badge'
+          INST 1197,215 16x16 'icon/sparkle'
+            FRAM 1197,215 24x24 'glyph'
+              VECT 1200,218 18x18 bd=#0e3b2c/1.8 'Vector'
+          TEXT 1219,213 78x20 [Plus Ja SemiBold 14/20 #0e3b2c] "3 deadlines"
+      FRAM 829,269 482x70 bg=#f7f8f6 r=14 'Task · Mon'
+        FRAM 841,284 52x40 bg=#ffffff r=10 'Frame'
+          TEXT 852,294 30x20 [Plus Ja SemiBold 14/20 #4e5d56] "Mon"
+        FRAM 907,281 348x46 'Frame'
+          TEXT 907,281 348x24 [Plus Ja SemiBold 16/24 #13201a] "Essay plan"
+          TEXT 907,305 348x22 [Plus Ja Regular 14/22 #4e5d56] "Psychology · 2 h"
+        FRAM 1269,290 28x28 bg=#17694a r=14 'Frame'
+          INST 1275,296 16x16 'icon/check'
+            FRAM 1275,296 24x24 'glyph'
+              VECT 1280,304 14x10 bd=#ffffff/1.8 'Vector'
+      FRAM 829,359 482x70 bg=#f7f8f6 r=14 'Task · Tue'
+        FRAM 841,374 52x40 bg=#ffffff r=10 'Frame'
+          TEXT 855,384 24x20 [Plus Ja SemiBold 14/20 #4e5d56] "Tue"
+        FRAM 907,371 348x46 'Frame'
+          TEXT 907,371 348x24 [Plus Ja SemiBold 16/24 #13201a] "Lab report draft"
+          TEXT 907,395 348x22 [Plus Ja Regular 14/22 #4e5d56] "Biology · 1.5 h"
+        FRAM 1269,380 28x28 bg=#17694a r=14 'Frame'
+          INST 1275,386 16x16 'icon/check'
+            FRAM 1275,386 24x24 'glyph'
+              VECT 1280,394 14x10 bd=#ffffff/1.8 'Vector'
+      FRAM 829,449 482x70 bg=#f7f8f6 r=14 'Task · Wed'
+        FRAM 841,464 52x40 bg=#ffffff r=10 'Frame'
+          TEXT 851,474 32x20 [Plus Ja SemiBold 14/20 #4e5d56] "Wed"
+        FRAM 907,461 348x46 'Frame'
+          TEXT 907,461 348x24 [Plus Ja SemiBold 16/24 #13201a] "Revise lectures 4–6"
+          TEXT 907,485 348x22 [Plus Ja Regular 14/22 #4e5d56] "Economics · 2 h"
+        FRAM 1269,470 28x28 bg=#ffffff bd=#e3e8e5/1.5 r=14 'Frame'
+      FRAM 829,539 482x70 bg=#f7f8f6 r=14 'Task · Thu'
+        FRAM 841,554 52x40 bg=#ffffff r=10 'Frame'
+          TEXT 855,564 24x20 [Plus Ja SemiBold 14/20 #4e5d56] "Thu"
+        FRAM 907,551 348x46 'Frame'
+          TEXT 907,551 348x24 [Plus Ja SemiBold 16/24 #13201a] "Group project meeting"
+          TEXT 907,575 348x22 [Plus Ja Regular 14/22 #4e5d56] "Marketing · 1 h"
+        FRAM 1269,560 28x28 bg=#ffffff bd=#e3e8e5/1.5 r=14 'Frame'
+      FRAM 829,629 482x40 'Progress'
+        FRAM 829,629 482x22 'Frame'
+          TEXT 829,629 102x20 [Plus Ja SemiBold 14/20 #13201a] "Week progress"
+          TEXT 1237,629 74x22 [Plus Ja Regular 14/22 #4e5d56] "2 of 4 done"
+        FRAM 829,661 482x8 bg=#e3e8e5 r=4 'Track'
+          ROUN 829,661 242x8 bg=#23a26d r=4 'Rectangle'
+    INST 760,692 270x76 bg=#ffffff bd=#e3e8e5/1 r=16 'Reminder card'
+      FRAM 777,708 44x44 bg=#eefaf3 r=12 'Frame'
+        INST 787,718 24x24 'icon/bell'
+          FRAM 787,718 24x24 'glyph'
+            VECT 792,723 15x13 bd=#17694a/1.8 'Vector'
+            VECT 797,739 4x0 bd=#17694a/1.8 'Vector'
+      FRAM 835,707 172x46 'Frame'
+        TEXT 835,707 146x24 [Plus Ja SemiBold 16/24 #13201a] "Essay due in 2 days"
+        TEXT 835,731 172x22 [Plus Ja Regular 14/22 #4e5d56] "Psychology · Friday 18 Oct"
+FRAM 0,872 1440x670 bg=#f7f8f6 'Features'
+  INST 360,984 720x148 'Section heading'
+    INST 666,984 108x32 bg=#c9f0da r=999 'Eyebrow'
+      INST 678,992 16x16 'icon/sparkle'
+        FRAM 678,992 24x24 'glyph'
+          VECT 681,995 18x18 bd=#0e3b2c/1.8 'Vector'
+      TEXT 700,990 60x20 [Plus Ja SemiBold 14/20 #0e3b2c] "Features"
+    TEXT 360,1032 720x52 [Plus Ja Bold 44/52 #13201a] "Everything you need to stay on top"
+    TEXT 360,1100 720x32 [Plus Ja Regular 20/32 #4e5d56] "Simple tools that help you plan your week, remember deadlines and focus."
+  FRAM 80,1196 1280x234 'Cards'
+    INST 80,1196 384x234 bg=#ffffff bd=#e3e8e5/1 r=20 'Feature card'
+      FRAM 113,1229 52x52 bg=#eefaf3 r=14 'Icon tile'
+        INST 127,1243 24x24 'icon/calendar'
+          FRAM 127,1243 24x24 'glyph'
+            VECT 130,1248 17x16 bd=#17694a/1.8 'Vector'
+            VECT 130,1246 17x7 bd=#17694a/1.8 'Vector'
+      TEXT 113,1297 318x28 [Plus Ja SemiBold 20/28 #13201a] "Weekly planner"
+      TEXT 113,1341 318x52 [Plus Ja Regular 16/26 #4e5d56] "Turn your modules and deadlines into a clear plan for each day of the week."
+    INST 528,1196 384x234 bg=#ffffff bd=#e3e8e5/1 r=20 'Feature card'
+      FRAM 561,1229 52x52 bg=#eefaf3 r=14 'Icon tile'
+        INST 575,1243 24x24 'icon/bell'
+          FRAM 575,1243 24x24 'glyph'
+            VECT 580,1248 15x13 bd=#17694a/1.8 'Vector'
+            VECT 585,1264 4x0 bd=#17694a/1.8 'Vector'
+      TEXT 561,1297 318x28 [Plus Ja SemiBold 20/28 #13201a] "Deadline reminders"
+      TEXT 561,1341 318x52 [Plus Ja Regular 16/26 #4e5d56] "Get a reminder a few days before every essay, lab report or exam."
+    INST 976,1196 384x234 bg=#ffffff bd=#e3e8e5/1 r=20 'Feature card'
+      FRAM 1009,1229 52x52 bg=#eefaf3 r=14 'Icon tile'
+        INST 1023,1243 24x24 'icon/timer'
+          FRAM 1023,1243 24x24 'glyph'
+            VECT 1028,1248 15x15 bd=#17694a/1.8 'Vector'
+            VECT 1032,1246 5x12 bd=#17694a/1.8 'Vector'
+      TEXT 1009,1297 318x28 [Plus Ja SemiBold 20/28 #13201a] "Focus timer"
+      TEXT 1009,1341 318x52 [Plus Ja Regular 16/26 #4e5d56] "Study in short, focused blocks with a simple built-in timer and breaks."
+FRAM 0,1542 1440x596 bg=#ffffff 'How it works'
+  INST 360,1654 720x148 'Section heading'
+    INST 652,1654 135x32 bg=#c9f0da r=999 'Eyebrow'
+      INST 664,1662 16x16 'icon/sparkle'
+        FRAM 664,1662 24x24 'glyph'
+          VECT 668,1665 18x18 bd=#0e3b2c/1.8 'Vector'
+      TEXT 686,1660 87x20 [Plus Ja SemiBold 14/20 #0e3b2c] "How it works"
+    TEXT 360,1702 720x52 [Plus Ja Bold 44/52 #13201a] "Set up your week in three steps"
+    TEXT 360,1770 720x32 [Plus Ja Regular 20/32 #4e5d56] "No long forms. Most students are ready in about 5 minutes."
+  FRAM 80,1866 1280x160 'Steps'
+    INST 80,1866 384x134 'Step'
+      FRAM 80,1866 48x48 bg=#17694a r=24 'Number'
+        TEXT 100,1878 7x24 [Plus Ja SemiBold 16/24 #ffffff] "1"
+      TEXT 80,1930 384x28 [Plus Ja SemiBold 20/28 #13201a] "Add your modules"
+      TEXT 80,1974 384x26 [Plus Ja Regular 16/26 #4e5d56] "Type in the modules you’re taking this term."
+    INST 528,1866 384x160 'Step'
+      FRAM 528,1866 48x48 bg=#17694a r=24 'Number'
+        TEXT 547,1878 10x24 [Plus Ja SemiBold 16/24 #ffffff] "2"
+      TEXT 528,1930 384x28 [Plus Ja SemiBold 20/28 #13201a] "Add your deadlines"
+      TEXT 528,1974 384x52 [Plus Ja Regular 16/26 #4e5d56] "Add essays, reports and exams with their due dates."
+    INST 976,1866 384x160 'Step'
+      FRAM 976,1866 48x48 bg=#17694a r=24 'Number'
+        TEXT 995,1878 10x24 [Plus Ja SemiBold 16/24 #ffffff] "3"
+      TEXT 976,1930 384x28 [Plus Ja SemiBold 20/28 #13201a] "Get your weekly plan"
+      TEXT 976,1974 384x52 [Plus Ja Regular 16/26 #4e5d56] "Studyflow spreads the work across your week, so nothing is left to the last night."
+FRAM 0,2138 1440x704 bg=#f7f8f6 'Reviews'
+  INST 360,2250 720x148 'Section heading'
+    INST 668,2250 105x32 bg=#c9f0da r=999 'Eyebrow'
+      INST 680,2258 16x16 'icon/sparkle'
+        FRAM 680,2258 24x24 'glyph'
+          VECT 682,2261 18x18 bd=#0e3b2c/1.8 'Vector'
+      TEXT 702,2256 57x20 [Plus Ja SemiBold 14/20 #0e3b2c] "Reviews"
+    TEXT 360,2298 720x52 [Plus Ja Bold 44/52 #13201a] "Students like how simple it is"
+    TEXT 360,2366 720x32 [Plus Ja Regular 20/32 #4e5d56] "What students said after trying Studyflow for a term."
+  FRAM 80,2462 1280x268 'Cards'
+    INST 80,2462 620x268 bg=#ffffff bd=#e3e8e5/1 r=20 'Testimonial card'
+      FRAM 117,2495 116x20 'Stars'
+        INST 117,2495 20x20 'icon/star'
+          FRAM 117,2495 20x20 'Frame'
+            VECT 119,2497 16x16 bg=#f5c451 'Vector'
+        INST 141,2495 20x20 'icon/star'
+          FRAM 141,2495 20x20 'Frame'
+            VECT 143,2497 16x16 bg=#f5c451 'Vector'
+        INST 165,2495 20x20 'icon/star'
+          FRAM 165,2495 20x20 'Frame'
+            VECT 167,2497 16x16 bg=#f5c451 'Vector'
+        INST 189,2495 20x20 'icon/star'
+          FRAM 189,2495 20x20 'Frame'
+            VECT 191,2497 16x16 bg=#f5c451 'Vector'
+        INST 213,2495 20x20 'icon/star'
+          FRAM 213,2495 20x20 'Frame'
+            VECT 215,2497 16x16 bg=#f5c451 'Vector'
+      TEXT 117,2535 546x96 [Plus Ja Regular 20/32 #13201a] "“I used to plan my week on sticky notes. Now I open Studyflow on Sunday night and I know exactly what to do each day.”"
+      FRAM 117,2651 198x46 'Person'
+        FRAM 117,2652 44x44 bg=#c9f0da r=22 'Avatar'
+          TEXT 130,2664 19x20 [Plus Ja SemiBold 14/20 #0e3b2c] "PK"
+        FRAM 173,2651 142x46 'Frame'
+          TEXT 173,2651 58x24 [Plus Ja SemiBold 16/24 #13201a] "Priya K."
+          TEXT 173,2675 142x22 [Plus Ja Regular 14/22 #4e5d56] "2nd-year Psychology"
+    INST 740,2462 620x268 bg=#ffffff bd=#e3e8e5/1 r=20 'Testimonial card'
+      FRAM 777,2495 116x20 'Stars'
+        INST 777,2495 20x20 'icon/star'
+          FRAM 777,2495 20x20 'Frame'
+            VECT 779,2497 16x16 bg=#f5c451 'Vector'
+        INST 801,2495 20x20 'icon/star'
+          FRAM 801,2495 20x20 'Frame'
+            VECT 803,2497 16x16 bg=#f5c451 'Vector'
+        INST 825,2495 20x20 'icon/star'
+          FRAM 825,2495 20x20 'Frame'
+            VECT 827,2497 16x16 bg=#f5c451 'Vector'
+        INST 849,2495 20x20 'icon/star'
+          FRAM 849,2495 20x20 'Frame'
+            VECT 851,2497 16x16 bg=#f5c451 'Vector'
+        INST 873,2495 20x20 'icon/star'
+          FRAM 873,2495 20x20 'Frame'
+            VECT 875,2497 16x16 bg=#f5c451 'Vector'
+      TEXT 777,2535 546x96 [Plus Ja Regular 20/32 #13201a] "“The reminders are the best part. I haven’t missed a deadline since I started using it, and it only took a few minutes to set up.”"
+      FRAM 777,2651 192x46 'Person'
+        FRAM 777,2652 44x44 bg=#c9f0da r=22 'Avatar'
+          TEXT 790,2664 17x20 [Plus Ja SemiBold 14/20 #0e3b2c] "TR"
+        FRAM 833,2651 136x46 'Frame'
+          TEXT 833,2651 52x24 [Plus Ja SemiBold 16/24 #13201a] "Tom R."
+          TEXT 833,2675 136x22 [Plus Ja Regular 14/22 #4e5d56] "1st-year Engineering"
+FRAM 0,2842 1440x528 bg=#ffffff 'Call to action'
+  INST 80,2938 1280x320 bg=#0e3b2c r=28 'CTA banner'
+    TEXT 160,3010 1120x52 [Plus Ja Bold 44/52 #ffffff] "Ready to plan your week?"
+    TEXT 160,3082 1120x32 [Plus Ja Regular 20/32 #c9f0da] "It takes about 5 minutes to set up. Free for students."
+    FRAM 609,3134 222x52 'Buttons'
+      INST 609,3134 222x52 bg=#ffffff bd=#e3e8e5/1.5 r=12 'Button'
+        TEXT 634,3148 143x24 [Plus Ja SemiBold 16/24 #13201a] "Start planning free"
+        INST 786,3150 20x20 'Arrow'
+          FRAM 786,3150 24x24 'glyph'
+            VECT 790,3156 14x12 bd=#13201a/1.8 'Vector'
+INST 0,3370 1440x330 bg=#f7f8f6 bd=#e3e8e5/1 'Footer'
+  FRAM 80,3435 1280x138 'Top'
+    FRAM 80,3435 269x72 'Frame'
+      INST 80,3435 158x34 'Logo'
+        FRAM 80,3435 34x34 bg=#17694a r=10 'Mark'
+          INST 87,3442 20x20 'icon/check'
+            FRAM 87,3442 24x24 'glyph'
+              VECT 92,3450 14x10 bd=#ffffff/1.8 'Vector'
+        TEXT 124,3438 114x28 [Plus Ja ExtraBold 22/28 #13201a] "Studyflow"
+      TEXT 80,3481 269x26 [Plus Ja Regular 16/26 #4e5d56] "A simple study planner for students."
+    FRAM 964,3435 396x138 'Columns'
+      FRAM 964,3435 96x138 'Frame'
+        TEXT 964,3435 63x24 [Plus Ja SemiBold 16/24 #13201a] "Product"
+        TEXT 964,3471 67x26 [Plus Ja Regular 16/26 #4e5d56] "Features"
+        TEXT 964,3509 96x26 [Plus Ja Regular 16/26 #4e5d56] "How it works"
+        TEXT 964,3547 63x26 [Plus Ja Regular 16/26 #4e5d56] "Reviews"
+      FRAM 1140,3435 63x138 'Frame'
+        TEXT 1140,3435 37x24 [Plus Ja SemiBold 16/24 #13201a] "Help"
+        TEXT 1140,3471 33x26 [Plus Ja Regular 16/26 #4e5d56] "FAQ"
+        TEXT 1140,3509 63x26 [Plus Ja Regular 16/26 #4e5d56] "Contact"
+        TEXT 1140,3547 55x26 [Plus Ja Regular 16/26 #4e5d56] "Privacy"
+      FRAM 1283,3435 77x138 'Frame'
+        TEXT 1283,3435 52x24 [Plus Ja SemiBold 16/24 #13201a] "Follow"
+        TEXT 1283,3471 77x26 [Plus Ja Regular 16/26 #4e5d56] "Instagram"
+        TEXT 1283,3509 47x26 [Plus Ja Regular 16/26 #4e5d56] "TikTok"
+        TEXT 1283,3547 64x26 [Plus Ja Regular 16/26 #4e5d56] "LinkedIn"
+  FRAM 80,3613 1280x47 bd=#e3e8e5/1 'Bottom'
+    TEXT 80,3638 294x22 [Plus Ja Regular 14/22 #4e5d56] "© 2026 Studyflow. A student design project."
+    TEXT 1245,3638 115x22 [Plus Ja Regular 14/22 #4e5d56] "Made in Coventry"
