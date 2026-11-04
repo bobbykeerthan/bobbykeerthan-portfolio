@@ -99,15 +99,15 @@
   var pageW = 0;
 
   // ---------- Reading view toggle ----------
-  // In the magazine: pinned inside the top-right corner of the visible pages (one page when closed).
-  // In Reading view (desktop): top-right of the screen, to switch back. Phones/tablets: hidden.
+  // In the magazine: on the desk just below the open spread, lined up with its right edge (like the
+  // running header above it). In Reading view (desktop): top-right of the screen. Phones: hidden.
   function placeToggle() {
     if (!toggle || mode === 'flow' || !pageW) return;
     var r = stage.getBoundingClientRect(), bh = Math.round(pageW * DESIGN_H / DESIGN_W);
-    var closed = book.classList.contains('is-closed-front') || book.classList.contains('is-closed-back');
-    var right = r.left + r.width / 2 + (closed ? pageW / 2 : pageW);
-    toggle.style.right = Math.round(window.innerWidth - right + 14) + 'px';
-    toggle.style.top = Math.round(r.top + (r.height - bh) / 2 + 14) + 'px';
+    var right = r.left + r.width / 2 + pageW;
+    var below = r.top + (r.height + bh) / 2 + 12;
+    toggle.style.right = Math.round(window.innerWidth - right) + 'px';
+    toggle.style.top = Math.round(Math.min(below, window.innerHeight - 20 - toggle.offsetHeight)) + 'px';
   }
   if (toggle) {
     toggle.querySelector('[data-label]').textContent = reading ? 'Magazine view' : 'Reading view';

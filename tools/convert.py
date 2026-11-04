@@ -529,10 +529,13 @@ class Page:
 
         if it['kind'] == 'app':
             a = it['app']
-            self.css.append(css_block(f'.is-canvas {sel}', dict(pos, width=f"{a['w']}px")))
+            self.css.append(css_block(f'.is-canvas {sel}', pos))
             frame = f' data-app-frame="{a["frame"]}"' if a.get('frame') else ''
+            label = html.escape(a['label'].rstrip(' →'))
             return (f'<button class="abs try-app {cls}" type="button" data-app="{html.escape(a["id"])}" '
-                    f'data-app-title="{html.escape(a["title"])}"{frame}>{html.escape(a["label"])}</button>')
+                    f'data-app-title="{html.escape(a["title"])}"{frame}>'
+                    f'<span class="try-app__live"><i aria-hidden="true"></i>Live demo</span>'
+                    f'<span class="try-app__label">{label}</span><span class="try-app__arrow" aria-hidden="true">→</span></button>')
 
         if it['kind'] == 'text':
             runs = text_runs(n)
@@ -541,6 +544,9 @@ class Page:
                 runs = [[PHONE.sub('', r[0]), r[1], r[2]] for r in runs]
                 if not ''.join(r[0] for r in runs).strip():
                     return ''
+            if text.startswith('Scan to watch the film'):  # the QR code is a play button on screen
+                runs = [[re.sub(r'youtu\.be/[\w-]+', 'Opens on YouTube', r[0].replace('Scan to watch the film', 'Watch the film')), r[1], r[2]]
+                        for r in runs]
             first = runs[0][2]
             css = style_css(first)
             size = first['fontSize']
@@ -643,8 +649,10 @@ class Page:
             qr = re.search(r'youtu\.be/[\w-]+', n.get('name', ''))
             if qr:
                 url = 'https://' + qr.group(0)
-                return (f'<a class="abs {cls}{desk}" href="{url}" target="_blank" rel="noopener noreferrer" '
-                        f'aria-label="Watch on YouTube ({qr.group(0)})">{svg}</a>')
+                # On screen a play button replaces the printed QR code (same place and size)
+                play = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>'
+                return (f'<a class="abs film-play {cls}{desk}" href="{url}" target="_blank" rel="noopener noreferrer" '
+                        f'aria-label="Play the film on YouTube">{play}</a>')
             return f'<div class="abs {cls}{desk}" aria-hidden="true">{svg}</div>'
 
         # plain box (panel, rule, swatch, ellipse)

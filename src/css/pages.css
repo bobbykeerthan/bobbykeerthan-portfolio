@@ -192,7 +192,7 @@
 .is-canvas .cs-block--process { left: 764px; top: 806px; }
 .is-canvas .cs-block--simple { left: 1166px; top: 612px; width: 290px; }
 .is-canvas .cs-phone { left: 1456px; top: 330px; width: 214px; }
-.is-canvas .cs-try { left: 1456px; top: 860px; width: 214px; }
+.is-canvas .cs-try { left: auto; right: 84px; top: 860px; }
 
 .is-flow .c-cashsplit { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
 .is-flow .c-cashsplit > * { grid-column: 1 / -1; }

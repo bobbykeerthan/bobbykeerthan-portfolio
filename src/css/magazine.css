@@ -160,7 +160,7 @@
 /* Desktop-only furniture */
 .is-flow .desk-only { display: none !important; }
 
-/* ---------- Reading view toggle ---------- */
+/* ---------- Reading view toggle (on the desk just below the magazine, right-aligned) ---------- */
 .view-toggle { display: none; }
 .is-canvas .view-toggle,
 .is-reading .view-toggle {
@@ -184,7 +184,7 @@
 .view-toggle:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 .view-toggle__aa { font: 400 16px/1 var(--serif); }
 .is-canvas .view-toggle { visibility: hidden; }
-.is-canvas .view-toggle.is-placed { visibility: visible; transition: right 1s cubic-bezier(.45, .05, .25, 1); }
+.is-canvas .view-toggle.is-placed { visibility: visible; }
 .is-reading .view-toggle { top: 20px; right: 24px; }
 /* Reading view on a big screen: a slightly wider column than on phones */
 .is-reading .canvas { max-width: 720px; padding-top: 72px; }
@@ -257,19 +257,59 @@
 .try-app {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  height: 52px;
-  padding: 0 24px;
+  gap: 12px;
+  width: max-content;
+  height: 60px;
+  padding: 0 22px 0 10px;
   border: 0;
   border-radius: 999px;
-  background: var(--ink);
-  color: var(--cream);
-  font: 600 16px/1 var(--sans);
+  background: #C23F27;
+  color: #fff;
+  font: 600 17px/1 var(--sans);
   letter-spacing: 0.01em;
   cursor: pointer;
+  box-shadow: 0 10px 26px rgba(194, 63, 39, 0.35);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
-.try-app:hover { background: #000; }
+.try-app:hover { background: #A8341F; transform: translateY(-2px); box-shadow: 0 14px 30px rgba(194, 63, 39, 0.42); }
+.try-app:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.try-app__live {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 40px;
+  padding: 0 14px 0 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  font: 700 12px/1 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.try-app__live i { width: 8px; height: 8px; border-radius: 50%; background: #fff; animation: live-pulse 1.8s ease-out infinite; }
+@keyframes live-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); }
+  70%, 100% { box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); }
+}
+.try-app__arrow { transition: transform 0.2s ease; }
+.try-app:hover .try-app__arrow { transform: translateX(4px); }
+
+/* Films: on screen a red play button replaces the printed QR code */
+.film-play {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #C23F27;
+  color: #fff;
+  box-shadow: 0 10px 26px rgba(194, 63, 39, 0.35);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.film-play svg { width: 42%; height: 42%; margin-left: 6%; }
+.film-play:hover { background: #A8341F; transform: scale(1.05); }
+.film-play:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) {
+  .try-app__live i { animation: none; }
+  .try-app:hover, .film-play:hover { transform: none; }
+}
 
 /* ---------- App pop-up ---------- */
 .app-dialog {

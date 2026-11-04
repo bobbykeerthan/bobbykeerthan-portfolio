@@ -309,7 +309,7 @@
 .g-34-977 .e8 { font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; color: #3730a3; letter-spacing: 0.06em; text-transform: uppercase; font-size: 16px; line-height: 1.3; }
 .is-canvas .g-34-977 .e9 { left: 84px; top: 728px; z-index: 9; width: 350px; }
 .g-34-977 .e9 { font-family: 'Archivo', system-ui, sans-serif; font-weight: 400; color: #3b3934; font-size: 20px; line-height: 1.52; white-space: pre-wrap; }
-.is-canvas .g-34-977 .e10 { left: 84px; top: 860px; z-index: 35; width: 220px; }
+.is-canvas .g-34-977 .e10 { left: 84px; top: 860px; z-index: 35; }
 .is-canvas .g-34-977 .e11 { left: 476px; top: 470px; z-index: 6; white-space: pre; }
 .g-34-977 .e11 { font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; color: #3730a3; letter-spacing: 0.06em; text-transform: uppercase; font-size: 16px; line-height: 1.3; }
 .is-canvas .g-34-977 .e12 { left: 476px; top: 496px; z-index: 7; width: 350px; }
@@ -586,14 +586,14 @@
 .g-130-22 .e7 { font-family: 'Archivo', system-ui, sans-serif; font-weight: 400; color: #3b3934; font-size: 20px; line-height: 1.52; white-space: pre-wrap; }
 .is-canvas .g-130-22 .e8 { left: 84px; top: 827px; z-index: 19; width: 536px; height: 260px; }
 .g-130-22 .e8 { object-fit: fill; }
-.is-canvas .g-130-22 .e9 { left: 84px; top: 1105px; z-index: 21; width: 220px; }
+.is-canvas .g-130-22 .e9 { left: 84px; top: 1105px; z-index: 21; }
 .is-canvas .g-130-22 .e10 { left: 700px; top: 84px; z-index: 3; white-space: pre; }
 .g-130-22 .e10 { font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; color: #3730a3; letter-spacing: 0.06em; text-transform: uppercase; font-size: 16px; line-height: 1.3; }
 .is-canvas .g-130-22 .e11 { left: 700px; top: 110px; z-index: 15; width: 970px; height: 731px; }
 .g-130-22 .e11 { object-fit: fill; }
 .is-canvas .g-130-22 .e12 { left: 700px; top: 865px; z-index: 4; width: 900px; }
 .g-130-22 .e12 { font-family: 'Archivo', system-ui, sans-serif; font-weight: 400; color: #3b3934; font-size: 20px; line-height: 1.52; white-space: pre-wrap; }
-.is-canvas .g-130-22 .e13 { left: 700px; top: 949px; z-index: 20; width: 220px; }
+.is-canvas .g-130-22 .e13 { left: 700px; top: 949px; z-index: 20; }
 .is-canvas .g-130-22 .e14 { left: 84px; top: 1182px; z-index: 5; white-space: pre; }
 .g-130-22 .e14 { font-family: 'Archivo', system-ui, sans-serif; font-weight: 500; color: #6f6b62; letter-spacing: 0.01em; font-size: 14px; line-height: 1.3; }
 .is-canvas .g-130-22 .e15 { left: 121px; top: 1182px; z-index: 6; white-space: pre; }
@@ -640,7 +640,7 @@
 .g-34-1063 .e3 { font-family: 'Inter', system-ui, sans-serif; font-weight: 600; color: #232420; font-size: 28px; line-height: 1.2; }
 .is-canvas .g-34-1063 .e4 { left: 84px; top: 383px; z-index: 3; white-space: pre; }
 .g-34-1063 .e4 { font-family: 'Inter', system-ui, sans-serif; font-weight: 500; color: #4b612d; font-size: 20px; line-height: normal; }
-.is-canvas .g-34-1063 .e5 { left: 84px; top: 440px; z-index: 32; width: 220px; }
+.is-canvas .g-34-1063 .e5 { left: 84px; top: 440px; z-index: 32; }
 .is-canvas .g-34-1063 .e6 { left: 84px; top: 590px; z-index: 4; white-space: pre; }
 .g-34-1063 .e6 { font-family: 'Archivo', system-ui, sans-serif; font-weight: 600; color: #4b612d; letter-spacing: 0.06em; text-transform: uppercase; font-size: 16px; line-height: 1.3; }
 .is-canvas .g-34-1063 .e7 { left: 84px; top: 616px; z-index: 5; width: 296px; }
@@ -850,7 +850,7 @@
 .g-34-1145 .e3 { font-family: 'Archivo', system-ui, sans-serif; font-weight: 500; color: #6c685f; letter-spacing: 0.005em; font-size: 16px; line-height: normal; }
 .is-canvas .g-34-1145 .e4 { left: 84px; top: 476px; z-index: 5; width: 538px; }
 .g-34-1145 .e4 { font-family: 'Archivo', system-ui, sans-serif; font-weight: 400; color: #271e17; font-size: 20px; line-height: 1.52; white-space: pre-wrap; }
-.is-canvas .g-34-1145 .e5 { left: 84px; top: 630px; z-index: 23; width: 220px; }
+.is-canvas .g-34-1145 .e5 { left: 84px; top: 630px; z-index: 23; }
 .is-canvas .g-34-1145 .e6 { left: 892px; top: 40px; z-index: 1; width: 738px; height: 880px; }
 .g-34-1145 .e6 { object-fit: fill; }
 .is-canvas .g-34-1145 .e7 { left: 1044px; top: 926px; z-index: 6; white-space: pre; }

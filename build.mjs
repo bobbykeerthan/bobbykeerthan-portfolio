@@ -1,7 +1,8 @@
 // Builds the static site into ./docs (GitHub Pages serves that folder).
 // No dependencies: node build.mjs [--base=/repo-name/] [--site=https://name.github.io/repo-name/]
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync, existsSync, readdirSync } from 'node:fs';
-import { join, dirname } from 'node:path';
+import { join, dirname, resolve } from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
@@ -111,5 +112,17 @@ for (const [slug, mag] of Object.entries(MAGAZINES)) {
   mkdirSync(join(OUT, slug), { recursive: true });
   writeFileSync(join(OUT, slug, 'index.html'), share(html, `${slug}/`));
 }
+
+// Cache-busting: GitHub Pages lets browsers keep files for 10 minutes, so every link to our own
+// CSS/JS carries a short content hash (?v=...). A changed file gets a new address and loads at once.
+const stamp = (htmlFile) => {
+  const html = readFileSync(htmlFile, 'utf8').replace(/((?:href|src)=")([^"?#:]+\.(?:css|js))(")/g, (m, a, path, b) => {
+    const file = resolve(dirname(htmlFile), path);
+    if (!existsSync(file)) return m;
+    return a + path + '?v=' + createHash('sha1').update(readFileSync(file)).digest('hex').slice(0, 8) + b;
+  });
+  writeFileSync(htmlFile, html);
+};
+for (const f of walk(OUT).filter(f => f.endsWith('.html'))) stamp(f);
 
 console.log(`Built ${Object.keys(MAGAZINES).length} magazines into docs/ (base ${BASE})`);
