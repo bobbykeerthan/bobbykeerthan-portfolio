@@ -6,6 +6,8 @@
   var root = document.documentElement;
   var book = document.getElementById('book');
   var head = document.getElementById('run-head');
+  var toggle = document.getElementById('view-toggle');
+  var reading = root.classList.contains('is-reading');
   var headSection = head && head.querySelector('[data-section]');
   var pages = Array.prototype.slice.call(book.querySelectorAll('.page'));
   var mode = root.classList.contains('mode-flow') ? 'flow'
@@ -73,6 +75,7 @@
     // A closed magazine (front or back cover) slides to the middle of the desk
     book.classList.toggle('is-closed-front', twoUp && spread[0] === 0);
     book.classList.toggle('is-closed-back', twoUp && spread.length === 1 && spread[0] !== 0);
+    placeToggle();
     // Running header: the section(s) on show; hidden while the magazine is closed
     if (head) {
       var names = [];
@@ -94,6 +97,29 @@
   // its 1754 × 1240 canvas is then scaled to that width.
   var stage = document.getElementById('stage');
   var pageW = 0;
+
+  // ---------- Reading view toggle ----------
+  // In the magazine: pinned inside the top-right corner of the visible pages (one page when closed).
+  // In Reading view (desktop): top-right of the screen, to switch back. Phones/tablets: hidden.
+  function placeToggle() {
+    if (!toggle || mode === 'flow' || !pageW) return;
+    var r = stage.getBoundingClientRect(), bh = Math.round(pageW * DESIGN_H / DESIGN_W);
+    var closed = book.classList.contains('is-closed-front') || book.classList.contains('is-closed-back');
+    var right = r.left + r.width / 2 + (closed ? pageW / 2 : pageW);
+    toggle.style.right = Math.round(window.innerWidth - right + 14) + 'px';
+    toggle.style.top = Math.round(r.top + (r.height - bh) / 2 + 14) + 'px';
+  }
+  if (toggle) {
+    toggle.querySelector('[data-label]').textContent = reading ? 'Magazine view' : 'Reading view';
+    toggle.setAttribute('aria-pressed', reading ? 'true' : 'false');
+    toggle.setAttribute('aria-label', reading ? 'Switch back to the magazine view' : 'Switch to reading view: larger text in a single column');
+    toggle.addEventListener('click', function () {
+      try { localStorage.setItem('bk-view', reading ? 'magazine' : 'reading'); } catch (e) { return; }
+      location.reload(); // reopens on the same page: the address keeps the current page
+    });
+    // show it once it has its first position, then let it follow the cover's slide
+    setTimeout(function () { toggle.classList.add('is-placed'); }, 100);
+  }
   function fitCanvas() {
     if (mode === 'flow') return;
     pageW = Math.floor(Math.min(stage.clientWidth / 2, stage.clientHeight * DESIGN_W / DESIGN_H));
@@ -113,6 +139,7 @@
       head.style.top = Math.round(top - 38) + 'px';
       head.classList.toggle('no-room', top < 52);
     }
+    placeToggle();
   }
 
   // ---------- Navigation per mode ----------
@@ -263,7 +290,7 @@
   var opener = null;
 
   function fitPhone() {
-    if (!dialog.open || mode === 'flow') return;
+    if (!dialog.open || (mode === 'flow' && !reading)) return;
     // phone frame: 426 × 898; browser window (desktop dashboards): 1440 × 900 page + 40 title bar
     var browser = dialog.classList.contains('is-browser');
     var fw = browser ? 1440 : 426, fh = browser ? 940 : 898;
@@ -276,7 +303,7 @@
     if (!btn) return;
     opener = btn;
     var app = btn.dataset.app.replace(/[^a-z0-9-]/g, '');
-    var view = mode === 'flow' ? 'full' : 'frame';
+    var view = mode === 'flow' && !reading ? 'full' : 'frame';
     dialog.classList.toggle('is-browser', btn.dataset.appFrame === 'browser');
     frame.title = btn.dataset.appTitle || 'App demo';
     dialog.setAttribute('aria-label', frame.title);

@@ -425,6 +425,16 @@ class Page:
                     num = self.page_no if name == 'Folio' else SECTION_MAP[self.mag].get(n['textData']['characters'].strip())
                     if num:
                         base['node'] = retext(n, num)
+                elif re.fullmatch(r'Page \d+', n['textData']['characters'].strip()):
+                    # 'In this section' cards: the page number of the project named beside it
+                    me = mat(n)
+                    named = sorted((abs(mat(BY[sib])[4] - me[4]) + abs(mat(BY[sib])[5] - me[5]), BY[sib]['textData']['characters'].strip().lower())
+                                   for _, sib in KIDS.get(nid, []) if BY[sib]['type'] == 'TEXT' and sib != k)
+                    titles = [pg['title'].lower() for pg in PAGES[self.mag]]
+                    near = next((t for _, t in named if t in titles), None)  # the closest project name
+                    hit = titles.index(near) if near else None
+                    if hit is not None:
+                        base['node'] = retext(n, f'Page {hit + 1}')
                 self.items.append(dict(base, kind='text'))
                 continue
             if name == 'Index strip':

@@ -160,6 +160,35 @@
 /* Desktop-only furniture */
 .is-flow .desk-only { display: none !important; }
 
+/* ---------- Reading view toggle ---------- */
+.view-toggle { display: none; }
+.is-canvas .view-toggle,
+.is-reading .view-toggle {
+  position: fixed;
+  z-index: 15;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 14px 0 12px;
+  border: 1px solid rgba(242, 239, 232, 0.35);
+  border-radius: 999px;
+  background: rgba(26, 25, 22, 0.88);
+  color: var(--cream);
+  font: 600 13px/1 var(--sans);
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(26, 25, 22, 0.18);
+}
+.view-toggle:hover { background: var(--ink); }
+.view-toggle:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.view-toggle__aa { font: 400 16px/1 var(--serif); }
+.is-canvas .view-toggle { visibility: hidden; }
+.is-canvas .view-toggle.is-placed { visibility: visible; transition: right 1s cubic-bezier(.45, .05, .25, 1); }
+.is-reading .view-toggle { top: 20px; right: 24px; }
+/* Reading view on a big screen: a slightly wider column than on phones */
+.is-reading .canvas { max-width: 720px; padding-top: 72px; }
+
 /* ---------- Fixed menu ---------- */
 .mag-menu {
   position: fixed;
