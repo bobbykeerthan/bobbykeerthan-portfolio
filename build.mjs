@@ -24,13 +24,13 @@ const REPORT = JSON.parse(readFileSync(join(ROOT, 'tools', 'report.json'), 'utf8
 const MAGAZINES = {
   'ui-ux': {
     title: 'UI/UX Design — Bobby Keerthan',
-    description: 'Bobby Keerthan, UI/UX & Graphic Designer. Apps, websites and brands, from someone who has founded two brands.',
+    description: 'Bobby Keerthan, UI/UX & Graphic Designer. Apps, websites and brands, by an MA graphic and UI/UX designer.',
     label: 'UI/UX Design',
     other: { href: '../graphic/', label: 'Graphic Design', short: 'Graphic' },
   },
   graphic: {
     title: 'Graphic Design — Bobby Keerthan',
-    description: 'Bobby Keerthan, Graphic Designer. Brands, posters and hand-drawn films, from someone who has founded two brands.',
+    description: 'Bobby Keerthan, Graphic Designer. Brands, posters and hand-drawn films, by an MA graphic designer.',
     label: 'Graphic Design',
     other: { href: '../ui-ux/', label: 'UI/UX Design', short: 'UI/UX' },
   },

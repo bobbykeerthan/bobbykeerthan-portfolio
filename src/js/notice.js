@@ -1,11 +1,12 @@
-// Phones: on the first visit, a short note that the magazines are designed for bigger screens.
-// "Continue on phone" closes it and it is remembered on this device, so it never shows again.
+// Phones: a short note that the magazines are designed for bigger screens, once per tab.
+// "Continue on phone" closes it for as long as that tab stays open (sessionStorage), including
+// reloads and moving between pages; opening the site in a new tab shows it once again.
 (function () {
   'use strict';
   var KEY = 'bk-phone-notice';
   if (!window.matchMedia('(max-width: 767px), (max-height: 500px) and (pointer: coarse)').matches) return;
   try {
-    if (localStorage.getItem(KEY)) return;
+    if (sessionStorage.getItem(KEY)) return;
   } catch (e) {
     return; // storage blocked: don't show a note we couldn't stop repeating
   }
@@ -29,7 +30,7 @@
   box.appendChild(card);
 
   function close() {
-    try { localStorage.setItem(KEY, '1'); } catch (e) { /* ignore */ }
+    try { sessionStorage.setItem(KEY, '1'); } catch (e) { /* ignore */ }
     root.classList.remove('has-notice');
     box.remove();
     document.removeEventListener('keydown', onKey, true);

@@ -31,6 +31,10 @@ ALT_PATH = os.path.join(ROOT, 'tools', 'alt.json')
 ALT = json.load(open(ALT_PATH, encoding='utf-8')) if os.path.exists(ALT_PATH) else {}
 SVG_PATH = os.path.join(ROOT, 'tools', 'svg.json')
 SVG_OVERRIDES = json.load(open(SVG_PATH, encoding='utf-8')) if os.path.exists(SVG_PATH) else {}
+# Wording changes on top of the Figma copy (see tools/copy.json); hits are counted so unused rules get reported
+COPY_PATH = os.path.join(ROOT, 'tools', 'copy.json')
+COPY_RULES = json.load(open(COPY_PATH, encoding='utf-8'))['rules'] if os.path.exists(COPY_PATH) else []
+COPY_HITS = [0] * len(COPY_RULES)
 
 # The site never shows the phone number (brief). Lines matching this are dropped.
 PHONE = re.compile(r'(\+44|\b07\d{3})[\d\s]{8,}')
@@ -284,6 +288,29 @@ def vector_svg(n):
 
 
 # ---------------------------------------------------------------- text
+def apply_copy(runs, slug):
+    """Apply tools/copy.json to one text layer's runs ([chunk, key, style]); styles are kept where possible."""
+    text = ''.join(r[0] for r in runs)
+    exact_done = False
+    for i, rule in enumerate(COPY_RULES):
+        if '*' not in rule['pages'] and slug not in rule['pages']:
+            continue
+        if 'exact' in rule:
+            if not exact_done and text.strip() == rule['exact']:
+                runs = [[rule['replace'], runs[0][1], runs[0][2]]]
+                text, exact_done = rule['replace'], True  # one exact rule per layer, so swaps don't chain
+                COPY_HITS[i] += 1
+        elif rule['find'] in text:
+            hit = next((r for r in runs if rule['find'] in r[0]), None)
+            if hit:
+                hit[0] = hit[0].replace(rule['find'], rule['replace'])
+            else:  # spans several styled runs: keep the first run's style for the whole layer
+                runs = [[text.replace(rule['find'], rule['replace']), runs[0][1], runs[0][2]]]
+            text = ''.join(r[0] for r in runs)
+            COPY_HITS[i] += 1
+    return runs
+
+
 def retext(n, chars):
     """Copy of a text node showing `chars` in the node's first-run style."""
     st = text_runs(n)[0][2]
@@ -544,6 +571,9 @@ class Page:
                 runs = [[PHONE.sub('', r[0]), r[1], r[2]] for r in runs]
                 if not ''.join(r[0] for r in runs).strip():
                     return ''
+            if COPY_RULES:
+                runs = apply_copy([list(r) for r in runs], self.cfg['slug'])
+                text = ''.join(r[0] for r in runs)
             if text.startswith('Scan to watch the film'):  # the QR code is a play button on screen
                 runs = [[re.sub(r'youtu\.be/[\w-]+', 'Opens on YouTube', r[0].replace('Scan to watch the film', 'Watch the film')), r[1], r[2]]
                         for r in runs]
@@ -894,3 +924,7 @@ json.dump(report, open(os.path.join(ROOT, 'tools', 'report.json'), 'w', encoding
 print('pages done; images', len(IMG_DONE), '; alt missing', len(report['alt_missing']))
 for mag, f in report['fonts'].items():
     print(mag, sorted({x[0] for x in f}))
+for rule, hits in zip(COPY_RULES, COPY_HITS):
+    if not hits:
+        print('WARNING copy rule matched nothing:', rule.get('exact') or rule.get('find')[:60])
+print('copy rules applied:', sum(1 for h in COPY_HITS if h), 'of', len(COPY_RULES), '(layer hits:', sum(COPY_HITS), ')')
